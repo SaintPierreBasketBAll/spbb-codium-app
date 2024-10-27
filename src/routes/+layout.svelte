@@ -56,7 +56,7 @@ Gris (pour les ombrages) : Un gris moyen (#808080)  -->
 <style>
 	
 	header {
-		background: linear-gradient(#FF4500,#FFA500);
+		background: linear-gradient(#FFA500,#FF4500);
 		color: white;
 		padding: 1rem;
 		text-align: center;
