@@ -4,31 +4,35 @@
 	let { children } = $props();
 </script>
 
+<div class="header-container">
 	<header>
 		<img src={logo_img} alt="Saint Pierre Basket Club logo" class="logo">
-		<h1>Saint Pierre Basket Club</h1>
+		<nav>
+			
+			<ul>
+				<li><a href="https://saintpierrebc.com/">Accueil</a></li>
+				<li>
+					<a href="https://saintpierrebc.com/le-club">Le club</a>
+					<div class="dropdown-content">
+						<a href="https://saintpierrebc.com/le-club/presentation">Présentation du club</a>
+						<a href="https://saintpierrebc.com/le-club/equipe-dirigeante">L'équipe dirigeante</a>
+						<a href="https://saintpierrebc.com/le-club/projets">Les projets</a>
+						<a href="https://saintpierrebc.com/le-club/staff">Le staff</a>
+						<a href="https://saintpierrebc.com/le-club/partenaires">Les partenaires</a>
+						<a href="https://saintpierrebc.com/le-club/faire-un-don">Faire un don</a>
+					</div>
+				</li>
+				<li><a href="https://saintpierrebc.com/nos-equipes">Nos équipes</a></li>
+				<li><a href="https://saintpierrebc.com/infos-pratiques">Infos pratiques</a></li>
+				<li><a href="https://saintpierrebc.com/boutique">Boutique</a></li>
+				<li><a href="https://saintpierrebc.com/contact">Contact</a></li>
+			</ul>
+		</nav>
 	</header>
+</div>	
+
 	
-	<nav>
-		<ul>
-			<li><a href="https://saintpierrebc.com/">Accueil</a></li>
-			<li>
-				<a href="https://saintpierrebc.com/le-club">Le club</a>
-				<div class="dropdown-content">
-					<a href="https://saintpierrebc.com/le-club/presentation">Présentation du club</a>
-					<a href="https://saintpierrebc.com/le-club/equipe-dirigeante">L'équipe dirigeante</a>
-					<a href="https://saintpierrebc.com/le-club/projets">Les projets</a>
-					<a href="https://saintpierrebc.com/le-club/staff">Le staff</a>
-					<a href="https://saintpierrebc.com/le-club/partenaires">Les partenaires</a>
-					<a href="https://saintpierrebc.com/le-club/faire-un-don">Faire un don</a>
-				</div>
-			</li>
-			<li><a href="https://saintpierrebc.com/nos-equipes">Nos équipes</a></li>
-			<li><a href="https://saintpierrebc.com/infos-pratiques">Infos pratiques</a></li>
-			<li><a href="https://saintpierrebc.com/boutique">Boutique</a></li>
-			<li><a href="https://saintpierrebc.com/contact">Contact</a></li>
-		</ul>
-	</nav>
+
 	
 	
 	{@render children()}
@@ -54,24 +58,27 @@ proches du rouge (#FF4500)
 Gris (pour les ombrages) : Un gris moyen (#808080)  -->
 
 <style>
-	
+	.header-container {
+  background-color: #000000;
+}
 	header {
-		background: linear-gradient(#FFA500,#FF4500);
-		color: white;
-		padding: 1rem;
-		text-align: center;
+		
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
+		justify-content: center;
+		
+
 	}
 	.logo {
-		width: 8rem;
+		width: 5rem;
 		height: auto;
 		margin-bottom: 10px;
 	}
 	h1{
 		font-size: 4rem;
 		font-weight: bolder;
+		box-shadow: -1px -1px 10px black, 1px 1px 10px black;
 		
 	}
 	nav {
