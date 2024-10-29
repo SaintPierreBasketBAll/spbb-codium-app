@@ -6,7 +6,7 @@
 <style>
     .hero-home{
         height: 640px;
-        background-image: url(spbb_img1.jpg);
+        background-image: url('../lib/images/spbb_img1.jpg');
         background-position: 100% 40%;
         background-size: cover;
 
