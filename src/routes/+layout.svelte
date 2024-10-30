@@ -10,7 +10,7 @@
 		<nav>
 			
 			<ul>
-				<li><a href="https://saintpierrebc.com/">Accueil</a></li>
+				<li><a href="/">Accueil</a></li>
 				<li>
 					<a href="https://saintpierrebc.com/le-club">Le club</a>
 					<div class="dropdown-content">
