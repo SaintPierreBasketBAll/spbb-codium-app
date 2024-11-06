@@ -1,14 +1,14 @@
 <section class="hero-home">
-<p>
-    <a href="/svelte5runes">svelte5runes</a>
-</p>
+
+    <h1>Bienvenue sur le site de Saint Pierre basket Ball</h1>
+    <p class="container-link">Ensemble pour gagner</p>
 </section>
 
 
 <style>
     .hero-home{
         height: 640px;
-        background-image: url('../lib/images/spbb_img1.jpg');
+        background-image: url('/images/spbb_img1.jpg');
         background-position: 100% 40%;
         background-size: cover;
         box-shadow:  inset 1000px 1000px 10px rgba(0, 0, 0, 0.658);
@@ -18,7 +18,7 @@
         align-items: start;
         
     }
-    p{
+    .container-link{
         color: beige;font-size: 5rem;
         margin-left: 100px;
     }

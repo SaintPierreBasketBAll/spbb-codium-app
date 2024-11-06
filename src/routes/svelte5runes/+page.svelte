@@ -1,28 +1,17 @@
 <script>
-    let {title} = $props();
-    let count = $state(0);
-    let double = $derived(count*2)
-
-    $effect(()=>{
-        document.title= 'Compteur : ${count}';
-    })
-    const increment =()=>{
-        count += 1
-    }
+    import Compter from "../../lib/components/Compter.svelte"
+    import {createTodos} from "../../lib/runes/todos.svelte"
+    const todos = createTodos()
 </script>
 
-<main class="container" style="margin-block:2rem">
-    <h1>{title}</h1>
-    <p>Compteur : {count}</p>
-    <p>Double: {double}</p>
-    
-    <button onclick={increment}>Incrementer</button>
+<main class="container"> style="margin-block:2rem"
+    <Compter title="Compteur"/>
+    <ul aria-busy={todos.isFetching}>
+        {#each todos.todos as todo}
+           <li>{todo.title}</li> 
+        {/each}
+    </ul>
+    <button onclick={()=>todos.addTodo("Demo")}>Ajouter</button>
 </main>
 
-<style>
-    button{
-        border: 3px solid orangered;
-        padding: 5px 14px;
-        background-color: bisque;
-    }
-</style>
+
