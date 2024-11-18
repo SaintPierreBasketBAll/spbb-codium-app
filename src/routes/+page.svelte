@@ -1,7 +1,7 @@
 <section class="hero-home">
 
-    <h1>Bienvenue sur le site de Saint Pierre basket Ball</h1>
-    <p class="container-link">Ensemble pour gagner</p>
+    <h1 class="hero-title">Bienvenue sur le site de Saint Pierre basket Ball</h1>
+    <p class="container-link">Ensemble pour grandir</p>
 </section>
 
 
@@ -15,10 +15,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         
     }
-    .container-link{
+    .container-link, .hero-title {
         color: beige;font-size: 5rem;
         margin-left: 100px;
     }
