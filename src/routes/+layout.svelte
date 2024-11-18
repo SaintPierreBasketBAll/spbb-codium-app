@@ -1,4 +1,16 @@
 <script>
+	import '../app.css'
+	import Header from '../components/Header.svelte';
+	import Footer from '../components/Footer.svelte';
+  </script>
+  
+  <Header />
+  <slot />
+  <Footer />
+
+
+
+<!-- <script>
 	import '../app.css';
 	let logo_img = 'spbb_logo.png'
 	let { children } = $props();
@@ -49,16 +61,16 @@
         </p>
     </footer>
 
-<!--Noir : #000000
-Blanc : #FFFFFF
-Orange (dégradé des flammes) : Un dégradé allant d’un 
-orange clair (#FFA500) 
+ Noir :  #<--000000 -->
+<!-- Blanc : # --><!-- FFFFFF -->
+<!-- Orange (dégradé des flammes) : Un dégradé allant d’un 
+orange clair (# --><!-- FFA500 --><!-- ) 
 à des teintes plus foncées 
-proches du rouge (#FF4500)
-Gris (pour les ombrages) : Un gris moyen (#808080)  -->
-
-<style>
-	.header-container {
+proches du rouge (# --><!-- FF4500 --><!-- )
+Gris (pour les ombrages) : Un gris moyen (# --><!-- 808080 --><!-- )  -->
+ 
+<!-- <style> -->
+<!-- 	.header-container {
   background-color: #000000;
 }
 	header {
@@ -179,5 +191,5 @@ Gris (pour les ombrages) : Un gris moyen (#808080)  -->
 		text-align: center;
 		padding: 1rem;
 		margin-top: auto;
-	}
-</style>
+	}  -->
+<!-- </style> -->
