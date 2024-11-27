@@ -2,10 +2,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities'
 
-html;:root {
-    --black: #000000;
-	--white: #FFFFFF;
-    --orange-light: #FFA500;
-    --orange-dark: #FF4500;
-    --grey: #808080;
-  }
