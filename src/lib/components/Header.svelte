@@ -74,20 +74,41 @@
     <div class="dropdown-menu">
       <a href="https://paris-f.com/le-club/presentation">Présentation du club</a>
       <a href="https://paris-f.com/le-club/equipe-dirigeante">L'équipe dirigeante</a>
+	  <a href="https://paris-f.com/le-club/Les projets">Présentation du club</a>
+      <a href="https://paris-f.com/le-club/equipe-dirigeante">Le staff technique</a>
+	  <a href="https://paris-f.com/le-club/presentation">Les partenaires</a>
+      <a href="https://paris-f.com/le-club/equipe-dirigeante">Faire un don</a>
     </div>
     </div>
-    <a href="https://paris-f.com/equipe">Équipe</a>
-    <a href="https://paris-f.com/calendrier">Calendrier</a>
-    <a href="https://paris-f.com/resultats">Résultats</a>
-    <a href="https://paris-f.com/news">News</a>
-    <a href="https://paris-f.com/contact">Contact</a>
+	<div class="nav-item">
+    <a href="https://paris-f.com/equipe">Nos Équipes</a>
+	<div class="dropdown-menu">
+		<a href="https://paris-f.com/le-club/presentation">Séniors garçons</a>
+		<a href="https://paris-f.com/le-club/equipe-dirigeante">Séniors filles</a>
+		<a href="https://paris-f.com/le-club/Les projets">U18 garçon</a>
+		<a href="https://paris-f.com/le-club/equipe-dirigeante">U18 filles</a>
+		<a href="https://paris-f.com/le-club/presentation">U15</a>
+		<a href="https://paris-f.com/le-club/equipe-dirigeante">U13</a>
+	  </div>
+	</div>
+	<div class="nav-item">
+		<a href="https://paris-f.com/equipe">Infos pratiques</a>
+		<div class="dropdown-menu">
+			<a href="https://paris-f.com/le-club/presentation">Adhésion</a>
+			<a href="https://paris-f.com/le-club/equipe-dirigeante">Les horaires</a>
+			<a href="https://paris-f.com/le-club/Les projets">Les gymnases</a>
+			<a href="https://paris-f.com/le-club/equipe-dirigeante">Tarifs et aides</a>
+		  </div>
+		</div>
+    <a href="https://paris-f.com/resultats">Contact</a>
+    <a href="https://paris-f.com/news">S'inscrire</a>
   </div>
   </nav>
 
   <style>
     .navbar {
 	  background: linear-gradient(45deg, var(--black), #1a1a1a);
-	  padding: 1rem;
+	  padding: 1rem 2rem 1rem 1rem;
 	  display: flex;
 	  justify-content: space-between;
 	  align-items: center;
