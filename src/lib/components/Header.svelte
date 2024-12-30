@@ -74,7 +74,7 @@
     <div class="dropdown-menu">
       <a href="https://paris-f.com/le-club/presentation">Présentation du club</a>
       <a href="https://paris-f.com/le-club/equipe-dirigeante">L'équipe dirigeante</a>
-	  <a href="https://paris-f.com/le-club/Les projets">Présentation du club</a>
+	  <a href="https://paris-f.com/le-club/Les projets">Les projets</a>
       <a href="https://paris-f.com/le-club/equipe-dirigeante">Le staff technique</a>
 	  <a href="https://paris-f.com/le-club/presentation">Les partenaires</a>
       <a href="https://paris-f.com/le-club/equipe-dirigeante">Faire un don</a>
