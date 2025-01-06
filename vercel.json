@@ -1,5 +1,9 @@
 {
     "engines": {
-      "node": "20.x"
+      "node": "20.x"},
+        "buildCommand": "npm run build",
+        "outputDirectory": "build",
+        "framework": "sveltekit"
+      
     }
-  }
+  
