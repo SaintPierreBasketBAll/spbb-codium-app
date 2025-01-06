@@ -61,7 +61,7 @@
 
 
 <nav class="navbar">
-  <img src="images/logo.png" alt="SPBB Basketball Logo with flame design" class="logo">
+  <img src="/src/lib/spbb_logo.png" alt="SPBB Basketball Logo with flame design" class="logo">
   <div class="hamburger">
     <span></span>
     <span></span>
