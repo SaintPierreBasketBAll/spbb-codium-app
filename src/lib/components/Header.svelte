@@ -70,9 +70,9 @@
   <div class="nav-links">
     <a href="index.html">Accueil</a>
     <div class="nav-item">
-    <a href="https://paris-f.com/le-club">Le club</a>
+    <a href="/leclub">Le club</a>
     <div class="dropdown-menu">
-      <a href="https://paris-f.com/le-club/presentation">Présentation du club</a>
+      <a href="/leclub/presentationduclub">Présentation du club</a>
       <a href="https://paris-f.com/le-club/equipe-dirigeante">L'équipe dirigeante</a>
 	  <a href="https://paris-f.com/le-club/Les projets">Les projets</a>
       <a href="https://paris-f.com/le-club/equipe-dirigeante">Le staff technique</a>
@@ -81,7 +81,7 @@
     </div>
     </div>
 	<div class="nav-item">
-    <a href="https://paris-f.com/equipe">Nos Équipes</a>
+    <a href="/nosequipes">Nos Équipes</a>
 	<div class="dropdown-menu">
 		<a href="https://paris-f.com/le-club/presentation">Séniors garçons</a>
 		<a href="https://paris-f.com/le-club/equipe-dirigeante">Séniors filles</a>
@@ -89,6 +89,7 @@
 		<a href="https://paris-f.com/le-club/equipe-dirigeante">U18 filles</a>
 		<a href="https://paris-f.com/le-club/presentation">U15</a>
 		<a href="https://paris-f.com/le-club/equipe-dirigeante">U13</a>
+		<a href="https://paris-f.com/le-club/equipe-dirigeante">École de Basket</a>
 	  </div>
 	</div>
 	<div class="nav-item">

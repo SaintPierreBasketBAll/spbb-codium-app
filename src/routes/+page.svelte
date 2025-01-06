@@ -83,7 +83,7 @@
     <div class="history-content">
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">1950</div>
+          <div class="timeline-date">14/08/2001</div>
           <div class="timeline-text">Création du club Saint-Pierre Basket Ball</div>
         </div>
         <div class="timeline-item">
@@ -152,13 +152,14 @@
       </div>
       <div class="contact-info">
         <h3>Informations de Contact</h3>
-        <p>Adresse: 123 Rue du Basket, 75000 Paris</p>
-        <p>Téléphone: 01 23 45 67 89</p>
-        <p>Email: contact@spbb.fr</p>
-        <h3>Horaires d'Ouverture</h3>
-        <p>Lundi - Vendredi: 9h - 20h</p>
-        <p>Samedi: 10h - 18h</p>
-        <p>Dimanche: Fermé</p>
+        <p>Adresse: GYMNASE NELSON MANDELA</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 AVENUE DE SOWETO</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 97410 SAINT PIERRE</p> <br>
+        
+        <p>Email: contact.spbb@gmail.com</p> <br>
+        <h3>Permanence Club House SPBB</h3>
+        <p>Mercredi : 15h - 17h</p>
+     
       </div>
     </div>
   </section>
