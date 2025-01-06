@@ -1,9 +1,9 @@
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-vercel';
 
 export default {
-  kit: {
-    adapter: vercel({
-      runtime: 'nodejs20.x' // ou 'nodejs20.x'
-    })
-  }
+	kit: {
+		adapter: adapter({
+			// see below for options that can be set here
+		})
+	}
 };
