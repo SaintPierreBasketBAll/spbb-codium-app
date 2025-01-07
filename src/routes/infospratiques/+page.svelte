@@ -1,4 +1,5 @@
 <h1 class="teams-h1">Infos pratiques</h1>
+<p>je teste la maj de vercel</p>
 
 <style>
     .teams-h1 {
