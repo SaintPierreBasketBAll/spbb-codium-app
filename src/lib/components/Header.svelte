@@ -93,7 +93,7 @@
 	  </div>
 	</div>
 	<div class="nav-item">
-		<a href="https://paris-f.com/equipe">Infos pratiques</a>
+		<a href="/infospratiques">Infos pratiques</a>
 		<div class="dropdown-menu">
 			<a href="https://paris-f.com/le-club/presentation">Adhésion</a>
 			<a href="https://paris-f.com/le-club/equipe-dirigeante">Les horaires</a>

@@ -2,7 +2,7 @@
 <p>je teste la maj de vercel</p>
 
 <style>
-    .teams-h1 {
+    .teams-h1, p {
         position: relative;
         background-color: dimgrey;
         height: 300px;
