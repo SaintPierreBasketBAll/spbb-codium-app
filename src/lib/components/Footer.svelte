@@ -3,7 +3,7 @@
       <div class="footer-section">
       
         <h3>À Propos</h3>
-        <p>Saint-Pierre Basket Ball est un club familial et compétitif dédié à la formation et au développement du basketball à Paris.</p>
+        <p>Saint-Pierre Basket Ball est un club familial et compétitif dédié à la formation et au développement du basketball à Saint-Pierre.</p>
         <p>Rejoignez notre communauté passionnée !</p>
       </div>
       
