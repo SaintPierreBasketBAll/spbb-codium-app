@@ -3,7 +3,9 @@
 <p>je teste la maj de vercel</p>
 <p>je teste la maj de vercel</p>
 
+
 <style>
+   
     .teams-h1, p {
         position: relative;
         background-color: dimgrey;
@@ -13,4 +15,4 @@
         text-align: center;
         color: var(--orange-light);
     }
-</style>
+   </style>
