@@ -6,11 +6,12 @@
 </script>
 
 <nav class="navbar">
-    <img
+    <a href="/"><img
         src="images/logo.png"
         alt="SPBB Basketball Logo with flame design"
         class="logo logo-radius"
-    />
+    /></a>
+    
     <div class="hamburger" onclick={toggleMenu}>
         <span></span>
         <span></span>
