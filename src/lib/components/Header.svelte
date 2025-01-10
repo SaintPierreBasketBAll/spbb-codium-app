@@ -20,7 +20,7 @@
     <div class="nav-links" class:active={isMenuOpen}>
         <a href="/">Accueil</a>
         <div class="nav-item">
-            <a href="/leclub">Le club</a>
+            <a href="#">Le club</a>
             <div class="dropdown-menu">
                 <a href="/leclub/presentationduclub">Présentation du club</a>
                 <a href="https://paris-f.com/le-club/equipe-dirigeante"
