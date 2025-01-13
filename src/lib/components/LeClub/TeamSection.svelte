@@ -611,7 +611,7 @@
     }
     
     .team-section {
-      padding: 6rem 2rem;
+      padding: 13rem 7rem 2rem;
       background-color: #1a1a1a;
       position: relative;
     }

@@ -1,7 +1,7 @@
 <script>
-    import TeamSection from "$components/TeamSection.svelte";
+    import AboutSection from "$components/LeClub/AboutSection.svelte";
     
 </script>
 
 
-<TeamSection />
+<AboutSection />

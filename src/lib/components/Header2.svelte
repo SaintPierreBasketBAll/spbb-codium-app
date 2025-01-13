@@ -1,50 +1,84 @@
 <script>
-    let isMenuOpen = $state(false);
-  
-    function toggleMenu() {
-      isMenuOpen = !isMenuOpen;
+  let isMenuOpen = $state(false); // État pour gérer l'ouverture du menu
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+  }
+
+  function handleClickOutside(event) {
+    // Vérifier si l'élément cliqué est en dehors des éléments spécifiés
+    if (!event.target.closest('.nav-links') && !event.target.closest('.hamburger')) {
+      isMenuOpen = false;
     }
-  </script>
+  }
+
+  // Effet pour gérer l'ajout et la suppression de l'événement de clic
+  $effect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  });
+</script>
+
+<nav class="navbar">
+  <a href="/"><img
+    src="/images/logo.png"
+    alt="SPBB Basketball Logo with flame design"
+    class="logo logo-radius"
+  /></a>
   
-  <nav class="navbar">
-    <div class="nav-header">
-      <img src="/a/aa40fb5b-f5b0-4830-9d97-85959841ffdd" alt="SPBB Basketball Logo with flame design" class="logo" />
-      <button class="hamburger" aria-label="Menu" onclick={toggleMenu}>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-    </div>
-    <div class="nav-links" class:active={isMenuOpen}>
-      <a href="https://paris-f.com/accueil">Accueil</a>
-      <div class="nav-item">
-        <a href="https://paris-f.com/le-club">Le club</a>
-        <div class="dropdown">
-          <a href="https://paris-f.com/le-club/presentation">Présentation du club</a>
-          <a href="https://paris-f.com/le-club/equipe-dirigeante">L'équipe dirigeante</a>
-          <a href="https://paris-f.com/le-club/projets">Les projets</a>
-          <a href="https://paris-f.com/le-club/staff-technique">Le staff technique</a>
-          <a href="https://paris-f.com/le-club/partenaires">Les partenaires</a>
-          <a href="https://paris-f.com/le-club/faire-un-don">Faire un don</a>
-        </div>
+  <div class="hamburger" onclick={toggleMenu}>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+ 
+  <div class="nav-links" class:active={isMenuOpen}>
+    <!-- Contenu des liens de navigation -->
+    <a href="/">Accueil</a>
+    <div class="nav-item">
+      <a href="">Le club</a>
+      <div class="dropdown-menu">
+        <a href="/leclub/presentationduclub/">Présentation du club</a>
+        <a href="/leclub/lebureau">L'équipe dirigeante</a>
+        <a href="https://paris-f.com/le-club/Les projets">Les projets</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">Le staff technique</a>
+        <a href="https://paris-f.com/le-club/presentation">Les partenaires</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">Faire un don</a>
       </div>
-      <a href="https://paris-f.com/nos-equipes">Nos équipes</a>
-      <a href="https://paris-f.com/infos-pratiques">Infos pratiques</a>
-      <a href="https://paris-f.com/contact">Contact</a>
     </div>
-  </nav>
-  
-  <style>
-    :root {
-      --black: #000000;
-      --white: #FFFFFF;
-      --orange-light: #FFA500;
-      --orange-dark: #FF4500;
-    }
-  
-    .navbar {
+    <div class="nav-item">
+      <a href="/nosequipes">Nos Équipes</a>
+      <div class="dropdown-menu">
+        <a href="https://paris-f.com/le-club/presentation">Séniors garçons</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">Séniors filles</a>
+        <a href="https://paris-f.com/le-club/Les projets">U18 garçon</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">U18 filles</a>
+        <a href="https://paris-f.com/le-club/presentation">U15</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">U13</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">École de Basket</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="/infospratiques">Infos pratiques</a>
+      <div class="dropdown-menu">
+        <a href="https://paris-f.com/le-club/presentation">Adhésion</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">Les horaires</a>
+        <a href="https://paris-f.com/le-club/Les projets">Les gymnases</a>
+        <a href="https://paris-f.com/le-club/equipe-dirigeante">Tarifs et aides</a>
+      </div>
+    </div>
+    <a href="https://paris-f.com/resultats">Contact</a>
+    <a href="https://paris-f.com/news">S'inscrire</a>
+  </div>
+
+</nav>
+
+<style>
+  .navbar {
       background: linear-gradient(45deg, var(--black), #1a1a1a);
-      padding: 1rem;
+      padding: 0.5rem 2rem 0.5rem 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -52,77 +86,77 @@
       width: 100%;
       top: 0;
       z-index: 1000;
-    }
-  
-    .nav-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 0 1rem;
-    }
-  
-    .hamburger {
+  }
+
+  .logo {
+      width: 80px;
+      height: auto;
+      transition: transform 0.3s ease;
+      margin-left: 1rem;
+  }
+  .logo-radius {
+      border-radius: 50%;
+  }
+
+  .logo:hover {
+      transform: scale(1.1);
+  }
+
+  .hamburger {
       display: none;
       flex-direction: column;
       justify-content: space-between;
       width: 30px;
-      height: 21px;
-      background: transparent;
-      border: none;
+      height: 1.5rem;
       cursor: pointer;
-      padding: 0;
-      z-index: 10;
-    }
-  
-    .hamburger-line {
+      z-index: 1001;
+  }
+
+  .hamburger span {
+      display: block;
       width: 100%;
       height: 3px;
-      background: var(--white);
-      transition: all 0.3s linear;
-    }
-  
-    .logo {
-      width: 80px;
-      height: auto;
-      transition: transform 0.3s ease;
-    }
-  
-    .logo:hover {
-      transform: scale(1.1);
-    }
-  
-    .nav-links {
+      background: var(--orange-light);
+      transition: all 0.3s ease;
+  }
+
+  .nav-links {
+      position: relative;
       display: flex;
       gap: 2rem;
-      align-items: center;
-      transition: all 0.3s ease;
-    }
-  
-    .nav-links.active {
-      display: block;
-      flex-direction: column;
-    }
-  
-    .nav-links > a {
+  }
+
+  .nav-links a {
       color: var(--white);
       text-decoration: none;
-      transition: color 0.3s ease;
-      padding: 1rem 0;
-    }
-  
-    .nav-links > a:hover {
-      color: var(--orange-light);
-    }
-  
-    .nav-item {
+      font-size: 1.1rem;
       position: relative;
-      height: 100%;
-      display: flex;
-      align-items: center;
-    }
-  
-    .dropdown {
+      background: linear-gradient(
+          90deg,
+          var(--orange-light),
+          var(--orange-dark)
+      );
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition:
+          color 0.3s ease,
+          background-position 0.3s ease;
+  }
+
+  .nav-links a:hover {
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-position: 0 0;
+  }
+
+  .nav-item {
+      position: relative;
+      display: inline-block;
+  }
+
+  .dropdown-menu {
       display: none;
       position: absolute;
       top: 100%;
@@ -132,46 +166,111 @@
       border-radius: 5px;
       padding: 0.5rem 0;
       z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-  
-    .nav-item:hover .dropdown {
+      margin-right: 1rem;
+  }
+
+  .nav-item:hover .dropdown-menu {
       display: block;
-    }
-  
-    .dropdown a {
+  }
+
+  .dropdown-menu a {
       display: block;
-      padding: 0.8rem 1.5rem;
+      padding: 0.5rem 1rem;
       color: var(--white);
       text-decoration: none;
-      font-size: 1rem;
-      text-align: left;
-      transition: color 0.3s ease, background-color 0.3s ease;
-    }
-  
-    .dropdown a:hover {
-      color: var(--orange-light);
-      background-color: rgba(255, 165, 0, 0.1);
-    }
-  
-    @media (max-width: 768px) {
+      background: linear-gradient(
+          90deg,
+          var(--orange-light),
+          var(--orange-dark)
+      );
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition:
+          color 0.3s ease,
+          background-position 0.3s ease;
+  }
+
+  .dropdown-menu a:hover {
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-position: 0 0;
+      background-color: transparent;
+  }
+  @media screen and (max-width: 900px) {
+      /* .hamburger {
+          display: flex;
+      } */
       .hamburger {
-        display: flex;
+          display: flex; /* Ensure hamburger is visible on small screens */
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 1.5rem;
+          cursor: pointer;
+          z-index: 1001; /* Ensure it's above other elements */
       }
-  
+      .hamburger span {
+          display: block;
+          width: 100%;
+          height: 3px;
+          background: var(--orange-light);
+          transition: all 0.3s ease;
+      }
+      /*  .nav-links {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          height: 100vh;
+          width: 250px;
+          background: linear-gradient(45deg, var(--black), #1a1a1a);
+          flex-direction: column;
+          padding: 80px 20px;
+          transition: 0.3s ease;
+          gap: 1.5rem;
+        } */
       .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(45deg, var(--black), #1a1a1a);
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          display: none; /* Initially hidden */
+          position: fixed;
+          top: 0;
+          right: -100%; /* Hidden off-screen */
+          height: 100vh;
+          width: 250px;
+          background: linear-gradient(45deg, var(--black), #1a1a1a);
+          flex-direction: column;
+          padding: 80px 20px;
+          transition: 0.3s ease;
+          gap: 1.5rem;
       }
-  
       .nav-links.active {
-        display: flex;
+          display: flex; /* Show menu when active */
+          right: 0; /* Slide into view */
       }
-    }
-  </style>
+
+      .nav-item {
+          width: 100%;
+      }
+
+      .dropdown-menu {
+          position: static;
+          width: 100%;
+          display: none;
+          padding-left: 1rem;
+          background: transparent;
+      }
+
+      .nav-item:hover .dropdown-menu {
+          display: block;
+      }
+
+      .navbar {
+          padding: 1rem;
+          justify-content: space-between;
+      }
+
+      .logo {
+          width: 60px;
+      }
+  }
+</style>
