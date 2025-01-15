@@ -14,7 +14,7 @@
       {
         name: "Frédéric Morel",
         role: "Secrétaire Général",
-        description: "En charge de la coordination et de la communication, il joue un rôle clé dans l'administration de l'association."
+        description: "Le secrétaire général d’association exerce des fonctions principalement administratives"
       },
       {
         name: "Anli-Saïd Souffou",
@@ -611,7 +611,7 @@
     }
     
     .team-section {
-      padding: 13rem 7rem 2rem;
+      padding: 9rem 2rem 4rem 2rem;
       background-color: #1a1a1a;
       position: relative;
     }
@@ -822,8 +822,9 @@
     }
     
     @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 2rem;
+      .section-title {
+        width: 100%;
+        font-size: 3rem;
       }
       
       .cta-button {

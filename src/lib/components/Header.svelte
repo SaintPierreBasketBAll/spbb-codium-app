@@ -1,6 +1,4 @@
 <script>
-/*     import { fade } from "svelte/transition"; */
-    import { fly } from 'svelte/transition';
   let isMenuOpen = $state(false); // État pour gérer l'ouverture du menu
 
   function toggleMenu() {
@@ -29,14 +27,14 @@
     alt="SPBB Basketball Logo with flame design"
     class="logo logo-radius"
   /></a>
-
+  
   <div class="hamburger" onclick={toggleMenu}>
     <span></span>
     <span></span>
     <span></span>
   </div>
-  {#if isMenuOpen}
-  <div class="nav-links" class:active={isMenuOpen} transition:fly={{ y: 200, duration: 400 }} >
+ 
+  <div class="nav-links" class:active={isMenuOpen}>
     <!-- Contenu des liens de navigation -->
     <a href="/">Accueil</a>
     <div class="nav-item">
@@ -74,7 +72,7 @@
     <a href="https://paris-f.com/resultats">Contact</a>
     <a href="https://paris-f.com/news">S'inscrire</a>
   </div>
-  {/if}
+
 </nav>
 
 <style>
@@ -200,12 +198,6 @@
       background-position: 0 0;
       background-color: transparent;
   }
-  @media (min-width: 1024px) {
-  .nav-links {
-    display: flex; /* Ou block, selon le design */
-    gap: 2rem;
-  }
-}
   @media screen and (max-width: 900px) {
       /* .hamburger {
           display: flex;
