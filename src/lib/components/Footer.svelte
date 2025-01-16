@@ -3,7 +3,7 @@
       <div class="footer-section">
       
         <h3>À Propos</h3>
-        <p>Saint-Pierre Basket Ball est un club familial et compétitif dédié à la formation et au développement du basketball à Saint-Pierre.</p>
+        <p>Saint-Pierre Basket Ball est un club familial et compétitif dédié à la formation et au développement du basket-ball à Saint-Pierre.</p>
         <p>Rejoignez notre communauté passionnée !</p>
       </div>
       
@@ -11,7 +11,7 @@
         <h3>Liens Rapides</h3>
         <ul class="footer-links">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="https://paris-f.com/histoire">Histoire</a></li>
+          <li><a href="/#history">Histoire</a></li>
           <li><a href="https://paris-f.com/equipe">Équipe</a></li>
           <li><a href="https://paris-f.com/calendrier">Calendrier</a></li>
           <li><a href="https://paris-f.com/resultats">Résultats</a></li>
@@ -73,7 +73,7 @@
 	.footer-logo {
 	  width: 120px;
 	  height: auto;
-	  margin-bottom: 1rem;
+	  margin: auto;
 	}
 	
 	.footer-section h3 {

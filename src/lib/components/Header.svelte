@@ -41,11 +41,11 @@
       <a href="">Le club</a>
       <div class="dropdown-menu">
         <a href="/leclub/presentationduclub/">Présentation du club</a>
-        <a href="/leclub/lebureau">L'équipe dirigeante</a>
-        <a href="https://paris-f.com/le-club/Les projets">Les projets</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">Le staff technique</a>
-        <a href="https://paris-f.com/le-club/presentation">Les partenaires</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">Faire un don</a>
+        <a href="/leclub/lebureau/">L'équipe dirigeante</a>
+        <a href="/leclub/lesprojets/">Les projets</a>
+        <a href="/leclub/lestafftechnique/">Le staff technique</a>
+        <a href="/leclub/lespartenaires">Les partenaires</a>
+        <a href="/leclub/faireundon/">Faire un don</a>
       </div>
     </div>
     <div class="nav-item">

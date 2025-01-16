@@ -531,7 +531,7 @@
     }
     
     .about-club {
-      padding: 6rem 2rem;
+      padding: 8rem 2rem 2rem 2rem;
       background-color: #000000;
       position: relative;
     }
