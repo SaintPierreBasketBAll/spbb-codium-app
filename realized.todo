@@ -1,0 +1,26 @@
+'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancelled`
+'Alt+S' // Triggers `Todo: Toggle Start`
+'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+
+Création du front end pour SPBB :
+
+    ✔ Créer la section "le comité directeur" @started(05-02-2025) @done(25-02-06 15:29) @lasted()
+    ✔ créer la page école de basket @started(17-02-2025 15:00) @done(25-02-17 14:16) @lasted(7y51w6d23h16m9s)
+    ☐ Implémenter le formulaire de contact @started(05-02-2025 14:55)
+    ☐ @fixed Bug à fixer sur la section nos partenaires @started (05/02/2025 15:00)
+    ☐ page staff technique à faire @started(05-02-2025 15:00)
+    ☐ page équipe senior Filles à faire @started(05-02-2025 15:00)
+    ☐ page équipe U18 à faire @started(05-02-2025 15:00) 
+    ☐ page u11 à faire @started(05-02-2025 15:00)
+    ☐ page info inscription à faire @started(05-02-2025 15:00)
+    ☐ page info entrainement à faire @started(05-02-2025 15:00)
+    ☐ implementer les photos de l'équipe senior @started(05-02-2025 15:00)    
+    ☐ implémenter formulaire d'inscription @started(05-02-2025 15:00)
+    ☐ section : Club House: Permanence ouverte, ce Mercredi de 15h00 à 17h00
+    
+Construction du Back end:
+    ☐ Acheter du pain @started(25-02-07 11:47)
+    ☐ Acheter du lait @started(25-02-07 11:46)

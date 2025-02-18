@@ -38,7 +38,7 @@
     <!-- Contenu des liens de navigation -->
     <a href="/">Accueil</a>
     <div class="nav-item">
-      <a href="">Le club</a>
+      <a href="#">Le club</a>
       <div class="dropdown-menu">
         <a href="/leclub/presentationduclub/">Présentation du club</a>
         <a href="/leclub/lebureau/">L'équipe dirigeante</a>
@@ -49,27 +49,27 @@
       </div>
     </div>
     <div class="nav-item">
-      <a href="/nosequipes">Nos Équipes</a>
+      <a href="#">Nos Équipes</a>
       <div class="dropdown-menu">
-        <a href="https://paris-f.com/le-club/presentation">Séniors garçons</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">Séniors filles</a>
-        <a href="https://paris-f.com/le-club/Les projets">U18 garçon</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">U18 filles</a>
-        <a href="https://paris-f.com/le-club/presentation">U15</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">U13</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">École de Basket</a>
+        <a href="/nosequipes/seniorsgarcons/saison2024-2025/equipesseniors">Seniors garçons</a>
+        <a href="/nosequipes/seniorsfilles/">Seniors filles</a>
+        <a href="/nosequipes/u18/">U18</a>
+        <a href="/nosequipes/u18/u18filles/">U18 filles</a>
+        <a href="/nosequipes/u15/">U15</a>
+        <a href="/nosequipes/u13/">U13</a>
+        <a href="/nosequipes/ecoledebasket/">École de Basket</a>
       </div>
     </div>
     <div class="nav-item">
-      <a href="/infospratiques">Infos pratiques</a>
+      <a href="#">Infos pratiques</a>
       <div class="dropdown-menu">
-        <a href="https://paris-f.com/le-club/presentation">Adhésion</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">Les horaires</a>
+        <a href="/infospratiques/adhesion/">Adhésion</a>
+        <a href="/infospratiques/leshoraires/">Les horaires</a>
         <a href="https://paris-f.com/le-club/Les projets">Les gymnases</a>
         <a href="https://paris-f.com/le-club/equipe-dirigeante">Tarifs et aides</a>
       </div>
     </div>
-    <a href="https://paris-f.com/resultats">Contact</a>
+    <a href="/contact">Contact</a>
     <a href="https://paris-f.com/news">S'inscrire</a>
   </div>
 

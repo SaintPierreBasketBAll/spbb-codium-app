@@ -1,40 +1,35 @@
-
-  <section class="projects">
-    <h2 class="section-title">Les projets</h2>
-    <div class="projects-container">
-      <div class="projects-intro">
-        <p>L&#x2019;association Saint Pierre Basket Ball (SPBB) s&#x2019;engage activement dans des projets ambitieux et diversifi&#xe9;s pour d&#xe9;velopper la pratique du basketball et renforcer ses valeurs au sein de la communaut&#xe9;. Voici les principaux axes qui orientent nos actions :</p>
+<section class="contact">
+    <h2 class="section-title">Nous Contacter</h2>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="donate-button">Envoyer</button>
+        </form>
       </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Am&#xe9;lioration des performances sportives</h3>
-          <p>SPBB ambitionne de renforcer le classement en comp&#xe9;tition des &#xe9;quipes s&#xe9;niores et jeunes, tant chez les filles que chez les gar&#xe7;ons. Notre objectif est de promouvoir l&#x2019;excellence sportive et d&#x2019;encourager nos joueurs et joueuses &#xe0; atteindre leur plein potentiel.</p>
-        </div>
-        
-        <div class="project-card">
-          <h3>Projet &#xc9;cole de Basket</h3>
-          <p>Destin&#xe9; aux enfants de moins de 11 ans, ce projet vise &#xe0; initier les plus jeunes &#xe0; la pratique du basketball tout en inculquant les valeurs de respect, d&#x2019;esprit d&#x2019;&#xe9;quipe et de plaisir. Cette &#xe9;cole est une p&#xe9;pini&#xe8;re pour les futurs talents du club et un espace d&#x2019;apprentissage ludique et formateur.</p>
-        </div>
-        
-        <div class="project-card">
-          <h3>Formation des membres du SPBB</h3>
-          <p>L&#x2019;association met un point d&#x2019;honneur &#xe0; accompagner la mont&#xe9;e en comp&#xe9;tences de ses membres, notamment les coachs. Des formations sp&#xe9;cifiques sont propos&#xe9;es pour leur permettre de d&#xe9;velopper des m&#xe9;thodes p&#xe9;dagogiques efficaces et de contribuer &#xe0; la progression sportive et humaine de nos licenci&#xe9;s.</p>
-        </div>
-        
-        <div class="project-card">
-          <h3>Organisation d&#x2019;&#xe9;v&#xe9;nements innovants</h3>
-          <p>SPBB s&#x2019;implique &#xe9;galement dans la cr&#xe9;ation d&#x2019;&#xe9;v&#xe9;nements attractifs et f&#xe9;d&#xe9;rateurs. Prochainement, nous aurons le plaisir de lancer la Nocturne Basket 3x3, un tournoi en soir&#xe9;e qui promet d&#x2019;associer comp&#xe9;tition et convivialit&#xe9;. Ces &#xe9;v&#xe9;nements renforcent les liens entre les joueurs, les familles et les partenaires locaux.</p>
-        </div>
-      </div>
-      <div class="projects-outro">
-        <p>&#xc0; travers ces projets, Saint Pierre Basket Ball continue de s&#x2019;affirmer comme un acteur incontournable du sport &#xe0; Saint-Pierre, toujours guid&#xe9; par l&#x2019;ambition de transmettre les valeurs du basketball et de f&#xe9;d&#xe9;rer autour de cette passion commune.</p>
+      <div class="contact-info">
+        <h3>Informations de Contact</h3>
+        <p>Adresse: 123 Rue du Basket, 75000 Paris</p>
+        <p>T&#xe9;l&#xe9;phone: 01 23 45 67 89</p>
+        <p>Email: contact@spbb.fr</p>
+        <h3>Horaires d&#x2019;Ouverture</h3>
+        <p>Lundi - Vendredi: 9h - 20h</p>
+        <p>Samedi: 10h - 18h</p>
+        <p>Dimanche: Ferm&#xe9;</p>
       </div>
     </div>
   </section>
-
-  
-  
-
 
 
   <style>
@@ -724,7 +719,21 @@
       line-height: 1.6;
     }
     
+    .credits {
+      padding: 2rem;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
     
+    .credits a {
+      color: var(--grey);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .credits a:hover {
+      color: var(--orange-light);
+    }
     
     .teams {
       padding: 6rem 2rem;

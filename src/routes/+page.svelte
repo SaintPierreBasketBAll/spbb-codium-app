@@ -10,6 +10,15 @@
   </div>
 </main>
 
+<section class="clubhouse">
+  <h2 class="section-title">Club House</h2>
+  <div class="clubhouse-container">
+    <div class="clubhouse-alert">
+      <p>Permanence ouverte, ce Mercredi de 15h00 à 17h00</p>
+    </div>
+  </div>
+</section>
+
 <section class="activities">
   <h2>Nos Activités</h2>
   <div class="activities-grid">
@@ -250,6 +259,7 @@
   </div>
 </section>
 
+
 <style>
   :root {
     --black: #000000;
@@ -319,6 +329,31 @@
     cursor: pointer;
     transition: transform 0.3s ease;
   }
+  .clubhouse {
+  padding: 6rem 2rem;
+  background-color: #000000;
+  position: relative;
+}
+
+.clubhouse-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clubhouse-alert {
+  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.clubhouse-alert p {
+  color: var(--orange-light);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
 
   .cta-button:hover {
     transform: translateY(-3px);
@@ -576,7 +611,6 @@
     border-radius: 5px;
     color: var(--white);
   }
-
   .contact-info {
     color: var(--grey);
     line-height: 1.6;
@@ -614,3 +648,4 @@
   @media (max-width: 768px) {
   }
 </style>
+

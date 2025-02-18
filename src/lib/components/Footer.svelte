@@ -52,6 +52,9 @@
     <div class="footer-bottom">
       <p>&copy; 2023 Saint-Pierre Basket Ball. Tous droits réservés.</p>
     </div>
+	<section class="credits">
+		<a href="https://www.flaticon.com/fr/icones-gratuites/coupe" title="coupe ic&#xf4;nes">Coupe ic&#xf4;nes cr&#xe9;&#xe9;es par Freepik - Flaticon</a>
+	  </section>
   </footer>
 
 <style>
@@ -129,6 +132,30 @@
 	  font-size: 0.9rem;
 	}
 	
+	.contact-info {
+    color: var(--grey);
+    line-height: 1.6;
+  }
+
+  .contact-info h3 {
+    color: var(--orange-light);
+    margin-bottom: 1rem;
+  }
+  .credits {
+      padding: 2rem;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+    
+    .credits a {
+      color: var(--grey);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .credits a:hover {
+      color: var(--orange-light);
+    }
 	@media (max-width: 768px) {
 	  .footer-content {
 		grid-template-columns: 1fr;
