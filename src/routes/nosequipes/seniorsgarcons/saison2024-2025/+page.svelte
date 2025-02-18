@@ -9,6 +9,15 @@
         Début de la saison de basket au mois de septembre !
     </h2>
     <div class="about-grid">
+        <div class="about-stats">
+            <a href="/nosequipes/seniorsgarcons/saison2024-2025/equipesseniors/">
+            <div class="stat-item">
+                <div class="stat-label">Saison</div>
+                <div class="stat-number">2024/2025</div>
+            </div>
+        </a>
+        </div>
+       
         <div class="about-content">
             <p>
                 <br />📢 🏀 De septembre à juin, une année de passion et de
@@ -26,22 +35,16 @@
                 Préparez-vous à une nouvelle saison de basket et rejoignez-nous pour
                 vivre ensemble cette aventure sportive passionnante ! 🏀🔥
             </p>
-                <div class="about-stats">
-                    <a href="/nosequipes/seniorsgarcons/saison2024-2025/equipesseniors/">
-                    <div class="stat-item">
-                        <div class="stat-label">Saison</div>
-                        <div class="stat-number">2024/2025</div>
-                    </div>
-                </a>
-                </div>
+                
             
         </div>
-        <div class="about-image">
-            <img
-                src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3"
-                alt="Équipe de basket Saint-Pierre en action"
-            />
-        </div>
+        
+    </div>
+    <div class="about-image">
+        <img
+            src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3"
+            alt="Équipe de basket Saint-Pierre en action"
+        />
     </div>
 </section>
 
@@ -88,6 +91,7 @@
     .about-content {
         color: var(--grey);
         line-height: 1.6;
+        padding-bottom: 3rem;
     }
     .about-stats {
         display: grid;
