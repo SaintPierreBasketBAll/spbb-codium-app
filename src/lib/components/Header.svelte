@@ -51,7 +51,7 @@
     <div class="nav-item">
       <a href="#">Nos Équipes</a>
       <div class="dropdown-menu">
-        <a href="/nosequipes/seniorsgarcons/saison2024-2025/equipesseniors">Seniors garçons</a>
+        <a href="/nosequipes/seniorsgarcons/saison2024-2025/">Seniors garçons</a>
         <a href="/nosequipes/seniorsfilles/">Seniors filles</a>
         <a href="/nosequipes/u18/">U18</a>
         <a href="/nosequipes/u18/u18filles/">U18 filles</a>
