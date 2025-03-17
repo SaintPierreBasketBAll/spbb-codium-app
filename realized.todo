@@ -19,7 +19,9 @@ Création du front end pour SPBB :
     ☐ page info entrainement à faire @started(05-02-2025 15:00)
     ☐ implementer les photos de l'équipe senior @started(05-02-2025 15:00)    
     ☐ implémenter formulaire d'inscription @started(05-02-2025 15:00)
-    ☐ section : Club House: Permanence ouverte, ce Mercredi de 15h00 à 17h00
+    ✔ section : Club House: Permanence ouverte, ce Mercredi de 15h00 à 17h00 @done(25-03-14 18:43)
+    ✔ Page Info pratiques -> adhésion / à faire @started(05-02-2025 15:00) @done(25-03-14 18:48) @lasted(20y3w6d3h48m15s)
+    ✔ Page Info pratiques ->  Les horaires / à faire @started(05-02-2025 15:00) @done(25-03-14 18:48) @lasted(20y3w6d3h48m11s)
     
 Construction du Back end:
     ☐ Acheter du pain @started(25-02-07 11:47)

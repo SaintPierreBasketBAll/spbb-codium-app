@@ -6,7 +6,7 @@ export default {
     // Autres réglages si nécessaires
     alias: {
       $components: './src/lib/components',
-      $lib: './src/lib',
+      $lib: '/src/lib',
       $utils: './src/utils',
       $stores: './src/stores',
       $styles: './src/styles',
