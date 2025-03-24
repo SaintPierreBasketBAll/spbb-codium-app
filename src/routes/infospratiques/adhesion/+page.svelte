@@ -9,7 +9,7 @@
       Le montant de l’adhésion pour la licence du <strong
         >Saint-Pierre Basket-Ball (SPBB)</strong
       >
-      est fixé à <span class="highlight">150 euros</span> pour la saison.
+      est fixé à <span class="highlight">150 euros (hors assurances)</span> pour la saison.
     </p>
 
     <div class="payment-options">

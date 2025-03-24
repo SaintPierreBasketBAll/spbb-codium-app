@@ -75,7 +75,7 @@
             <td>U15 DF <br> Minime</td>
             <td>17H30 - 19H00 <br> Gymnase Nelson Mandela </td>
             <td></td>
-            <td>16h00 - 18h00 <br> Gymnase Gaston R</td>
+            <td>16h00 - 18h00 <br> Gymnase Richardson</td>
             <td>17h30 - 19h00 <br> Terrain ext. Mandela </td>
             <td></td>
             <td></td>
@@ -108,7 +108,7 @@
             <td>U18 DF <br> Cadette</td>
             <td>17h30 - 19h00 <br> Gym. Mandela</td>
             <td></td>
-            <td>18h00 - 200h00 <br> Gym. Gaston R</td>
+            <td>18h00 - 200h00 <br> Gym. Richardson</td>
             <td></td>
             <td>18h00 - 20h00 <br> Gym. Mandela</td>
             <td></td>
@@ -150,9 +150,9 @@
           </tr>
           <tr>
             <td>Senior RM 2</td>
-            <td>20h15 - 22h00 <br> Gym.Gaston R</td>
+            <td>20h15 - 22h00 <br> Gym.Richardson</td>
             <td></td>
-            <td>20h00-22h00 <br> Gym.Gaston R</td>
+            <td>20h00-22h00 <br> Gym.Richardson</td>
             <td></td>
             <td></td>
             <td></td>

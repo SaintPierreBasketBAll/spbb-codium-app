@@ -65,8 +65,8 @@
       <div class="dropdown-menu">
         <a href="/infospratiques/adhesion/">Adhésion</a>
         <a href="/infospratiques/leshoraires/">Les horaires</a>
-        <a href="https://paris-f.com/le-club/Les projets">Les gymnases</a>
-        <a href="https://paris-f.com/le-club/equipe-dirigeante">Tarifs et aides</a>
+        <a href="/infospratiques/lesgymnases/">Les gymnases</a>
+        <a href="/infospratiques/tarifsetaides/">Tarifs et aides</a>
       </div>
     </div>
     <a href="/contact">Contact</a>

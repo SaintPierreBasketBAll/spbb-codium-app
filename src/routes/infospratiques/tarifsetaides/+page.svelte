@@ -1,62 +1,35 @@
-<script>
-   
-    let teamMembers = $state([
-      {
-        name: "Laurent Parata",
-        role: "Président",
-        description: "Avec passion et leadership, il veille à la bonne marche de l'association et à la réalisation de ses objectifs."
-      },
-      {
-        name: "Imraane Hafeji",
-        role: "Vice-Président",
-        description: "Il soutient activement le président et contribue au développement des projets de l'association."
-      },
-      {
-        name: "Frédéric Morel",
-        role: "Secrétaire Général",
-        description: "Le secrétaire général d’association exerce des fonctions principalement administratives"
-      },
-      {
-        name: "Anli-Saïd Souffou",
-        role: "Secrétaire Général adjoint",
-        description: "Il assiste le secrétaire dans ses missions administratives et contribue à la gestion quotidienne."
-      },
-      {
-        name: "Estelle Omarjee",
-        role: "Trésorière",
-        description: "Elle assure une gestion rigoureuse et transparente des finances de l'association."
-      },
-      {
-        name: "Hamza Panchbaya",
-        role: "Trésorier adjoint",
-        description: "Il soutient la trésorière dans le suivi et l'exécution des budgets."
-      }
-    ]);
-  </script>
-  
-  <section class="team-section">
-    <h2 class="section-title">L'équipe dirigeante</h2>
-    <div class="team-container">
-      <div class="team-intro">
-        <p>L'association Saint Pierre Basket Ball (SPBB) est dirigée par une équipe de bénévoles passionnés, qui donnent de leur temps et de leur énergie pour promouvoir le basketball et transmettre ses valeurs à Saint-Pierre.</p>
-      </div>
-      <div class="team-grid">
-        {#each teamMembers as member}
-          <div class="team-member">
-            <h3>{member.name}</h3>
-            <div class="role">{member.role}</div>
-            <p>{member.description}</p>
+
+
+  <section class="pass-sport">
+    <h2 class="section-title">Pass'Sport</h2>
+    <div class="pass-sport-content">
+      <div class="pass-sport-card">
+        <div class="pass-sport-icon">
+          <svg viewBox="0 0 24 24" width="64" height="64">
+            <path fill="var(--orange-light)" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="var(--orange-light)" font-size="10" font-weight="bold">€</text>
+          </svg>
+        </div>
+        <div class="pass-sport-text">
+          <p>Le <strong>Pass'Sport</strong> permet de bénéficier d'une aide financière de <strong>50 euros</strong> pour la prise en charge d'une partie de l'adhésion à un club sportif. Pour la saison en cours, le prix de l'adhésion pour la licence au <strong>Saint Pierre Basket Ball</strong> est de <strong>150 euros</strong>.</p>
+          <div class="alert">
+            <svg class="alert-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="var(--orange-dark)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>
+            <p><strong>Attention</strong> :</p>
+            <ul style="list-style-type: none; margin-top: 0.5rem; padding-left: 0;">
+              <li>Le <strong>Pass'Sport</strong> pour la saison <strong>2024/2025</strong> <strong>n'est plus valable après le 31 décembre 2024</strong>.</li>
+              <li>Le <strong>Pass'Sport</strong> pour la saison <strong>2025/2026</strong> <strong>n'est plus valable après le 31 décembre 2025</strong>.</li>
+            </ul>
+            <p>Assurez-vous d'en profiter avant ces dates !</p>
           </div>
-        {/each}
-      </div>
-      <div class="team-outro">
-        <p>Grâce à leur engagement désintéressé, cette équipe unie et compétente permet à l'association de continuer à grandir et à faire rayonner le basketball au sein de la communauté de Saint-Pierre et au-delà.</p>
+          <a href="tarifs.html" class="pass-sport-button">Plus d'informations</a>
+        </div>
       </div>
     </div>
   </section>
-  
 
-  <style>
+<style>
     :root {
       --black: #000000;
       --white: #FFFFFF;
@@ -89,34 +62,6 @@
       z-index: 1000;
     }
     
-    .nav-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 0 1rem;
-    }
-    
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 21px;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      z-index: 10;
-    }
-    
-    .hamburger-line {
-      width: 100%;
-      height: 3px;
-      background: var(--white);
-      transition: all 0.3s linear;
-    }
-    
     .logo {
       width: 80px;
       height: auto;
@@ -130,7 +75,6 @@
     .nav-links {
       display: flex;
       gap: 2rem;
-      align-items: center;
     }
     
     .nav-links > a,
@@ -147,9 +91,6 @@
     
     .nav-item {
       position: relative;
-      height: 100%;
-      display: flex;
-      align-items: center;
     }
     
     .dropdown {
@@ -328,6 +269,12 @@
       height: 50px;
       margin-bottom: 1rem;
       fill: var(--orange-light);
+    }
+    
+    @media (max-width: 768px) {
+      .activities-grid {
+        grid-template-columns: 1fr;
+      }
     }
     
     .history, .donate, .contact {
@@ -548,299 +495,220 @@
       color: var(--orange-dark);
     }
     
-    .about-club {
+    .schedule {
       padding: 6rem 2rem;
       background-color: #000000;
       position: relative;
     }
     
-    .about-grid {
+    .schedule-content {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 3rem;
+      grid-template-columns: 1fr;
+      gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
     
-    .about-content {
-      color: var(--grey);
-      line-height: 1.6;
+    @media (min-width: 992px) {
+      .schedule-content {
+        grid-template-columns: 2fr 1fr;
+      }
     }
     
-    .about-content h3 {
-      color: var(--orange-light);
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .about-stats {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    
-    .stat-item {
-      text-align: center;
-      padding: 1.5rem;
+    .schedule-table {
+      overflow-x: auto;
       background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
       border-radius: 15px;
+      padding: 1.5rem;
     }
     
-    .stat-number {
-      font-size: 2.5rem;
-      color: var(--orange-light);
-      margin-bottom: 0.5rem;
+    .schedule-table table {
+      width: 100%;
+      border-collapse: collapse;
+      color: var(--white);
     }
     
-    .stat-label {
+    .schedule-table th, 
+    .schedule-table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .schedule-table th {
+      background: linear-gradient(90deg, var(--orange-light), var(--orange-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .schedule-table tr:hover {
+      background-color: rgba(255, 165, 0, 0.1);
+    }
+    
+    .schedule-notes {
+      background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+      border-radius: 15px;
+      padding: 1.5rem;
       color: var(--grey);
     }
     
-    .about-image {
-      border-radius: 15px;
-      overflow: hidden;
-      height: 400px;
+    .schedule-notes h3 {
+      color: var(--orange-light);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    
+    .schedule-notes ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+    
+    .schedule-notes li {
+      padding: 0.5rem 0;
       position: relative;
+      padding-left: 1.5rem;
+      line-height: 1.5;
     }
     
-    .about-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .schedule-notes li::before {
+      content: "•";
+      color: var(--orange-light);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
     }
     
-    .team-section {
-      padding: 9rem 2rem 4rem 2rem;
+    .schedule-download {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
+      border: none;
+      border-radius: 25px;
+      color: var(--white);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .schedule-download:hover {
+      transform: scale(1.05);
+    }
+    
+    @media (max-width: 768px) {
+      .schedule-table {
+        font-size: 0.9rem;
+      }
+      
+      .schedule-table th, 
+      .schedule-table td {
+        padding: 0.7rem;
+      }
+    }
+    
+    .pass-sport {
+      padding: 6rem 2rem;
       background-color: #1a1a1a;
       position: relative;
     }
     
-    .team-container {
-      max-width: 1200px;
+    .pass-sport-content {
+      max-width: 800px;
       margin: 0 auto;
     }
     
-    .team-intro {
-      color: var(--grey);
-      line-height: 1.6;
-      margin-bottom: 3rem;
-      text-align: center;
-    }
-    
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    
-    .team-member {
+    .pass-sport-card {
       background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
       border-radius: 15px;
       padding: 2rem;
-      transition: transform 0.3s ease;
-    }
-    
-    .team-member:hover {
-      transform: translateY(-10px);
-    }
-    
-    .team-member h3 {
-      color: var(--orange-light);
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .team-member .role {
-      color: var(--white);
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-    
-    .team-member p {
-      color: var(--grey);
-      line-height: 1.6;
-    }
-    
-    .team-outro {
-      margin-top: 2rem;
-      text-align: center;
-      color: var(--grey);
-      line-height: 1.6;
-    }
-    
-    .projects {
-      padding: 6rem 2rem;
-      background-color: #000000;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
       position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     
-    .projects-container {
-      max-width: 1200px;
-      margin: 0 auto;
+    .pass-sport-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--orange-light), var(--orange-dark));
     }
     
-    .projects-intro,
-    .projects-outro {
-      color: var(--grey);
-      line-height: 1.6;
-      text-align: center;
-      margin: 2rem 0;
-    }
-    
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin: 3rem 0;
-    }
-    
-    .project-card {
-      background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
-      padding: 2rem;
-      border-radius: 15px;
-      transition: transform 0.3s ease;
-    }
-    
-    .project-card:hover {
-      transform: translateY(-10px);
-    }
-    
-    .project-card h3 {
-      color: var(--orange-light);
-      font-size: 1.5rem;
+    .pass-sport-icon {
+      display: flex;
+      justify-content: center;
       margin-bottom: 1rem;
     }
     
-    .project-card p {
+    .pass-sport-text {
       color: var(--grey);
       line-height: 1.6;
     }
     
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        padding: 1rem 0;
-      }
-      
-      .hamburger {
-        display: flex;
-      }
+    .pass-sport-text p {
+      margin-bottom: 1.5rem;
+    }
     
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(45deg, var(--black), #1a1a1a);
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      }
+    .pass-sport-text strong {
+      color: var(--white);
+    }
     
-      .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    .alert {
+      background-color: rgba(255, 69, 0, 0.1);
+      border-left: 4px solid var(--orange-dark);
+      padding: 1rem;
+      border-radius: 0 5px 5px 0;
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
     
-      .nav-links > a,
-      .nav-item > a {
-        width: 100%;
-        padding: 1rem;
-      }
+    .alert-icon {
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
     
-      .dropdown {
-        position: static;
-        width: 100%;
-        display: none;
-        margin-left: 1rem;
-      }
+    .alert p {
+      margin: 0;
+    }
     
-      .nav-item:hover .dropdown {
-        display: none;
-      }
+    .pass-sport-button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
+      border: none;
+      border-radius: 25px;
+      color: var(--white);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 1rem;
+    }
     
-      .nav-item.active .dropdown {
-        display: block;
-      }
+    .pass-sport-button:hover {
+      transform: scale(1.05);
+    }
     
-      .hamburger.active .hamburger-line:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-      }
-    
-      .hamburger.active .hamburger-line:nth-child(2) {
-        opacity: 0;
+    @media (min-width: 768px) {
+      .pass-sport-card {
+        flex-direction: row;
+        align-items: center;
       }
       
-      .hamburger.active .hamburger-line:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-      }
-      
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      
-      .hero p {
-        font-size: 1.2rem;
-      }
-      
-      .section-title {
-        font-size: 2rem;
-      }
-      
-      .timeline::before {
-        left: 0;
-      }
-      
-      .timeline-item {
-        width: 100%;
-        padding-left: 2rem;
-        text-align: left;
-      }
-      
-      .timeline-item:nth-child(even) {
-        left: 0;
-      }
-      
-      .about-stats {
-        grid-template-columns: 1fr;
-      }
-      
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .activities-grid,
-      .news-grid,
-      .about-grid,
-      .donate-options,
-      .projects-grid,
-      .team-grid {
-        grid-template-columns: 1fr;
+      .pass-sport-icon {
+        margin-bottom: 0;
+        margin-right: 2rem;
       }
     }
     
-    @media (max-width: 480px) {
-      .section-title {
-        width: 100%;
-        font-size: 3rem;
-      }
-      
-      .cta-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-      }
-      
-      .news-card,
-      .activity-card,
-      .donate-option,
-      .project-card {
-        margin: 1rem;
-      }
-      
-      .stat-number {
-        font-size: 2rem;
-      }
-    }
-    </style>  
+    </style>
