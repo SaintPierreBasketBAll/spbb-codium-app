@@ -78,22 +78,9 @@
     font-family: "Arial", sans-serif;
   }
 
-  body {
-    background-color: var(--black);
-    color: var(--white);
-  }
+ 
 
-  .navbar {
-    background: linear-gradient(45deg, var(--black), #1a1a1a);
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
+ 
 
   .logo {
     width: 80px;
