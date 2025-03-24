@@ -1,5 +1,5 @@
 <section class="pass-sport">
-  <h2 class="section-title">Pass'Sport</h2>
+  <h2 class="section-title">Le Pass Sport</h2>
   <div class="pass-sport-content">
     <div class="pass-sport-card">
       <div class="pass-sport-icon">
@@ -21,7 +21,7 @@
       </div>
       <div class="pass-sport-text">
         <p>
-          Le <strong>Pass'Sport</strong> permet de bénéficier d'une aide
+          Le <strong>Pass Sport</strong> permet de bénéficier d'une aide
           financière de <strong>50 euros</strong> pour la prise en charge d'une
           partie de l'adhésion à un club sportif. Pour la saison en cours, le
           prix de l'adhésion pour la licence au
@@ -56,7 +56,7 @@
           </div>
           
         </div>
-        <a href="tarifs.html" class="pass-sport-button">Plus d'informations</a>
+        <a href="https://www.pass.sports.gouv.fr/" class="pass-sport-button" target="_blank" rel="noopener noreferrer">Plus d'informations</a>
       </div>
     </div>
   </div>
