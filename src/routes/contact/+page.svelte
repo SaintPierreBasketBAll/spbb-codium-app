@@ -20,13 +20,10 @@
       </div>
       <div class="contact-info">
         <h3>Informations de Contact</h3>
-        <p>Adresse: 123 Rue du Basket, 75000 Paris</p>
-        <p>T&#xe9;l&#xe9;phone: 01 23 45 67 89</p>
-        <p>Email: contact@spbb.fr</p>
-        <h3>Horaires d&#x2019;Ouverture</h3>
-        <p>Lundi - Vendredi: 9h - 20h</p>
-        <p>Samedi: 10h - 18h</p>
-        <p>Dimanche: Ferm&#xe9;</p>
+        <p>Adresse: GYMNASE NELSON MANDELA, <br> 3 AVENUE DE SOWETO, <br>  97410 Saint Pierre</p>
+        <p>Email: contact.spbb@gmail.com</p> <br>
+        <h3>Permanence au club house</h3>
+        <p>Mercredi: 15h - 18h</p>
       </div>
     </div>
   </section>
