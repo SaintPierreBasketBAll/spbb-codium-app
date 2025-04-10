@@ -16,21 +16,21 @@
         role: "Secrétaire Général",
         description: "Le secrétaire général d’association exerce des fonctions principalement administratives"
       },
-      {
+     /*  {
         name: "Anli-Saïd Souffou",
         role: "Secrétaire Général adjoint",
         description: "Il assiste le secrétaire dans ses missions administratives et contribue à la gestion quotidienne."
-      },
+      }, */
       {
         name: "Estelle Omarjee",
         role: "Trésorière",
         description: "Elle assure une gestion rigoureuse et transparente des finances de l'association."
-      },
+      }/* ,
       {
         name: "Hamza Panchbaya",
         role: "Trésorier adjoint",
         description: "Il soutient la trésorière dans le suivi et l'exécution des budgets."
-      }
+      } */
     ]);
   </script>
   

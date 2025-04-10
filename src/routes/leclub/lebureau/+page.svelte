@@ -4,4 +4,4 @@
 </script>
 
 <TeamSection />
-<CommitteeMembers />
+<!-- <CommitteeMembers /> -->

@@ -45,11 +45,11 @@
               <strong>2024/2025</strong>
               <strong>n'est plus valable après le 31 décembre 2024</strong>.
             </li>
-            <li>
+           <!--  <li>
               Le <strong>Pass'Sport</strong> pour la saison
               <strong>2025/2026</strong>
               <strong>n'est plus valable après le 31 décembre 2025</strong>.
-            </li>
+            </li> -->
           </ul>
 
           <p>Assurez-vous d'en profiter avant ces dates !</p>
