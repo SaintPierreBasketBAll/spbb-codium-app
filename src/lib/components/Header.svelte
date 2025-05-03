@@ -70,7 +70,7 @@
       </div>
     </div>
     <a href="/contact">Contact</a>
-    <a href="https://paris-f.com/news">S'inscrire</a>
+    <a href="/sinscrire">S'inscrire</a>
   </div>
 
 </nav>

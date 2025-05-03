@@ -259,7 +259,6 @@
   </div>
 </section>
 
-
 <style>
   :root {
     --black: #000000;
@@ -267,6 +266,14 @@
     --orange-light: #ffa500;
     --orange-dark: #ff4500;
     --grey: #808080;
+    --primary-color: #ff4500;
+    --secondary-color: #ffa500;
+    --text-color: #ccc;
+    --card-bg: #1a1a1a;
+    --card-border: #333;
+    --section-bg: #000;
+    --orange-light: #ff4500;
+    --icon-color: #ff4500;
   }
 
   * {
@@ -330,30 +337,30 @@
     transition: transform 0.3s ease;
   }
   .clubhouse {
-  padding: 6rem 2rem;
-  background-color: #000000;
-  position: relative;
-}
+    padding: 6rem 2rem;
+    background-color: #000000;
+    position: relative;
+  }
 
-.clubhouse-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
+  .clubhouse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.clubhouse-alert {
-  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
-  padding: 2rem;
-  border-radius: 15px;
-  margin: 2rem auto;
-  max-width: 600px;
-}
+  .clubhouse-alert {
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
 
-.clubhouse-alert p {
-  color: var(--orange-light);
-  font-size: 1.5rem;
-  line-height: 1.6;
-}
+  .clubhouse-alert p {
+    color: var(--orange-light);
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
 
   .cta-button:hover {
     transform: translateY(-3px);
@@ -648,4 +655,3 @@
   @media (max-width: 768px) {
   }
 </style>
-

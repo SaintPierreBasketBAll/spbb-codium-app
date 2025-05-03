@@ -1,31 +1,24 @@
-
-
-
-
-
-
-
-
-
-
-
-
   <section class="contact">
     <h2 class="section-title">Nous Contacter</h2>
     <div class="contact-grid">
       <div class="contact-form">
         <a href="mailto:contact.spbb@gmail.com"  class="email-contact">Contacter par e-mail</a>
+       
+        
 
       </div>
       <div class="contact-info">
         <h3>Informations de Contact</h3>
-        <p>Adresse: 123 Rue du Basket, 75000 Paris</p>
-        <p>Téléphone: 01 23 45 67 89</p>
-        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="76151918021715023605061414581004">[email&#160;protected]</a></p>
-        <h3>Horaires d'Ouverture</h3>
-        <p>Lundi - Vendredi: 9h - 20h</p>
-        <p>Samedi: 10h - 18h</p>
-        <p>Dimanche: Fermé</p>
+        <p>Adresse: <br> Saint Pierre Basket Ball <br>
+          GYMNASE NELSON MANDELA <br>
+          3 AVENUE DE SOWETO
+          97410 SAINT-PIERRE</p>
+       
+        <p>Email: <a href="mailto:contact.spbb@gmail.com"  class="__cf_email__" >contact.spbb@gmail.com</a></p>
+        <br>
+        <h3>Permanence du club house</h3>
+        <p>Mercredi de 15h00 à 17h00</p>
+       
       </div>
     </div>
   </section>
@@ -48,7 +41,22 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
   }
-  
+  /* Exemple avec BEM */
+.contact-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #ff8008, #ffc837);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: linear-gradient(to right, #ffc837, #ff8008);
+}
+
   body {
     background-color: var(--black);
     color: var(--white);
