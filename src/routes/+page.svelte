@@ -272,7 +272,6 @@
     --card-bg: #1a1a1a;
     --card-border: #333;
     --section-bg: #000;
-    --orange-light: #ff4500;
     --icon-color: #ff4500;
   }
 

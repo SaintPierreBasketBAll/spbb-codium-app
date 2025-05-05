@@ -18,7 +18,7 @@
     :root {
       --black: #000000;
       --white: #FFFFFF;
-      --orange-light: #FFA500;
+      --orange-light: #FFa500;
       --orange-dark: #FF4500;
       --grey: #808080;
       font-family: Arial, Helvetica, sans-serif;

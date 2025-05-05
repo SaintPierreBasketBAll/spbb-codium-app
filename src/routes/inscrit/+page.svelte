@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <section class="profils">
     <h2 class="profils__title">Quel est votre profil ?</h2>
     <div class="profils__list">
@@ -150,4 +150,4 @@
   margin-left: -1em;
 }
 
-  </style>
+  </style> -->

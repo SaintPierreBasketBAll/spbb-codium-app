@@ -28,6 +28,6 @@
     .icon {
       width: 24px;
       height: 24px;
-      fill: var(--icon-color, var(--orange-light, #ff4500));
+      fill: var(--icon-color, var(--orange-light, red));
     }
   </style>

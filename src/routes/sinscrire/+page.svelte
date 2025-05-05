@@ -1,4 +1,4 @@
-<script>
+ <script>
   import Title from "$lib/components/atomic/Title.svelte";
   import Subtitle from "$lib/components/atomic/Subtitle.svelte";
   import Text from "$lib/components/atomic/Text.svelte";
@@ -9,11 +9,11 @@
 
 <Section backgroundColor="#1a1a1a" padding="6rem 2rem">
   <!-- En-tête de l'inscription -->
-  <Title text="INSCRIPTION AU SPBB" />
+ <Title text="INSCRIPTION AU SPBB" />
   <Subtitle text="Rejoignez la communauté et développez vos talents !" />
   <Text
     content="Remplissez le formulaire ci-dessous pour vous inscrire et découvrir nos programmes d'entraînement, compétitions et formations. Nous sommes impatients de vous accueillir !"
-  />
+  /> 
 
   <!-- Carte d'inscription -->
   <Card>
@@ -163,7 +163,7 @@
       <a href="#" class="cta-button licence-cta">Télécharger les formulaires</a>
     </div>
   </div>
-</section>
+</section> 
 
 <style>
   
@@ -220,9 +220,7 @@
 
     padding: 0.8rem 1.5rem;
     background: linear-gradient(
-      45deg,
-      var(--orange-light, #ff4500),
-      var(--orange-dark, #ffa500)
+      deg,orange,red
     );
     border: none;
     border-radius: 25px;
