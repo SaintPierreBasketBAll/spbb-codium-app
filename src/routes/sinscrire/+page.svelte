@@ -105,7 +105,7 @@
   font-size: 2.5rem;
   margin-bottom: 3rem;
   background: linear-gradient(90deg, var(--orange-light), var(--orange-dark));
-  background-clip: text;
+  /* background-clip: text; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
