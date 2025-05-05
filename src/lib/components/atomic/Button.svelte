@@ -24,6 +24,7 @@
       color: var(--white);
       cursor: pointer;
       transition: transform 0.3s ease;
+      
     }
     .button:hover {
       transform: translateY(-3px);

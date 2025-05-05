@@ -21,6 +21,7 @@
       --orange-light: #FFA500;
       --orange-dark: #FF4500;
       --grey: #808080;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     @keyframes flameMove {

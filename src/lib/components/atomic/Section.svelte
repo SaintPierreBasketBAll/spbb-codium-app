@@ -14,6 +14,7 @@
   
   <style>
     .section {
+      margin-top: 2.5rem;
       padding: 6rem 2rem;
       position: relative;
       background-color: #1a1a1a;
