@@ -315,9 +315,9 @@
   .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(90deg, var(--orange-light), var(--orange-dark));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, var(--orange-light), var(--orange-dark))!important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent!important;
   }
 
   .hero p {
