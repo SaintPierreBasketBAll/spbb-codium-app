@@ -63,7 +63,7 @@
     <div class="nav-item">
       <a href="#">Infos pratiques</a>
       <div class="dropdown-menu">
-        <a href="/infospratiques/adhesion/">Adhésion</a>
+        <a href="/infospratiques/adhesion">Adhésion</a>
         <a href="/infospratiques/leshoraires/">Les horaires</a>
         <a href="/infospratiques/lesgymnases/">Les gymnases</a>
         <a href="/infospratiques/tarifsetaides/">Tarifs et aides</a>
