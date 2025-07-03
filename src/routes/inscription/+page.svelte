@@ -448,10 +448,14 @@
     .licence-panel {
       padding: 1rem 1rem 2rem;
     }
+    .section-title_h1 {
+      margin-top: 3rem;
+    }
 
     .section-title {
       font-size: 1.8rem;
       margin-bottom: 2rem;
+      
     }
   }
 </style>
