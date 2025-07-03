@@ -1,135 +1,137 @@
 <script>
   // Type de licencié sélectionné
-  let selectedType = "nouveau";
+  let selectedType = $state("nouveau");
+  let titre = $state("Nouveau licencié");
+
+  // Met à jour le titre à chaque changement de selectedType
+  $effect(() => {
+    if (selectedType === "nouveau") {
+      titre = "Nouveau licencié";
+    } else if (selectedType === "renouvellement") {
+      titre = "Renouvellement";
+    } else if (selectedType === "mutation") {
+      titre = "Mutation";
+    } else if (selectedType === "surclassement") {
+      titre = "Surclassement";
+    } else if (selectedType === "coach") {
+      titre = "Entraîneur / Assistant entraîneur";
+    } else if (selectedType === "senior") {
+      titre = "senior fille ou senior garçon";
+    } else {
+      titre = selectedType;
+    }
+  });
 
   // Dictionnaire des fiches documents par type
-  const fichesDocuments = {
+  const fichesDocuments = $state({
     nouveau: {
       title: "Nouveau licencié (joueur) — première inscription",
       items: [
-        "Déclaration d'adhésion",
-        "Certificat médical (2025-2026_certificat_medical.pdf) attestant l’aptitude à la pratique du basket qui sera à fournir lors de l'inscription finale sur le site de la FFBB (Fédération Française de Basket-Ball)",
-        "Copie d’une pièce d’identité (obligatoire pour première inscription)",
-        "Charte joueur (CHARTE JOUEURS.pdf)",
-        "Charte parents si mineur",
-        "Règlement intérieur",
-        "Photo récente conforme aux exigences de la Ligue (pour licence)",
-        "Paiement de la licence (tarif 150€ sauf Pass-Sport)",
-        "Pass-Sport (optionnel) : QR code pour réduction éventuelle",
+        "Vous trouverez en-dessous de cette liste les liens de téléchargement correspondants : ",
+        "- Déclaration d'adhésion signée",
+        "- Certificat médical attestant l’aptitude à la pratique du basket qui sera à fournir lors de l'inscription finale sur le site de la F.F.B.B (Fédération Française de Basket-Ball)",
+        "- Copie numérique d’une pièce d’identité (obligatoire pour première inscription)",
+        "- Charte joueur",
+        " - Charte parents si mineur",
+        "- Règlement intérieur",
+        "- Photo récente conforme aux exigences de la Ligue (pour licence)",
       ],
       links: [
+        "/pdf/declaration_d_adhesion.pdf",
         "/pdf/charte_joueur.pdf",
         "/pdf/reglement_interieur_spbb.pdf",
-        "/pdf/charte_joueur.pdf",
         "/pdf/charte_parent.pdf",
-        "/pdf/declaration_adhesion.pdf",
-        "/pdf/2025-2026_certificat_medical.pdf",
-      ]
+        "/pdf/certificat_medical.pdf",
+      ],
     },
     renouvellement: {
       title: "Licencié déjà inscrit dans le club (renouvellement)",
       items: [
-        "Fiche de renseignements mise à jour si besoin",
-        "Certificat médical (selon les règles de la FFBB, parfois renouvellement requis tous les 3 ans)",
-        "Charte joueur signée (à renouveler chaque saison)",
-        "Charte parents signée si mineur",
-        "Règlement intérieur signé",
-        "Paiement de la licence",
+       "Vous trouverez en-dessous de cette liste les liens de téléchargement correspondants : ",
+        "- Certificat médical (selon les règles de la FFBB, parfois renouvellement requis tous les 3 ans)",
+        "- Charte joueur signée (à renouveler chaque saison)",
+        "- Charte parents signée si mineur (à renouveler chaque saison)",
+        "- Règlement intérieur signé (à renouveler chaque saison)",
       ],
-      link: [
+      links: [
         "/pdf/charte_joueur.pdf",
         "/pdf/reglement_interieur_spbb.pdf",
-        "/pdf/charte_joueur.pdf",
         "/pdf/charte_parent.pdf",
-        "/pdf/declaration_adhesion.pdf",
-        "/pdf/2025-2026_certificat_medical.pdf",
-      ]
+        "/pdf/declaration_d_adhesion.pdf",
+        "/pdf/certificat_medical.pdf",
+      ],
     },
     mutation: {
       title: "Joueur en mutation (changement de club)",
       items: [
-        "Fiche de renseignements",
-        "Certificat médical (ou copie du certificat valide si récent)",
-        "Charte joueur signée",
-        "Charte parents signée si mineur",
-        "Règlement intérieur signé",
-        "Attestation ou document de mutation du club précédent",
-        "Paiement de la licence",
+       "Vous trouverez en-dessous de cette liste les liens de téléchargement correspondants : ",
+        "- Certificat médical (ou copie du certificat valide si récent)",
+        "- Charte joueur",
+        "- Charte parents",
+        "- Règlement intérieur",
+        "- Attestation ou document de mutation du club précédent"
       ],
-      link: [
+      links: [
         "/pdf/charte_joueur.pdf",
         "/pdf/reglement_interieur_spbb.pdf",
-        "/pdf/charte_joueur.pdf",
         "/pdf/charte_parent.pdf",
-        "/pdf/declaration_adhesion.pdf",
+        "/pdf/declaration_d_adhesion.pdf",
         "/pdf/2025-2026_certificat_medical.pdf",
-      ]
+      ],
     },
     surclassement: {
       title:
         "Surclassement (joueur compétitif pratiquant en catégorie supérieure)",
       items: [
-        "Certificat médical spécifique de surclassement (2024-2025_surclassement.pdf), établi par médecin agréé, attestant l’aptitude à jouer dans la catégorie supérieure",
-        "Fiche de renseignements",
-        "Charte joueur signée",
-        "Charte parents signée si mineur",
-        "Règlement intérieur signé",
-        "Paiement de la licence",
+        "Vous trouverez en-dessous de cette liste les liens de téléchargement correspondants : ",
+        "- Liste des documents demandés pour, soit un nouveau licencié (joueur),soit un Renouvellement ou une Mutation",
+        "+",
+        "- Certificat médical de surclassement normal, voir lien ci-dessous. Ou, un certificat médical spécifique de surclassement, établi par médecin agréé, attestant l’aptitude à jouer dans la catégorie supérieure, document envoyé par le club aux joueurs concernés.",
       ],
-      link: [
+      links: [
+        "/pdf/surclassement_simple.pdf",
         "/pdf/charte_joueur.pdf",
         "/pdf/reglement_interieur_spbb.pdf",
-        "/pdf/charte_joueur.pdf",
         "/pdf/charte_parent.pdf",
-        "/pdf/declaration_adhesion.pdf",
-        "/pdf/2025-2026_certificat_medical.pdf",
-      ]
+        "/pdf/declaration_d_adhesion.pdf",
+        
+      ],
     },
     coach: {
       title: "Entraîneur/ Assistant entraîneur",
       items: [
-        "Fiche de renseignements (avec rôle « coach » coché)",
-        "Charte entraîneur-coach signée (CHARTE ENTRAINEURS-COACHS.pdf)",
-        "Certificat médical non systématique mais conseillé (selon réglementation FFBB)",
-        "Règlement intérieur signé",
-        "Paiement de la licence (le cas échéant)",
+        "Vous trouverez en-dessous de cette liste les liens de téléchargement correspondants : ",
+        "- Déclaration d'adhésion",
+        "- Charte entraîneur-assistant",
+        "- Règlement intérieur signé",
       ],
-      link: [
-        "/pdf/charte_joueur.pdf",
+      links: [
         "/pdf/reglement_interieur_spbb.pdf",
-        "/pdf/charte_joueur.pdf",
-        "/pdf/charte_parent.pdf",
-        "/pdf/declaration_adhesion.pdf",
-        "/pdf/2025-2026_certificat_medical.pdf",
-      ]
-    },
-    parent: {
-      title: "Parent accompagnateur",
-      items: [
-        "Règlement intérieur signé (seul document obligatoire)",
-        "Paiement de la licence gratuite (parent accompagnateur)",
-        "Parfois fiche de renseignements simplifiée (à vérifier selon le club)",
+        "/pdf/charte_entraineur_assistant.pdf",
+        "/pdf/declaration_d_adhesion.pdf",     
       ],
-      link: [
-        "/pdf/charte_joueur.pdf",
-        "/pdf/reglement_interieur_spbb.pdf",
-        "/pdf/charte_joueur.pdf",
-        "/pdf/charte_parent.pdf",
-        "/pdf/declaration_adhesion.pdf",
-        "/pdf/2025-2026_certificat_medical.pdf",
-      ]
     },
-    /*haut_niveau: {
-      title: "Sportifs de haut niveau (cas particulier)",
+    
+    senior: {
+      title: "Senior fille ou garçon",
       items: [
-        "Fiche spécifique « sportifs de haut niveau » à compléter (FICHE sportifs de haut niveau_vierge.pdf)",
-        "Documents administratifs spécifiques en fonction du voyage ou du projet sportif",
+        "Vous trouverez en-dessous de cette liste les liens de téléchargement correspondants : ",
+        "- Déclaration d'adhésion",
+        "- CHARTE D’ENGAGEMENTS : Des Joueurs et Joueuses de NM2, NM3, PNM, NF1, NF2, NF3 et PNF",
         "Certificat médical",
-        "Autres documents selon demande de la ligue ou du club",
+        "- Règlement intérieur",
+        "- Charte joueur",
+       
       ],
-      link: "/pdf/2024-2025_certificat_medical.pdf"
-    },*/
-  };
+      links: [
+        "/pdf/certificat_medical.pdf",
+        "/pdf/charte_d_engagement.pdf",
+        "/pdf/charte_joueur.pdf",
+        "/pdf/reglement_interieur_spbb.pdf",      
+        "/pdf/declaration_d_adhesion.pdf",
+      ],
+    },
+  });
 
   function selectType(type) {
     selectedType = type;
@@ -137,34 +139,51 @@
 </script>
 
 <!-- Page d'inscription pour la saison 2025/2026 -->
+
 <section class="licence-info">
   <!-- Titre de la section -->
-  <h1 class="section-title_h1">INSCRIPTIONS SAISON 2025/2026</h1>
+  <h1 class="section-title_h1">LES INSCRIPTIONS 2025/2026</h1>
   <!-- Sous-titre de la section -->
 
-  <h2 class="section-title_h1">
-    Attention ! Les documents pour les inscriptions concernant la nouvelle
-    saison 2025/2026 ne sont pas encore disponible
-  </h2>
-  <h3 class="section-title">
-    Une fois les documents disponibles vous pourrez envoyer votre demande à
-    spbb.inscriptions@gmail.com
-  </h3>
-</section>
-<!-- 
- -->
-<section class="licence-info">
-  <!-- Titre de la section -->
-  <h1 class="section-title_h1">LES INSCRIPTIONS</h1>
-  <!-- Sous-titre de la section -->
-
-  <h2 class="section-title_h1">
-    Attention ! Documents ci-dessous à fournir selon votre situation
-  </h2>
-  <h3 class="section-title">
-    Envoyer votre demande à spbb.inscriptions@gmail.com
-  </h3>
-
+  <h2 class="section-title_h1">🏀 Procédure d’inscription au SPBB</h2>
+  <p>
+    1️⃣ &nbsp;Demande de préinscription : 
+  </p>
+  <p>- Veuillez remplir le formulaire de demande de
+    préinscription en cliquant sur Formulaire de demande de préinscription
+    ci-dessous</p>
+  <br />
+   <h3 class="section-title">Cliquez ici :</h3>
+  <p class="inscription_form_link">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSceCokeBqxNcACXk8VAjKczXRd2heP-lbCNmKop0IbtsxdbBw/viewform?usp=dialog"
+      target="_blank">Formulaire de demande de préinscription</a
+    >
+  </p>
+  <p>
+    2️⃣ &nbsp; Étude de votre demande : 
+  </p>
+  <p>- Votre demande de préinscription sera étudiée par
+    le club, en fonction des places disponibles. Vous recevrez une réponse par
+    e-mail si refus,sinon un lien FFB vous sera envoyé par mail si votre demande
+    est acceptée.</p>
+  <br />
+  <p>
+    3️⃣ &nbsp; Réception d'un lien F.F.B.B : 
+  </p>
+  <p> - Vous devrez alors cliquer sur le lien FFBB et compléter le formulaire <span>
+    muni des documents à fournir(photo d'identité, certificat medical, etc.), voir ci-dessous.</span>
+     À cette étape, il vous faudra aussi <span>télécharger et surtout bien lire et être bien informé du contenu,</span>  du règlement intérieur et des chartes en fonction du type de licence. La demande d'adhésion devra alors nous être retournée complétée et signée.
+  <br />
+  <p>
+    4️⃣ &nbsp; Paiement de la licence : 
+  </p>
+  <p>- Une fois que nous avons recu le demande d'adhésion
+    signée et le paiement de la licence effectué, vous recevrez votre licence et
+    serez officiellement licencié au SPBB pour la saison 2025/2026.</p>
+  <br /><br />
+ 
+  <h2 class="section-title_h1">📄 Liste des documents à fournir</h2>
   <div class="licence-tabs" role="tablist" aria-label="Types de licenciés">
     <button
       role="tab"
@@ -214,61 +233,45 @@
       aria-selected={selectedType === "coach"}
       tabindex={selectedType === "coach" ? 0 : -1}
     >
-      Coach / Entraîneur
+      Entraîneur / Assistant entraîneur
     </button>
+  
     <button
       role="tab"
       class="licence-tab"
-      class:selected={selectedType === "parent"}
-      onclick={() => selectType("parent")}
-      aria-selected={selectedType === "parent"}
-      tabindex={selectedType === "parent" ? 0 : -1}
+      class:selected={selectedType === "senior"}
+      onclick={() => selectType("senior")}
+      aria-selected={selectedType === "senior"}
+      tabindex={selectedType === "senior" ? 0 : -1}
     >
-      Parent accompagnateur
+      Senior
     </button>
-    <!-- <button
-      role="tab"
-      class="licence-tab"
-      class:selected={selectedType === "haut_niveau"}
-      onclick={() => selectType("haut_niveau")}
-      aria-selected={selectedType === "haut_niveau"}
-      tabindex={selectedType === "haut_niveau" ? 0 : -1}
-    >
-      Sportifs de haut niveau
-    </button> -->
   </div>
 
   <div class="licence-panel active" role="tabpanel" aria-live="polite">
-    <h2>H2 : {fichesDocuments.nouveau.title}</h2>
+   
 
-    <h3>Liste des documents à fournir selon votre demande</h3>
-
-    
+    <h3>Liste des documents à fournir pour un/une {titre}</h3>
 
     <!-- Affichage de la liste des items -->
     <ul>
-      {#each fichesDocuments.nouveau.items as item}
+      {#each fichesDocuments[selectedType]?.items as item}
         <li>{item}</li>
       {/each}
     </ul>
     <h3>Liste des liens de téléchargement par rapport à la liste ci-dessus</h3>
     <!-- Affichage des liens (s'il y en a) -->
-    {#if fichesDocuments.nouveau.links}
+    {#if fichesDocuments[selectedType]?.links}
       <ul>
-        {#each fichesDocuments.nouveau.links as link}
-        <div>
-          <a href={link} target="_blank">{link.split("/").pop()}</a>
-        </div>
-          
+        {#each fichesDocuments[selectedType]?.links as link}
+          <div>
+            <a href={link} target="_blank">{link.split("/").pop()}</a>
+          </div>
         {/each}
       </ul>
     {/if}
-
-    <span>Fin nouveau test</span>
-
-
-  
-
+    <br /> <br />
+  </div>
 </section>
 
 <style>
@@ -300,6 +303,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+  }
+  span {
+    color: var(--orange-light);
+    font-weight: bold;
+  }
+  .inscription_form_link {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: aliceblue;
+    text-decoration: underline;
   }
 
   /* Onglets */

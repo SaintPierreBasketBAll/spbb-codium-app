@@ -2,13 +2,49 @@
     <h2 class="section-title">Le club House</h2>
     <div class="clubhouse-container">
       <div class="clubhouse-alert">
-        <p>Permanence ouverte, ce Mercredi de 15h00 à 17h00</p>
+         <p>
+        🏠🔴 La permanence du Club House est définitivement fermée, en raison du
+        manque de bénévoles disponibles pour assurer ce service. 🙏
+      </p>
+
+      <br />
+
+      <p>
+        ➡️ Pour toute demande d’inscription, merci d’utiliser directement le
+        formulaire en ligne : <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSceCokeBqxNcACXk8VAjKczXRd2heP-lbCNmKop0IbtsxdbBw/viewform?usp=dialog"
+          >Formulaire d’inscription SPBB</a
+        >
+        🖱️
+      </p>
+      <br>
+      <p>
+        Pour toute question ou demande d’information, merci de privilégier le
+        contact par e-mail :
+      </p>
+      <br>
+      <p>
+        • 📅 evenements.spbb@gmail.com : pour les inscriptions ou renseignements
+        concernant les événements (camps basket, tournois 3x3, etc.)
+      </p>
+      <br>
+      <p>
+        • 📝 spbb.inscriptions@gmail.com : pour toute demande de licence ou
+        question relative aux licences
+      </p>
+      <br />
+      <p>
+        • ℹ️ contact.spbb@gmail.com : pour toute autre demande ou information
+        générale
+      </p>
+      <br />
+      <p>Nous vous remercions de votre compréhension.</p>
       </div>
     </div>
 </section>
 
 <section class="schedule">
-  <h2 class="section-title">Planning des Entraînements</h2>
+  <h2 class="section-title">Planning des Entraînements 204/2025<p>Attention ce planning n'est plus valable. Un nouveau planning sera bientot mis en linge</p></h2>
   <div class="schedule-content">
     <div class="schedule-table">
       <table>

@@ -33,9 +33,9 @@
     </div>
 
     <p class="membership-contact">
-      Pour toute question, contactez-nous à <a
+      Pour toute question, contactez-nous à cette adresse email : <a
         href="mailto:inscription.spbb@gmail.com"
-        class="email-link">contact.spbb@gmail.com</a
+        class="email-link">spbb.inscriptions@gmail.com</a
       >
     </p>
   </div>

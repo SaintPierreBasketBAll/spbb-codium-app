@@ -14,7 +14,43 @@
   <h2 class="section-title">Club House</h2>
   <div class="clubhouse-container">
     <div class="clubhouse-alert">
-      <p>Permanence ouverte, ce Mercredi de 15h00 à 17h00</p>
+      <p>
+        🏠🔴 La permanence du Club House est définitivement fermée, en raison du
+        manque de bénévoles disponibles pour assurer ce service. 🙏
+      </p>
+
+      <br />
+
+      <p>
+        ➡️ Pour toute demande d’inscription, merci d’utiliser directement le
+        formulaire en ligne : <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSceCokeBqxNcACXk8VAjKczXRd2heP-lbCNmKop0IbtsxdbBw/viewform?usp=dialog"
+          >Formulaire d’inscription SPBB</a
+        >
+        🖱️
+      </p>
+      <br>
+      <p>
+        Pour toute question ou demande d’information, merci de privilégier le
+        contact par e-mail :
+      </p>
+      <br>
+      <p>
+        • 📅 evenements.spbb@gmail.com : pour les inscriptions ou renseignements
+        concernant les événements (camps basket, tournois 3x3, etc.)
+      </p>
+      <br>
+      <p>
+        • 📝 spbb.inscriptions@gmail.com : pour toute demande de licence ou
+        question relative aux licences
+      </p>
+      <br />
+      <p>
+        • ℹ️ contact.spbb@gmail.com : pour toute autre demande ou information
+        générale
+      </p>
+      <br />
+      <p>Nous vous remercions de votre compréhension.</p>
     </div>
   </div>
 </section>
@@ -314,9 +350,13 @@
   .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(90deg, var(--orange-light), var(--orange-dark))!important;
+    background: linear-gradient(
+      90deg,
+      var(--orange-light),
+      var(--orange-dark)
+    ) !important;
     -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent!important;
+    -webkit-text-fill-color: transparent !important;
   }
 
   .hero p {
@@ -353,6 +393,7 @@
     border-radius: 15px;
     margin: 2rem auto;
     max-width: 600px;
+    text-align: left;
   }
 
   .clubhouse-alert p {
