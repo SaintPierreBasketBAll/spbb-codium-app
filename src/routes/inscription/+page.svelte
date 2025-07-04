@@ -152,6 +152,7 @@
   <p>- Veuillez remplir le formulaire de demande de
     préinscription en cliquant sur Formulaire de demande de préinscription
     ci-dessous</p>
+  <p>- Pour connaitre les conditions d'inscription cliquez sur ce lien : <a href="/infospratiques/adhesion" class="link">Conditions d'inscription</a></p>
   <br />
    <h3 class="section-title">Cliquez ici :</h3>
   <p class="inscription_form_link">
@@ -314,12 +315,29 @@
     color: var(--orange-light);
     font-weight: bold;
   }
+  span:hover {
+    color: var(--orange-dark);
+    font-weight: bold;
+  }
+  .link {
+    color: var(--orange-light);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .link:hover {
+    color: var(--orange-dark);
+  }
   .inscription_form_link {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 3rem;
     color: aliceblue;
     text-decoration: underline;
+  }
+  .inscription_form_link :hover {
+    color: var(--orange-dark);
+    text-decoration: none;
+    font-weight: bold;
   }
 
   /* Onglets */
