@@ -15,9 +15,7 @@
     <div class="payment-options">
       <p>
         💳 <strong>Paiement :</strong> De préférence
-        <span class="highlight">directement en ligne lors de l'inscription sur le site de la ligue ou par virement bancaire</span>. Si besoin, vous pouvez régler
-        en espèces ou par chèque lors des permanences au
-        <strong>Club House</strong>.
+        <span class="highlight">directement en ligne lors de l'inscription sur le site de la ligue ou par virement bancaire</span>.
       </p>
       <p>
         📆 <strong>Attention :</strong> Le
