@@ -39,7 +39,8 @@
     </p>
   </div>
   
-  <Button><a href="/inscription">S'inscrire</a></Button>
+<!--   <Button><a href="/inscription">S'inscrire</a></Button> -->
+  <a href="/inscription"> <Button>S'inscrire</Button> </a>
 </section>
 
 <style>
