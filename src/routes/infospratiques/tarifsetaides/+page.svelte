@@ -22,7 +22,7 @@
       <div class="pass-sport-text">
         <p>
           Le <strong>Pass Sport</strong> permet de bénéficier d'une aide
-          financière de <strong>50 euros</strong> pour la prise en charge d'une
+          financière de <strong>70 euros</strong> pour la prise en charge d'une
           partie de l'adhésion à un club sportif. Pour la saison en cours, le
           prix de l'adhésion pour la licence au
           <strong>Saint Pierre Basket Ball</strong>
@@ -45,11 +45,23 @@
               <strong>2024/2025</strong>
               <strong>n'est plus valable après le 31 décembre 2024</strong>.
             </li>
-           <!--  <li>
+            <li>
               Le <strong>Pass'Sport</strong> pour la saison
               <strong>2025/2026</strong>
               <strong>n'est plus valable après le 31 décembre 2025</strong>.
-            </li> -->
+            </li>
+            <li>
+              Valable pour toute inscription du <strong>1er septembre au 31 décembre 2025</strong>;
+              campagne de communication fin août.
+            </li>
+            <li>
+              Bénéficiaires :
+              <ul>
+                <li>Jeunes de <strong>14 à 17 ans</strong> avec ARS ;</li>
+                <li>Jeunes en situation de handicap : <strong>6–19 ans (AEEH)</strong> ou <strong>16–30 ans (AAH)</strong> ;</li>
+                <li>Étudiants boursiers ou aides CROUS/régionales, <strong>moins de 28 ans</strong> ;</li>
+              </ul>
+            </li>
           </ul>
 
           <p>Assurez-vous d'en profiter avant ces dates !</p>
