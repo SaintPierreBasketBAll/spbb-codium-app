@@ -1,5 +1,6 @@
 <script>
   import NewButton from "$lib/components/NewButton.svelte";
+  import Button from "$lib/components/atomic/Button.svelte";
 </script>
 
 <section class="membership">
@@ -38,6 +39,7 @@
     </p>
   </div>
   
+  <Button><a href="/inscription">S'inscrire</a></Button>
 </section>
 
 <style>
