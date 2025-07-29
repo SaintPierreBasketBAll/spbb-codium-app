@@ -2,7 +2,7 @@
     <h2 class="section-title">Nous Contacter</h2>
     <div class="contact-grid">
       <div class="contact-form">
-        <a href="mailto:contact.spbb@gmail.com"  class="email-contact">Contacter par e-mail</a>
+        <a href="mailto:contact.spbb@gmail.com"  class="email-contact"> Écrire au club</a>
        
         
 

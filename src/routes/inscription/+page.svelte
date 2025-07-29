@@ -94,6 +94,8 @@
         "/pdf/reglement_interieur_spbb.pdf",
         "/pdf/charte_parent.pdf",
         "/pdf/declaration_d_adhesion.pdf",
+        "/pdf/Certificat_d_aptitude_au_surclassement.pdf",
+        "/pdf/Tableau_surclassements_2025-2026.pdf"
         
       ],
     },
@@ -150,8 +152,7 @@
     1️⃣ &nbsp;Demande de préinscription : 
   </p>
   <p>- Veuillez remplir le formulaire de demande de
-    préinscription en cliquant sur Formulaire de demande de préinscription
-    ci-dessous</p>
+    préinscription en cliquant sur lien ci-dessous</p>
   <p>- Pour connaitre les conditions d'inscription cliquez sur ce lien : <a href="/infospratiques/adhesion" class="link">Conditions d'inscription</a></p>
   <br />
    <h3 class="section-title">Cliquez ici :</h3>
@@ -165,9 +166,16 @@
     2️⃣ &nbsp; Étude de votre demande : 
   </p>
   <p>- Votre demande de préinscription sera étudiée par
-    le club, en fonction des places disponibles. Vous recevrez une réponse par
-    e-mail si refus,sinon un lien FFB vous sera envoyé par mail si votre demande
-    est acceptée.</p>
+    le club, en fonction des places disponibles.
+  </p>
+  <p>
+    - En cas d’acceptation, un lien FFBB vous sera transmis par e-mail.
+  </p>
+  <p>
+    - En cas de refus vous en serez informé par mail et vous pourrez
+    vous inscrire dans un autre club.
+  </p>
+  
   <br />
   <p>
     3️⃣ &nbsp; Réception d'un lien F.F.B.B : 
