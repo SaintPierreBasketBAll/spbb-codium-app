@@ -16,14 +16,13 @@
     <div class="payment-options">
       <p>
         💳 <strong>Paiement :</strong> De préférence
-        <span class="highlight">directement en ligne lors de l'inscription sur le site de la ligue ou par virement bancaire</span>.
+        <span class="highlight">directement en ligne lors de l'inscription sur le site de la ligue, ou par virement bancaire</span>.
       </p>
-      <p>
-        📆 <strong>Attention :</strong> Le
-        <span class="highlight">Pass’Sport</span>
-        ne sera plus valide après le
-        <span class="highlight">31 décembre 2024</span>.
-      </p>
+     
+        <a href="/infospratiques/tarifsetaides"> <p>
+        📆 <strong>📌 Aide financière : Cliquez ici pour plus d’informations</strong>— aide disponible via
+        <span class="highlight">le Pass Sport.</span>
+      </p></a>
       <p>
         🛡️ <strong>Assurance :</strong> L'assurance proposée lors de la
         souscription est <span class="highlight">optionnelle</span> et son coût
@@ -32,7 +31,7 @@
     </div>
 
     <p class="membership-contact">
-      Pour toute question, contactez-nous à cette adresse email : <a
+      Pour toute question concernant les inscriptions, vous pouvez nous contacter à l’adresse suivante : <a
         href="mailto:inscription.spbb@gmail.com"
         class="email-link">spbb.inscriptions@gmail.com</a
       >
