@@ -10,7 +10,7 @@
   </div>
 </main>
 
-<section class="clubhouse">
+<!-- <section class="clubhouse">
   <h2 class="section-title">Club House</h2>
   <div class="clubhouse-container">
     <div class="clubhouse-alert">
@@ -23,12 +23,13 @@
 
       <p>
         ➡️ Pour toute demande d’inscription, merci d’utiliser directement le
-        formulaire en ligne : <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSceCokeBqxNcACXk8VAjKczXRd2heP-lbCNmKop0IbtsxdbBw/viewform?usp=dialog"
-          >Formulaire d’inscription SPBB</a
-        >
-        🖱️
+        formulaire en ligne : 
       </p>
+      <br>
+      🖱️<a class="form_link"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSceCokeBqxNcACXk8VAjKczXRd2heP-lbCNmKop0IbtsxdbBw/viewform?usp=dialog"
+          >Formulaire d’inscription SPBB</a>
+      <br>
       <br>
       <p>
         Pour toute question ou demande d’information, merci de privilégier le
@@ -36,6 +37,7 @@
       </p>
       <br>
       <p>
+        • 📞 Concernant les évènements à venir 
         • 📅 evenements.spbb@gmail.com : pour les inscriptions ou renseignements
         concernant les événements (camps basket, tournois 3x3, etc.)
       </p>
@@ -53,7 +55,7 @@
       <p>Nous vous remercions de votre compréhension.</p>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="activities">
   <h2>Nos Activités</h2>
@@ -227,8 +229,8 @@
   </div>
 </section>
 
-<section class="donate">
-  <h2 class="section-title">Faire un Don</h2>
+<!-- <section class="donate">
+   <h2 class="section-title">Faire un Don</h2>
   <div class="donate-content">
     <p>
       Votre soutien est essentiel pour maintenir et développer nos activités.
@@ -251,13 +253,13 @@
         <button class="donate-button">Faire un don</button>
       </div>
     </div>
-  </div>
-</section>
+  </div> 
+</section> -->
 
 <section class="contact">
   <h2 class="section-title">Nous Contacter</h2>
   <div class="contact-grid">
-    <div class="contact-form">
+   <!--  <div class="contact-form">
       <form id="contactForm">
         <div class="form-group">
           <label for="name">Nom</label>
@@ -273,7 +275,7 @@
         </div>
         <button type="submit" class="donate-button">Envoyer</button>
       </form>
-    </div>
+    </div> -->
     <div class="contact-info">
       <h3>Informations de Contact</h3>
       <p>Adresse: GYMNASE NELSON MANDELA</p>
@@ -289,8 +291,7 @@
 
       <p>Email: contact.spbb@gmail.com</p>
       <br />
-      <h3>Permanence Club House SPBB</h3>
-      <p>Mercredi : 15h - 17h</p>
+   
     </div>
   </div>
 </section>
@@ -416,6 +417,24 @@
     animation: flameMove 8s infinite alternate;
     z-index: -1;
   }
+  .form_link {
+    width: 100%;
+  text-align: center !important;
+  color: #cccccc; /* gris clair */
+  font-size: 1.4rem; /* équivalent à 16px */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form_link:hover {
+  color: var(--orange-light); /* effet de survol (jaune clair si déjà défini dans tes variables) */
+  text-decoration: underline;
+}
+
+.form_link:visited {
+  color: #999999; /* couleur modifiée après clic */
+}
 
   @keyframes flameMove {
     0% {
@@ -513,7 +532,6 @@
   }
 
   .history,
-  .donate,
   .contact {
     padding: 6rem 2rem;
     position: relative;
@@ -661,6 +679,10 @@
   .contact-info {
     color: var(--grey);
     line-height: 1.6;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   }
 
   .contact-info h3 {
