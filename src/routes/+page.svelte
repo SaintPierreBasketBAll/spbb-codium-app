@@ -6,7 +6,8 @@
   <div class="hero-content">
     <h1>Saint-Pierre Basket Ball</h1>
     <p>Passion, Performance, Excellence</p>
-    <button class="cta-button">Rejoignez-nous</button>
+    <a href="/inscription"><button class="cta-button">Rejoignez-nous</button></a>
+    
   </div>
 </main>
 
