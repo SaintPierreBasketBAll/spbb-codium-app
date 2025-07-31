@@ -22,7 +22,7 @@
         description: "Il assiste le secrétaire dans ses missions administratives et contribue à la gestion quotidienne."
       }, */
       {
-        name: "Estelle Omarjee",
+        name: "Estelle Omarjee-Robineau",
         role: "Trésorière",
         description: "Elle assure une gestion rigoureuse et transparente des finances de l'association."
       }/* ,
