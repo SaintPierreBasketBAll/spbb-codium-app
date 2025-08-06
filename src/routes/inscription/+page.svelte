@@ -266,7 +266,7 @@
   <div class="licence-panel active" role="tabpanel" aria-live="polite">
    
 
-    <h3>Liste des documents à fournir pour un/une {titre}</h3>
+    <h3>{titre} : Liste des documents à fournir.</h3>
 
     <!-- Affichage de la liste des items -->
     <ul>
@@ -274,7 +274,7 @@
         <li>{item}</li>
       {/each}
     </ul>
-    <h3>Liste des liens de téléchargement par rapport à la liste ci-dessus</h3>
+    <h3 class="download_link_h3">Liste des liens de téléchargement par rapport à la liste ci-dessus</h3>
     <!-- Affichage des liens (s'il y en a) -->
     {#if fichesDocuments[selectedType]?.links}
       <ul>
@@ -394,7 +394,7 @@
     background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
     padding: 2rem;
     border-radius: 15px;
-    color: var(--grey);
+    color: var(--white);
     line-height: 1.6;
   }
 
@@ -402,8 +402,11 @@
     color: var(--orange-light);
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
+  }
+  .download_link_h3{
+    padding-top: 2rem;
   }
 
   .licence-docs {

@@ -1,5 +1,5 @@
 <section class="schedule">
-  <h2 class="section-title">Planning des Entraînements 204/2025<p>Attention ce planning n'est plus valable. Un nouveau planning sera bientot mis en linge</p></h2>
+  <h2 class="section-title">Planning des Entraînements 204/2025<p>Attention ce planning n'est plus valable. Un nouveau planning sera bientot mis en ligne</p></h2>
   <div class="schedule-content">
     <div class="schedule-table">
       <table>
@@ -212,7 +212,7 @@
   </div>
 </section>
 
-<section class="clubhouse">
+<!-- <section class="clubhouse">
     <h2 class="section-title">Le club House</h2>
     <div class="clubhouse-container">
       <div class="clubhouse-alert">
@@ -255,7 +255,7 @@
       <p>Nous vous remercions de votre compréhension.</p>
       </div>
     </div>
-</section>
+</section> -->
 
 <style>
     :root {
