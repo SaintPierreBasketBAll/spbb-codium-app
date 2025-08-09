@@ -15,9 +15,7 @@
           97410 SAINT-PIERRE</p>
        
         <p>Email: <a href="mailto:contact.spbb@gmail.com"  class="__cf_email__" >contact.spbb@gmail.com</a></p>
-        <br>
-        <h3>Permanence du club house</h3>
-        <p>Mercredi de 15h00 à 17h00</p>
+   
        
       </div>
     </div>
