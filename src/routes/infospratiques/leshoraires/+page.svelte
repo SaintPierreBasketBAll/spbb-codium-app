@@ -1,5 +1,6 @@
 <section class="schedule">
-  <h2 class="section-title">Planning des Entraînements 204/2025<p>Attention ce planning n'est plus valable. Un nouveau planning sera bientot mis en ligne</p></h2>
+  <h2 class="section-title">Planning des entraînements saison 2025/2026</h2>
+  <p class = "text_planning">Ce planning est fourni à titre indicatif et susceptible de modifications de dernière minute.</p>
   <div class="schedule-content">
     <div class="schedule-table">
       <table>
@@ -19,10 +20,10 @@
 <!-- SG1-->
           <tr>
             <td>SG1</td>
-            <td>19h30-20h30 <br> Mandela</td>
-            <td>20h30-22h00 <br> Mandela</td>
+            <td>19h30-20h30 <br> Gymnase N.Mandela</td>
+            <td>20h30-22h00 <br> Gymnase N.Mandela</td>
             <td></td>
-            <td>20h30-22h00 <br> Mandela</td>
+            <td>20h30-22h00 <br> Gymnase N.Mandela</td>
             <td></td>
             <td></td>
             <td><span class="text__bold">Laurent Parata</td>
@@ -31,13 +32,13 @@
 <!-- SG2-->            
           <tr>
             <td>SG2</td>
-            <td>20h15-22h00 <br> Mandela</td>
-            <td>20h00-22h00 Mandela</td>
+            <td>20h30-22h00 <br> Gymnase N.Mandela</td>
+            <td></td>
+            <td>20h00-22h00 Gymnase N.Mandela</td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Daniel D et Toto J</td>
+            <td>Daniel Doro <br> Toto J</td>
           </tr>
 <!-- SG3-->            
           <tr>
@@ -54,10 +55,10 @@
           <tr>
             <td>SF1</td>
             <td></td>
-            <td>19h15-20h30 <br> Mandela</td>
+            <td>19h15-20h30 <br> Gymnase N.Mandela</td>
             <td></td>
-            <td>19h00-20h30 <br> Mandela</td>
-            <td>19h00-20h00 <br> Mandela</td>
+            <td>19h00-20h30 <br> Gymnase N.Mandela</td>
+            <td>19h00-20h00 <br> Gymnase N.Mandela</td>
             <td></td>
             <td>Lise S <br> Jocelyne L</td>
           </tr>
@@ -68,49 +69,49 @@
             <td>19h00-20h30 <br> Dôme</td>
             <td></td>
             <td>19h00-20h30 <br> Dôme</td>
-            <td>19h00-20h30 <br> Dôme</td>
+            <td>19h00-20h00 <br> Gymnase N.Mandela</td>
             <td></td>
             <td>Jocelyne L <br> Jessie G</td>
           </tr>
 <!-- U18 MR - 1 -->
           <tr>
             <td> U18 MR - 1</td>
-            <td>17h30-19h00 <br> Dôme</td>
             <td></td>
-            <td>17h30-19h00 <br> Mandela</td>
+            <td>17h30-20h00 <br> Dôme</td>
+            <td>17h30-19h00 <br> Gymnase N.Mandela</td>
             <td></td>
+            <td>10h30-12h00 <br> Gymnase N.Mandela</td>
             <td></td>
-            <td></td>
-            <td>Jean Hugues B et Logan P</td>
+            <td>Jean Hugues B <br>Logan P</td>
           </tr>
 <!-- U18 MD - 2 -->
           <tr>
-            <td>U15 RM 1 <br> Minime</td>
-            <td>17h30 - 19h00 <br> Terrain ext. Mandela </td>
+            <td>U18 MD-2</td>
+            <td> </td>
+            <td>17h30-20h00 <br> Gymnase L.des Bambous </td>
             <td></td>
-            <td>16h30 - 18h30 <br> Gym. Ligne des Bambous</td>
+            <td>17h30 - 19h00 <br> Dôme</td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>Romain E</td>
+            <td>Romain Enault</td>
           </tr>
 <!-- U18 DF - Cadettes-->            
           <tr>
-            <td>U18 DF <br> Cadette</td>
-            <td>17h30-19h00 <br> Mandela</td>
+            <td>U18 DF</td>
+            <td>17h30-19h00 <br> Gymnase N.Mandela</td>
             <td></td>
-            <td>19h00-20h30 <br> Gaston Richardson</td>
+            <td>19h00-20h30 <br> Gymnase G.Richardson</td>
             <td></td>
             <td></td>
             <td></td>
             <td>Pauline P</td>
           </tr>
-<!-- U15 MR -->            
+<!-- U15 MR 1 -->            
           <tr>
             <td>U15 MR - 1</td>
             <td>17h30-19h00 Dôme</td>
             <td></td>
-            <td>17h30-19h00 <br>Ligne des bambous</td>
+            <td>16h30-18h30 <br>Gymnase L. des bambous</td>
             <td></td>
             <td></td>
             <td></td>
@@ -121,55 +122,55 @@
             <td>U15 MD - 2</td>
             <td>17h30-19h00 <br> Dôme</td>
             <td></td>
-            <td>17h30-19h00 Dôme</td>
+            <td>16h30-18h30 <br> Ligne des bambous</td>
             <td></td>
             <td></td>
             <td></td>
-            <td><span class="text__bold">Faïz D</td>
+            <td><span class="text__bold">Faïz Djanfar <br> Staps</td>
           </tr>
 <!-- U15 DF -->            
           <tr>
             <td>U15 DF</td>
             <td></td>
-            <td>Terrain extérieur</td>
+            <td></td>
             <td>17h30-19h00 <br> Gaston Richardson</td>
             <td></td>
             <td>17h30-19h00 <br>Mandela</td>
             <td></td>
-            <td>Neyma I et Darell C</td>
+            <td>Neyma Ibrahim <br> Darell Coupama</td>
           </tr>
 <!-- U13 MD - 1  -->
           <tr>
             <td>U13 MD - 1 </td>
+            <td>17h30-19h00 <br> Terrain extérieur </td>
             <td></td>
-            <td>17h30-19h00 <br> Dôme</td>
             <td></td>
             <td></td>
-            <td>17h30-19h00 <br>Extérieur</td>
+            <td>17h30-19h00 <br>Terrain extérieur</td>
             <td></td>
-            <td>Guillaume D et Fabien S</td>
+            <td>Guillaume D <br> Fabien S</td>
           </tr>
 <!-- U13 MD - 2 -->            
           <tr>
             <td>U13 MD - 2</td>
+            <td>17h30-19h00 <br>Terrain extérieur</td>
             <td></td>
-            <td>17h30-19h00 <br> Dôme</td>
             <td></td>
             <td></td>
-            <td>17h30-19h00 <br> Dôme</td>
+            <td>17h30-19h00 <br> Terrain extérieur</td>
             <td></td>
             <td>Melvin A</td>
           </tr>
 <!-- U13 DF -->            
           <tr>
             <td>U13 DF</td>
-            <td>Terrain extérieur</td>
             <td></td>
-            <td>17h30-19h00 Dôme</td>
+            <td></td>
+            <td>17h30-19h00 <br> Dôme</td>
             <td>20h30-22h00 <br> Gym.Mandela</td>
             <td></td>
             <td>9h00-10h30 <br> Mandela</td>
-            <td> Darell C </td>
+            <td> Darell Coupama </td>
           </tr>
 <!-- Ecole MB U7-U9 -->            
           <tr>
@@ -179,7 +180,7 @@
             <td>16h00-17h30 <br> Dôme</td>
             <td></td>
             <td></td>
-            <td>9h00-10h00 Dôme</td>
+            <td>9h00-10h30 Dôme</td>
             <td>Phillipe /Anli <br>Romain/Julien</td>
           </tr>
 <!-- Ecole MB - U11 -->            
@@ -191,7 +192,7 @@
             <td></td>
             <td></td>
             <td>10h30-12h00 Dôme</td>
-            <td>Floriane <br> Romain</td>
+            <td>Floriane <br> Romain / staps</td>
           </tr>
                                        
         </tbody>
@@ -205,8 +206,8 @@
         <li>Merci d'arriver 15 minutes avant le début de chaque séance</li>
         <li>Pour toute absence, merci de prévenir le coach au moins 4h à l'avance</li>
       </ul>
-      <a href="/pdf/Planning_entrainements_2025_2026.pdf"
-      download="Planning_entrainements_2025_2026.pdf"
+      <a href="/pdf/planning_previsionnel_2025_2026.pdf"
+      download="planning_previsionnel_2025_2026.pdf"
       class="schedule-download">Télécharger le planning complet (PDF)</a>
     </div>
   </div>
@@ -332,6 +333,12 @@
       background: linear-gradient(90deg, var(--orange-light), var(--orange-dark));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    .text_planning {
+      text-align: center;
+      font-size: 1.4rem;
+      color: var(--grey);
+      margin-bottom: 2rem;
     }
 
     .schedule {
