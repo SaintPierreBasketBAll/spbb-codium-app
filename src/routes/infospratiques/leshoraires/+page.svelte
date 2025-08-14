@@ -207,8 +207,11 @@
         <li>Pour toute absence, merci de prévenir le coach au moins 4h à l'avance</li>
       </ul>
       <a href="/pdf/planning_entrainements_2025_2026.pdf"
-      download="planning_entrainements_2025_2026.pdf"
-      class="schedule-download">Télécharger le planning complet (PDF)</a>
+   download="planning_entrainements_2025_2026.pdf"
+   class="schedule-download">
+   Télécharger le planning complet (PDF)
+</a>
+
     </div>
   </div>
 </section>
