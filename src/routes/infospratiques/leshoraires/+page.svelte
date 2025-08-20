@@ -19,98 +19,98 @@
         <tbody>
 <!-- SG1-->
           <tr>
-            <td>SG1</td>
-            <td>19h30-20h30 <br> Gymnase N.Mandela</td>
-            <td>20h30-22h00 <br> Gymnase N.Mandela</td>
+            <td>SG1</td> 
+            <td>19h30-20h30 <br> Gymnase N.Mandela</td><!-- Lundi -->
+            <td>20h30-22h00 <br> Gymnase N.Mandela</td><!-- Mardi -->
             <td></td>
             <td>20h30-22h00 <br> Gymnase N.Mandela</td>
             <td></td>
-            <td></td>
+            <td></td><!-- Samedi -->
             <td><span class="text__bold">Laurent Parata</td>
           </tr>
 
 <!-- SG2-->            
           <tr>
             <td>SG2</td>
-            <td>20h30-22h00 <br> Gymnase N.Mandela</td>
-            <td></td>
-            <td>20h00-22h00 Gymnase N.Mandela</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>20h30-22h00 <br> Gymnase N.Mandela</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
+            <td>20h00-22h00 Gymnase N.Mandela</td><!-- Mercredi -->
+            <td></td><!-- Jeudi -->
+            <td></td><!-- Vendredi -->
+            <td></td><!-- Samedi -->
             <td>Daniel Doro <br> Toto J</td>
           </tr>
 <!-- SG3-->            
           <tr>
             <td>SG3</td>
-            <td> 20h30-22h00 <br> Gaston Richardson</td>
-            <td></td>
-            <td>20h30-22h00 <br> Gaston Richardson </td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> 20h30-22h00 <br> Gaston Richardson</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
+            <td>20h30-22h00 <br> Gaston Richardson </td><!-- Mercredi -->
+            <td></td><!-- Jeudi -->
+            <td></td><!-- Vendredi -->
+            <td></td><!-- Samedi -->
             <td>Nicolas M </td>
           </tr>
 <!-- SF1-->
           <tr>
             <td>SF1</td>
-            <td></td>
-            <td>19h15-20h30 <br> Gymnase N.Mandela</td>
-            <td></td>
-            <td>19h00-20h30 <br> Gymnase N.Mandela</td>
-            <td>19h00-20h00 <br> Gymnase N.Mandela</td>
-            <td></td>
+            <td></td><!-- Lundi -->
+            <td>19h15-20h30 <br> Gymnase N.Mandela</td><!-- Mardi -->
+            <td></td> <!-- Mercredi -->
+            <td>19h00-20h30 <br> Gymnase N.Mandela</td><!-- Jeudi -->
+            <td>19h00-20h00 <br> Gymnase N.Mandela</td><!-- Vendredi -->
+            <td></td><!-- Samedi -->
             <td>Lise S <br> Jocelyne L</td>
           </tr>
 <!-- SF2-->
           <tr>
             <td>SF2</td>
-            <td></td>
-            <td>19h00-20h30 <br> Dôme</td>
-            <td></td>
-            <td>19h00-20h30 <br> Dôme</td>
-            <td>19h00-20h00 <br> Gymnase N.Mandela</td>
-            <td></td>
+            <td></td><!-- Lundi -->
+            <td>19h00-20h30 <br> Dôme</td><!-- Mardi -->
+            <td></td><!-- Mercredi -->
+            <td>19h00-20h30 <br> Dôme</td><!-- Jeudi -->
+            <td>19h00-20h00 <br> Gymnase N.Mandela</td><!-- Vendredi -->
+            <td></td><!-- Samedi -->
             <td>Jocelyne L <br> Jessie G</td>
           </tr>
 <!-- U18 MR - 1 -->
           <tr>
             <td> U18 MR - 1</td>
-            <td></td>
-            <td>17h30-20h00 <br> Dôme</td>
-            <td>17h30-19h00 <br> Gymnase N.Mandela</td>
-            <td></td>
-            <td>10h30-12h00 <br> Gymnase N.Mandela</td>
-            <td></td>
+            <td>17h30-20h00 <br> Dôme</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
+            <td></td><!-- Mercredi -->
+            <td>17h30-19h00 <br> Gymnase N.Mandela</td><!-- Jeudi -->
+            <td></td><!-- Vendredi -->
+            <td>10h30-12h00 <br> Gymnase N.Mandela</td><!-- Samedi -->
             <td>Jean Hugues B <br>Logan P</td>
           </tr>
 <!-- U18 MD - 2 -->
           <tr>
             <td>U18 MD-2</td>
-            <td> </td>
-            <td>17h30-20h00 <br> Gymnase L.des Bambous </td>
-            <td></td>
-            <td>17h30 - 19h00 <br> Dôme</td>
-            <td></td>
-            <td></td>
+            <td> </td><!-- Lundi -->
+            <td>17h30-20h00 <br> Gymnase L.des Bambous </td><!-- Mardi -->
+            <td></td><!-- Mercredi -->
+            <td>17h30 - 19h00 <br> Dôme</td><!-- Jeudi -->
+            <td></td><!-- Vendredi -->
+            <td></td><!-- Samedi -->
             <td>Romain Enault</td>
           </tr>
 <!-- U18 DF - Cadettes-->            
           <tr>
             <td>U18 DF</td>
-            <td>17h30-19h00 <br> Gymnase N.Mandela</td>
-            <td></td>
+            <td>17h30-19h00 <br> Gymnase N.Mandela</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
             <td>19h00-20h30 <br> Gymnase G.Richardson</td>
             <td></td>
             <td></td>
-            <td></td>
+            <td></td><!-- Samedi -->
             <td>Pauline P</td>
           </tr>
 <!-- U15 MR 1 -->            
           <tr>
             <td>U15 MR - 1</td>
-            <td>17h30-19h00 Dôme</td>
-            <td></td>
+            <td>17h30-19h00 Terrain extérieur</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
             <td>16h30-18h30 <br>Gymnase L. des bambous</td>
             <td></td>
             <td></td>
@@ -120,8 +120,8 @@
 <!-- U15 MD - 2 -->            
           <tr>
             <td>U15 MD - 2</td>
-            <td>17h30-19h00 <br> Dôme</td>
-            <td></td>
+            <td>17h30-19h00 <br> Terrain extérieur</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
             <td>16h30-18h30 <br> Ligne des bambous</td>
             <td></td>
             <td></td>
@@ -131,69 +131,70 @@
 <!-- U15 DF -->            
           <tr>
             <td>U15 DF</td>
-            <td></td>
-            <td></td>
-            <td>17h30-19h00 <br> Gaston Richardson</td>
-            <td></td>
-            <td>17h30-19h00 <br>Mandela</td>
-            <td></td>
+            <td>17h30-19h00<br>Dôme</td><!-- Lundi -->
+            <td></td><!-- Mardi -->
+            <td>17h30-19h00 <br> Gaston Richardson</td><!-- Mercredi -->
+            <td></td><!-- Jeudi -->
+            <td>17h30-19h00 <br>Mandela</td><!-- Vendredi -->
+            <td></td><!-- Samedi -->
             <td>Neyma Ibrahim <br> Darell Coupama</td>
           </tr>
 <!-- U13 MD - 1  -->
           <tr>
             <td>U13 MD - 1 </td>
-            <td>17h30-19h00 <br> Terrain extérieur </td>
-            <td></td>
+            <td> </td><!-- Lundi -->
+            <td></td><!-- Mardi -->
             <td></td>
             <td></td>
             <td>17h30-19h00 <br>Terrain extérieur</td>
-            <td></td>
+            <td></td><!-- Samedi -->
             <td>Guillaume D <br> Fabien S</td>
           </tr>
 <!-- U13 MD - 2 -->            
           <tr>
             <td>U13 MD - 2</td>
-            <td>17h30-19h00 <br>Terrain extérieur</td>
-            <td></td>
+            <td></td><!-- Lundi -->
+            <td>17h30-19h00 <br> Dôme ou Terrain extérieur</td><!-- Mardi -->
             <td></td>
             <td></td>
             <td>17h30-19h00 <br> Terrain extérieur</td>
-            <td></td>
+            <td></td><!-- Samedi -->
             <td>Melvin A</td>
           </tr>
 <!-- U13 DF -->            
           <tr>
             <td>U13 DF</td>
-            <td></td>
-            <td></td>
+            <td></td><!-- Lundi -->
+            <td></td><!-- Mardi -->
             <td>17h30-19h00 <br> Dôme</td>
-            <td>20h30-22h00 <br> Gym.Mandela</td>
             <td></td>
-            <td>9h00-10h30 <br> Mandela</td>
+            <td></td>
+            <td>9h00-10h30 <br> Mandela</td><!-- Samedi -->
             <td> Darell Coupama </td>
+          </tr>
+          <!-- Ecole MB - U11 -->            
+          <tr>
+            <td> Ecole MB - U11</td>
+            <td></td><!-- Lundi -->
+            <td></td><!-- Mardi -->
+            <td>16h00-17h30 Dôme</td>
+            <td></td>
+            <td></td>
+            <td>10h30-12h00 Dôme</td><!-- Samedi -->
+            <td>Floriane <br> Romain / staps</td>
           </tr>
 <!-- Ecole MB U7-U9 -->            
           <tr>
             <td>Ecole MB U7-U9</td>
+            <td></td><!-- Lundi -->
+            <td></td><!-- Mardi -->
+            <td>16h00-17h30 <br> Dôme</td><!-- Mercredi -->
             <td></td>
             <td></td>
-            <td>16h00-17h30 <br> Dôme</td>
-            <td></td>
-            <td></td>
-            <td>9h00-10h30 Dôme</td>
+            <td>9h30-10h30 Dôme</td><!-- Samedi -->
             <td>Phillipe /Anli <br>Romain/Julien</td>
           </tr>
-<!-- Ecole MB - U11 -->            
-          <tr>
-            <td> Ecole MB - U11</td>
-            <td></td>
-            <td></td>
-            <td>16h00-17h30 Dôme</td>
-            <td></td>
-            <td></td>
-            <td>10h30-12h00 Dôme</td>
-            <td>Floriane <br> Romain / staps</td>
-          </tr>
+
                                        
         </tbody>
       </table>
@@ -326,7 +327,18 @@
     }
     
     @media (max-width: 768px) {
-     
+      .schedule-table table {
+    font-size: 0.8rem;
+    min-width: 600px; /* garde une largeur minimale pour éviter que ça s'écrase */
+  }
+      .schedule-table th, 
+      .schedule-table td {
+        padding: 0.5rem;
+      } 
+      .schedule-notes{
+        font-size: 0.9rem;    
+      }
+
     }
     
     .section-title {
