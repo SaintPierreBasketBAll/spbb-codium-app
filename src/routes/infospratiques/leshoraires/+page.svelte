@@ -191,7 +191,7 @@
             <td>16h00-17h30 <br> Dôme</td><!-- Mercredi -->
             <td></td>
             <td></td>
-            <td>9h30-10h30 Dôme</td><!-- Samedi -->
+            <td>9h00-10h30 Dôme</td><!-- Samedi -->
             <td>Phillipe /Anli <br>Romain/Julien</td>
           </tr>
 
