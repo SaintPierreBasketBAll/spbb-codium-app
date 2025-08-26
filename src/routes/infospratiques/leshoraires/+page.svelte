@@ -217,6 +217,27 @@
   </div>
 </section>
 
+<section class="trial">
+  <h2 class="section-title">Deux séances d’essai offertes</h2>
+  <div class="trial__content">
+    <p>
+      Avant toute nouvelle inscription, chaque futur licencié a droit à <strong>deux séances d’essai gratuites</strong>.
+    </p>
+    <ul class="trial__steps">
+      <li>Consultez le planning des entraînements sur notre site : <a href="https://www.spbb.re" target="_blank" rel="noopener">www.spbb.re</a></li>
+      <li>Rendez-vous le jour de l’entraînement correspondant à votre catégorie</li>
+      <li>Demandez simplement un essai au coach présent</li>
+    </ul>
+  </div>
+</section>
+
+<section class="categories">
+  <h2 class="section-title">Catégories &amp; années de naissance</h2>
+  <div class="categories__embed">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSPBB974%2Fposts%2Fpfbid02wzSnNkhv6jv1McgfvxJuJv6jK8vQH3nwWnfNGuRGfchvrgFg1vz6jRj1V5cayZqbl&show_text=true&width=500" width="500" height="693" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+</section>
+
 <!-- <section class="clubhouse">
     <h2 class="section-title">Le club House</h2>
     <div class="clubhouse-container">
@@ -490,6 +511,60 @@
       -webkit-text-fill-color: transparent;
     }
     
-    
-    
+  /* =============================
+     Deux séances d’essai (trial)
+     ============================= */
+  .trial {
+    padding: 2rem;
+    background-color: #000000;
+  }
+  .trial__content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+  .trial__content p {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  .trial__steps {
+    list-style: none;
+    padding-left: 0;
+  }
+  .trial__steps li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin: 0.4rem 0;
+    color: var(--grey);
+  }
+  .trial__steps li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--orange-light);
+  }
+  .trial a { color: var(--orange-light); }
+
+  /* =============================
+     Catégories (Facebook embed)
+     ============================= */
+  .categories {
+    padding: 2rem;
+    background-color: #000000;
+  }
+  .categories__embed {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .categories__embed iframe {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  }
 </style>

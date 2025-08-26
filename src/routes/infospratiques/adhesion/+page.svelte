@@ -1,7 +1,25 @@
 <script>
-  import NewButton from "$lib/components/NewButton.svelte";
-  import Button from "$lib/components/atomic/Button.svelte";
 </script>
+<section class="trial">
+  <h2 class="section-title">Deux séances d’essai offertes</h2>
+  <div class="trial__content">
+    <p>
+      Avant toute nouvelle inscription, chaque futur licencié a droit à <strong>deux séances d’essai gratuites</strong>.
+    </p>
+    <ul class="trial__steps">
+      <li>Consultez le planning des entraînements sur notre site : <a href="https://www.spbb.re" target="_blank" rel="noopener">www.spbb.re</a></li>
+      <li>Rendez-vous le jour de l’entraînement correspondant à votre catégorie</li>
+      <li>Demandez simplement un essai au coach présent</li>
+    </ul>
+  </div>
+</section>
+
+<section class="categories">
+  <h2 class="section-title">Catégories &amp; années de naissance</h2>
+  <div class="categories__embed">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSPBB974%2Fposts%2Fpfbid02wzSnNkhv6jv1McgfvxJuJv6jK8vQH3nwWnfNGuRGfchvrgFg1vz6jRj1V5cayZqbl&show_text=true&width=500" width="500" height="693" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Publication Facebook SPBB"></iframe>
+  </div>
+</section>
 
 <section class="membership">
   <h2 class="section-title">Adhésion et Licence</h2>
@@ -38,8 +56,7 @@
     </p>
   </div>
   
-<!--   <Button><a href="/inscription">S'inscrire</a></Button> -->
-  <a href="/inscription"> <Button>S'inscrire</Button> </a>
+  <a class="membership__cta" href="/inscription">S'inscrire</a>
 </section>
 
 <style>
@@ -53,7 +70,7 @@
     -webkit-text-fill-color: transparent;
   }
   .membership {
-    padding: 6rem 2rem;
+    padding: 1rem 2rem;
     background-color: #1a1a1a;
     position: relative;
     text-align: center;
@@ -88,5 +105,86 @@
 
   .email-link:hover {
     text-decoration: underline;
+  }
+  .membership__cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 10px;
+    border: 2px solid var(--orange-light);
+    color: var(--orange-light);
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+  .membership__cta:hover {
+    transform: translateY(-1px);
+    background-color: var(--orange-light);
+    color: #111;
+  }
+
+  :root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --orange-light: #FFA500;
+    --orange-dark: #FF4500;
+    --grey: #808080;
+  }
+
+  /* =============================
+     Deux séances d’essai (trial)
+     ============================= */
+  .trial {
+    padding: 2rem;
+    background-color: #1a1a1a;
+  }
+  .trial__content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+  .trial__content p {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  .trial__steps {
+    list-style: none;
+    padding-left: 0;
+  }
+  .trial__steps li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin: 0.4rem 0;
+    color: var(--grey);
+  }
+  .trial__steps li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--orange-light);
+  }
+  .trial a { color: var(--orange-light); }
+
+  /* =============================
+     Catégories (Facebook embed)
+     ============================= */
+  .categories {
+    padding: 2rem;
+    background-color: #1a1a1a;
+  }
+  .categories__embed {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .categories__embed iframe {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
   }
 </style>

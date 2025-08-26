@@ -3,6 +3,7 @@
  /*  import Header from '$lib/components/Header.svelte'; */
 	import Footer from '../lib/components/Footer.svelte';
   import Header from '../lib/components/Header.svelte';
+  import CookieBanner from '../lib/components/CookieBanner.svelte';
 	let { children } = $props();
 </script>
 
@@ -13,6 +14,8 @@
 	
 	
 <Footer/>
+<CookieBanner />
+
 
 <style>
     :root {
