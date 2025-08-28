@@ -173,7 +173,13 @@
      ============================= */
   .categories {
     padding: 2rem;
-    background-color: #1a1a1a;
+     /* background-color: #e0e0e0;  */
+    background: linear-gradient(
+      180deg,
+      rgb(0, 0, 0) 0%,
+      rgb(171, 168, 168) 50%,
+      rgba(255, 255, 255) 100%
+      );
   }
   .categories__embed {
     max-width: 900px;

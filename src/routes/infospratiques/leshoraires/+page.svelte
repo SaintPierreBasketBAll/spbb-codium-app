@@ -553,7 +553,12 @@
      ============================= */
   .categories {
     padding: 2rem;
-    background-color: #000000;
+    background: linear-gradient(
+      180deg,
+      rgb(0,0,0) 0%,
+      rgb(226, 223, 223) 50%,
+      rgb(255, 255, 255) 100%
+    );
   }
   .categories__embed {
     max-width: 900px;
