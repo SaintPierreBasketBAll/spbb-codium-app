@@ -146,6 +146,8 @@
   <!-- Titre de la section -->
   <h1 class="section-title_h1">LES INSCRIPTIONS 2025/2026</h1>
   <!-- Sous-titre de la section -->
+   
+
 
   <h2 class="section-title_h1">🏀 Procédure d’inscription au SPBB</h2>
   <p>
@@ -310,6 +312,7 @@
     background: linear-gradient(90deg, var(--orange-dark), var(--orange-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
   }
 
@@ -320,6 +323,7 @@
     background: linear-gradient(90deg, var(--orange-dark), gold);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
   }
   span {
@@ -412,25 +416,11 @@
     padding-top: 2rem;
   }
 
-  .licence-docs {
-    list-style-type: none;
-    padding-left: 0;
-  }
 
-  .licence-docs li {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-  }
 
-  .licence-docs li::before {
-    content: "•";
-    color: var(--orange-light);
-    position: absolute;
-    left: 0;
-    font-size: 1.5rem;
-    line-height: 1;
-  }
+
+
+
 
   /* Responsive */
 
