@@ -1,13 +1,20 @@
 <script>
 </script>
-<div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform; ">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGyejT18HU/AM_ictzLRhu8-X_URWeIMg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
+
+<div style = "background-color: rgb(0, 0, 0) ">
+  <div style="position: relative; width: 80%; height: 0; padding-top: 100.0000%; margin :auto;
+  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+  border-radius: 8px; will-change: transform;">
+   <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+     src="https://www.canva.com/design/DAGyejT18HU/AM_ictzLRhu8-X_URWeIMg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+   </iframe>
+ </div>
+ <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGyejT18HU&#x2F;AM_ictzLRhu8-X_URWeIMg&#x2F;view?utm_content=DAGyejT18HU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Entrainement annulé pour toutes les sections jeunes (U7 à U18) demain</a> par spbb
+ 
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGyejT18HU&#x2F;AM_ictzLRhu8-X_URWeIMg&#x2F;view?utm_content=DAGyejT18HU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Entrainement annulé pour toutes les sections jeunes (U7 à U18) demain</a> par spbb
+
+
+
 <main class="hero">
   <div class="flame-animation"></div>
   <div class="hero-content">
@@ -325,6 +332,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
+    background-color: #000;
   }
 
   .hero {
