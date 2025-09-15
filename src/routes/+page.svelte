@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div style = "background-color: rgb(0, 0, 0) ">
+<!-- <div >
   <div style="position: relative; width: 80%; height: 0; padding-top: 100.0000%; margin :auto;
   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
   border-radius: 8px; will-change: transform;">
@@ -11,7 +11,7 @@
  </div>
  <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGyejT18HU&#x2F;AM_ictzLRhu8-X_URWeIMg&#x2F;view?utm_content=DAGyejT18HU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Entrainement annulé pour toutes les sections jeunes (U7 à U18) demain</a> par spbb
  
-</div>
+</div> -->
 
 
 
@@ -332,7 +332,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
-    background-color: #000;
+   /*  background-color: #000; */
   }
 
   .hero {
@@ -645,7 +645,7 @@
     margin: 1rem 0;
   }
 
-  .donate-button {
+/*   .donate-button {
     padding: 0.8rem 1.5rem;
     background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
     border: none;
@@ -657,7 +657,7 @@
 
   .donate-button:hover {
     transform: scale(1.05);
-  }
+  } */
 
   .contact-grid {
     display: grid;
@@ -667,7 +667,7 @@
     margin: 0 auto;
   }
 
-  .contact-form {
+/*   .contact-form {
     background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
     padding: 2rem;
     border-radius: 15px;
@@ -675,14 +675,14 @@
 
   .form-group {
     margin-bottom: 1.5rem;
-  }
+  } */
 
-  .form-group label {
+/*   .form-group label {
     display: block;
     margin-bottom: 0.5rem;
     color: var(--grey);
-  }
-
+  } */
+/*
   .form-group input,
   .form-group textarea {
     width: 100%;
@@ -691,7 +691,8 @@
     border: none;
     border-radius: 5px;
     color: var(--white);
-  }
+  } 
+*/
   .contact-info {
     color: var(--grey);
     line-height: 1.6;

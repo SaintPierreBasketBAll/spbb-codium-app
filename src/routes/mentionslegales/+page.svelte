@@ -11,7 +11,7 @@
         <strong>SPBB – Saint-Pierre Basket Ball</strong><br>
         Association loi 1901, RNA&nbsp;: <strong>W9R2000412</strong> (créée le 14 août 2001)<br>
         Siège social : Gymnase Nelson Mandela, 3 avenue de Soweto, 97410 Saint-Pierre, La Réunion<br>
-        Directeur de la publication : Laurent Parata (Président)<br>
+        Directeur de la publication : Frédéric Morel (Secrétaire Général)<br>
         Contact principal&nbsp;: <a href="mailto:contact.spbb@gmail.com">contact.spbb@gmail.com</a>
       </div>
     </section>
