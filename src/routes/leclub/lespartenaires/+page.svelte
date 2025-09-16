@@ -21,7 +21,7 @@
     { src: '/images/partners/logo_lrbb.jpeg', alt: 'Ligue Régionale de BasketBall de La Réunion (LRBB)' },
     { src: '/images/partners/logo_ostl.png', alt: 'OSTL Saint‑Pierre' },
     { src: '/images/partners/logo_saint_pierre1.png', alt: 'Ville de Saint‑Pierre (blason)' },
-    { src: '/images/partners/nestlé.png', alt: 'Nestlé' },
+    { src: '/images/partners/nestlé.png', alt: 'Nestle' },
     { src: '/images/partners/oasis.png', alt: 'Oasis' },
     { src: '/images/partners/snack-le-boulevard.jpg', alt: 'Snack Le Boulevard' },
     { src: '/images/partners/u-express.png', alt: 'U Express' },
