@@ -322,8 +322,8 @@
 
   .header__icon {
     display: block;
-    width: 36px;
-    height: 36px;
+    width: 64px;
+    height: 64px;
     color: var(--white);
   }
 
@@ -344,8 +344,8 @@
       height: 42px;
     }
     .header__icon {
-      width: 32px;
-      height: 32px;
+      width: 67px;
+      height: 67px;
     }
   }
 </style>

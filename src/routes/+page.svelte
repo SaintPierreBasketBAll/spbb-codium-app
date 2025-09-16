@@ -332,17 +332,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
-   /*  background-color: #000; */
+   /*   background-color: #000; */
   }
 
   .hero {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-  }
+    /* padding-top: 10rem ;
+    margin-top: 5.5rem; */
+    margin-bottom: -1rem;
+    z-index: auto;
+   }
 
   .hero::before {
     content: "";
@@ -463,7 +467,7 @@
   }
 
   .activities {
-    padding: 6rem 2rem;
+    padding: 2rem 2rem;
     background-color: #1a1a1a;
     position: relative;
   }

@@ -4,20 +4,28 @@
   <meta name="description" content="Découvrez les partenaires officiels du SPBB." />
 </svelte:head>
 
-<script lang="ts">
-  type Partner = {
-    src: string;
-    alt: string;
-    href?: string;
-  };
-
+<script>
   // Images présentes dans /static/images/partners
-  const partners: Partner[] = [
+  const partners = [
+    { src: '/images/partners/NEVA.png', alt: 'Neva' },
+    { src: '/images/partners/atlas.png', alt: 'Atlas' },
+    { src: '/images/partners/capri-sun.png', alt: 'Capri-Sun' },
+    { src: '/images/partners/cindy-brows.png', alt: 'Cindy Brows' },
+    { src: '/images/partners/cot.png', alt: 'COT' },
+    { src: '/images/partners/dk&co.png', alt: 'DK & Co' },
+    { src: '/images/partners/garage-oltra.png', alt: 'Garage Oltra' },
     { src: '/images/partners/kitm_logo_400.png', alt: 'Kit-M' },
+    { src: '/images/partners/kokot.png', alt: 'Kokot' },
+    { src: '/images/partners/la-caz-a-peche.png', alt: 'La Caz à Pêche' },
     { src: '/images/partners/logo_ffbb.png', alt: 'Fédération Française de BasketBall (FFBB)' },
-    { src: '/images/partners/logo_saint_pierre.png', alt: 'Ville de Saint‑Pierre' },
     { src: '/images/partners/logo_lrbb.jpeg', alt: 'Ligue Régionale de BasketBall de La Réunion (LRBB)' },
-    { src: '/images/partners/logo_ostl.png', alt: 'OSTL Saint‑Pierre' }
+    { src: '/images/partners/logo_ostl.png', alt: 'OSTL Saint‑Pierre' },
+    { src: '/images/partners/logo_saint_pierre1.png', alt: 'Ville de Saint‑Pierre (blason)' },
+    { src: '/images/partners/nestlé.png', alt: 'Nestlé' },
+    { src: '/images/partners/oasis.png', alt: 'Oasis' },
+    { src: '/images/partners/snack-le-boulevard.jpg', alt: 'Snack Le Boulevard' },
+    { src: '/images/partners/u-express.png', alt: 'U Express' },
+    { src: '/images/partners/univers-pharmacie.png', alt: 'Univers Pharmacie' }
   ];
 </script>
 
@@ -100,9 +108,8 @@
     border-radius: 8px;
     box-sizing: border-box;
 
-    /* petit effet "gris" par défaut comme dans ta capture */
-    filter: grayscale(100%) contrast(95%);
-    transition: filter 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+    /* pas d'effet de niveaux de gris */
+    transition: transform 0.25s ease, background-color 0.25s ease;
   }
 
   .partners__logo--link {
@@ -112,7 +119,6 @@
 
   .partners__logo:hover,
   .partners__logo:focus-within {
-    filter: none;
     transform: translateY(-2px);
     background-color: rgba(255, 255, 255, 0.04);
   }
