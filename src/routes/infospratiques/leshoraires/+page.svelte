@@ -1,6 +1,18 @@
+<script>
+  import Horaires from "../../../lib/components/infos-pratiques/Horaires.svelte";
+</script>
+
+
 <section class="schedule">
   <h2 class="section-title">Planning des entraînements saison 2025/2026</h2>
   <p class = "text_planning">Ce planning est fourni à titre indicatif et susceptible de modifications de dernière minute.</p>
+
+<!-- Planning en mode carte par sections -->
+<Horaires />
+<!-- Fin Planning en mode carte par sections  -s->
+
+
+
   <div style="position: relative; width: 100%; height: 0; padding-top: 70.7071%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
