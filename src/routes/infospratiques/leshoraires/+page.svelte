@@ -1,5 +1,5 @@
 <script>
-  import Horaires from "../../../lib/components/infos-pratiques/Horaires.svelte";
+import PlanningCards from '$lib/components/infos-pratiques/PlanningCards.svelte';
 </script>
 
 
@@ -8,7 +8,8 @@
   <p class = "text_planning">Ce planning est fourni à titre indicatif et susceptible de modifications de dernière minute.</p>
 
 <!-- Planning en mode carte par sections -->
-<Horaires />
+
+<PlanningCards />
 <!-- Fin Planning en mode carte par sections  -s->
 
 
