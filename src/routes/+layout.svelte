@@ -11,8 +11,8 @@
   <meta name="description" content="Bienvenue à l'association Saint Pierre Basket Ball (SPBB). Découvrez nos activités, événements et informations pratiques pour profiter pleinement du basket-ball à Saint Pierre." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/favicon.ico" />
-  <meta name="color-scheme" content="dark">
-<meta name="supported-color-schemes" content="dark">
+  <meta name="color-scheme" content="dark light">
+<meta name="supported-color-schemes" content="dark light">
 </svelte:head>
 <!-- <Header/> -->
 <Header/> 
@@ -26,7 +26,7 @@
 
 <style>
   :global(html) {
-    color-scheme: dark;
+    color-scheme: dark light;
   }
 
     :root {

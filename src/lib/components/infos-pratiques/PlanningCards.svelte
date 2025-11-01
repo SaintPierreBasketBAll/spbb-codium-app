@@ -227,7 +227,7 @@
     color: var(--offwhite);
   }
 
-   @media (prefers-color-scheme: dark) {
+   @media /* (prefers-color-scheme: dark) */ {
     .planning {
       --bg: #0a0a0a;
       --panel: #121212;
