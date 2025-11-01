@@ -205,15 +205,19 @@
 
 <style>
   .planning {
-    --bg: #0a0a0a;
-    --panel: #121212;
+    --bg: #efefef;
+    --panel: #fff;
     --red: #d7263d;
     --offwhite: #f5f5f5;
     --muted: #bdbdbd;
-    --chip: #1b1b1b;
-    --stroke: #2a2a2a;
-    --shadow: 0 6px 16px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    --chip: #f4f4f4;
+    --stroke: #e8e8e8;
+    --offwhite: #111;
+    --muted: #444;
+    --red: #d7263d;
+    --shadow: 0 6px 16px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.25);
     --radius: 18px;
+    color-scheme: light;
     min-height: 100%;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial,
       'Noto Sans', sans-serif;
@@ -223,14 +227,15 @@
     color: var(--offwhite);
   }
 
-  @media (prefers-color-scheme: light) {
+   @media (prefers-color-scheme: dark) {
     .planning {
-      --bg: #efefef;
-      --panel: #fff;
-      --chip: #f4f4f4;
-      --stroke: #e8e8e8;
-      --offwhite: #111;
-      --muted: #444;
+      --bg: #0a0a0a;
+      --panel: #121212;
+      --chip: #1b1b1b;
+      --stroke: #2a2a2a;
+      --offwhite: #f5f5f5;
+      --muted: #bdbdbd;
+      color-scheme: dark;
     }
   }
 
