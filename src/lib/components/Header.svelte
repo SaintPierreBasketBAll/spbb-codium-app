@@ -24,7 +24,7 @@
 <nav class="navbar">
   <a href="/"><img
     src="/images/logo.png"
-    alt="SPBB Basketball Logo with flame design"
+    alt="Logo du Saint-Pierre Basket Ball avec le dessin d'un ballon de basket avec des flammes et le texte SPBB Saint Pierre Basket Ball"
     class="logo logo-radius"
   /></a>
   
