@@ -226,7 +226,8 @@
   }
 
   .page-header {
-    position: sticky;
+    /* position: sticky; */
+    position: relative;
     top: 0;
     z-index: 10;
     backdrop-filter: blur(8px);
