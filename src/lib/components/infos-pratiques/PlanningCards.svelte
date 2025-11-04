@@ -205,38 +205,24 @@
 
 <style>
   .planning {
-    --bg: #efefef;
-    --panel: #fff;
-    --red: #d7263d;
+    --bg: #080808;
+    --panel: #151515;
+    --chip: #1f1f1f;
+    --stroke: #282828;
     --offwhite: #f5f5f5;
-    --muted: #bdbdbd;
-    --chip: #f4f4f4;
-    --stroke: #e8e8e8;
-    --offwhite: #111;
-    --muted: #444;
-    --red: #d7263d;
-    --shadow: 0 6px 16px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.25);
+    --muted: #b0b0b0;
+    --accent-start: var(--orange-light, #ffa500);
+    --accent-end: var(--orange-dark, #ff4500);
+    --shadow: 0 6px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.06);
     --radius: 18px;
-    color-scheme: light;
     min-height: 100%;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, 'Helvetica Neue', Arial,
       'Noto Sans', sans-serif;
-    background: radial-gradient(1200px 800px at 20% -10%, rgba(215, 38, 61, 0.12), transparent 60%),
-      radial-gradient(900px 600px at 120% 10%, rgba(255, 255, 255, 0.05), transparent 60%),
+    background:
+      radial-gradient(1200px 800px at 20% -10%, rgba(255, 165, 0, 0.12), transparent 60%),
+      radial-gradient(900px 600px at 120% 10%, rgba(255, 69, 0, 0.08), transparent 60%),
       var(--bg);
     color: var(--offwhite);
-  }
-
-   @media /* (prefers-color-scheme: dark) */ {
-    .planning {
-      --bg: #0a0a0a;
-      --panel: #121212;
-      --chip: #1b1b1b;
-      --stroke: #2a2a2a;
-      --offwhite: #f5f5f5;
-      --muted: #bdbdbd;
-      color-scheme: dark;
-    }
   }
 
   .page-header {
@@ -261,8 +247,8 @@
   }
 
   .badge {
-    background: var(--red);
-    color: white;
+    background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+    color: #0f0f0f;
     padding: 6px 10px;
     border-radius: 999px;
     font-weight: 700;
@@ -310,19 +296,33 @@
   }
 
   .card {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 50%), var(--panel);
+    background: linear-gradient(45deg, #121212, #1f1f1f), var(--panel);
     border: 1px solid var(--stroke);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    pointer-events: none;
   }
 
   .card header {
     position: relative;
-    background: linear-gradient(180deg, rgba(230, 46, 46, 0.18), rgba(130, 30, 2, 0.06));
-    border: 0;
+    background: linear-gradient(180deg, rgba(255, 165, 0, 0.08), rgba(255, 69, 0, 0.02));
+    border-bottom: 1px solid var(--stroke);
     backdrop-filter: none;
   }
 
@@ -337,7 +337,7 @@
   .card h2 {
     margin: 0;
     font-size: 18px;
-    color: var(--offwhite);
+    color: var(--accent-start);
     letter-spacing: 0.4px;
   }
 
@@ -383,10 +383,12 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+    color: var(--muted);
   }
 
   .time {
     font-weight: 700;
+    color: var(--offwhite);
   }
 
   .venue {
