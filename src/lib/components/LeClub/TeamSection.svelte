@@ -6,11 +6,11 @@
         role: "Président",
         description: "Avec passion et leadership, il veille à la bonne marche de l'association et à la réalisation de ses objectifs."
       },
-      {
+     /*  {
         name: "Imraane Hafeji",
         role: "Vice-Président",
         description: "Il soutient activement le président et contribue au développement des projets de l'association."
-      },
+      }, */
       {
         name: "Frédéric Morel",
         role: "Secrétaire Général",
@@ -21,16 +21,16 @@
         role: "Secrétaire Général adjoint",
         description: "Il assiste le secrétaire dans ses missions administratives et contribue à la gestion quotidienne."
       }, */
-      {
+     /*  {
         name: "Estelle Omarjee-Robineau",
         role: "Trésorière",
         description: "Elle assure une gestion rigoureuse et transparente des finances de l'association."
-      }/* ,
+      }/* , */
       {
         name: "Hamza Panchbaya",
         role: "Trésorier adjoint",
         description: "Il soutient la trésorière dans le suivi et l'exécution des budgets."
-      } */
+      } 
     ]);
   </script>
   
