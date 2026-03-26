@@ -1,4 +1,7 @@
 <script>
+  import SocialFeedSection from "$lib/components/social-feed/SocialFeedSection.svelte";
+
+  let { data } = $props();
 </script>
 
 <!-- <div >
@@ -15,15 +18,23 @@
 
 
 
-<main class="hero">
-  <div class="flame-animation"></div>
-  <div class="hero-content">
-    <h1>Saint-Pierre Basket Ball</h1>
-    <p>Passion, Performance, Excellence</p>
-    <a href="/inscription"><button class="cta-button">Rejoignez-nous</button></a>
-    
+<main class="hero home-hero" aria-labelledby="home-hero-title">
+  <div class="flame-animation home-hero__flame"></div>
+  <div class="hero-content home-hero__content">
+    <h1 class="home-hero__title" id="home-hero-title">Saint-Pierre Basket Ball</h1>
+    <p class="home-hero__subtitle">Passion, Performance, Excellence</p>
+    <div class="home-hero__actions">
+      <a class="cta-button home-hero__button home-hero__link" href="/inscription">
+        Rejoignez-nous
+      </a>
+      <a class="cta-button home-hero__button home-hero__button--secondary home-hero__link" href="#social-feed">
+        Voir les dernières actualités
+      </a>
+    </div>
   </div>
 </main>
+
+<SocialFeedSection feed={data.socialFeed} />
 
 <!-- <section class="clubhouse">
   <h2 class="section-title">Club House</h2>
@@ -336,15 +347,15 @@
   }
 
   .hero {
-    height: 90vh;
+    min-height: clamp(28rem, 76svh, 46rem);
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    /* padding-top: 10rem ;
-    margin-top: 5.5rem; */
-    margin-bottom: -1rem;
+    padding: calc(5.9rem + env(safe-area-inset-top)) 1.25rem 2.25rem;
+    margin-bottom: 0;
     z-index: auto;
    }
 
@@ -357,7 +368,7 @@
     height: 100%;
     background-image: url("/images/hero.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 32%;
     background-repeat: no-repeat;
     filter: brightness(0.3);
     z-index: -2;
@@ -366,11 +377,15 @@
   .hero-content {
     text-align: center;
     z-index: 1;
+    width: min(100%, 46rem);
+    margin: 0 auto;
   }
 
-  .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  .home-hero__title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.95rem, 5.6vw, 3.8rem);
+    line-height: 1.1;
+    text-wrap: balance;
     background: linear-gradient(
       90deg,
       var(--orange-light),
@@ -380,15 +395,36 @@
     -webkit-text-fill-color: transparent !important;
   }
 
-  .hero p {
-    font-size: 1.5rem;
+  .home-hero__subtitle {
+    margin: 0 auto 1.75rem;
+    max-width: 34ch;
+    font-size: clamp(1.02rem, 2.4vw, 1.36rem);
+    line-height: 1.45;
     color: var(--grey);
-    margin-bottom: 2rem;
+  }
+
+  .home-hero__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+  }
+
+  .home-hero__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
 
   .cta-button {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.9rem 1.6rem;
+    font-size: 1.06rem;
+    line-height: 1.3;
+    text-align: center;
     background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
     border: none;
     border-radius: 30px;
@@ -396,6 +432,25 @@
     cursor: pointer;
     transition: transform 0.3s ease;
   }
+
+  .home-hero__button {
+    min-width: 12.75rem;
+    max-width: 18rem;
+  }
+
+  .home-hero__button--secondary {
+    background: transparent;
+    border: 1px solid var(--orange-light);
+    color: var(--orange-light);
+    line-height: 1.35;
+    padding-inline: 1.1rem;
+  }
+
+  .home-hero__button--secondary:hover {
+    color: var(--white);
+    background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
+  }
+
   .clubhouse {
     padding: 6rem 2rem;
     background-color: #000000;
@@ -545,9 +600,103 @@
     vertical-align: middle; /* Aligne l'image au centre du texte */
   }
 
+  @media (max-width: 1024px) {
+    .hero {
+      min-height: clamp(25.5rem, 68svh, 37rem);
+      padding: calc(5.9rem + env(safe-area-inset-top)) 1.1rem 1.9rem;
+    }
+
+    .hero::before {
+      background-position: center 26%;
+    }
+
+    .home-hero__content {
+      width: min(100%, 35rem);
+    }
+
+    .home-hero__title {
+      font-size: clamp(1.85rem, 5.4vw, 3rem);
+    }
+  }
+
   @media (max-width: 768px) {
+    .hero {
+      min-height: clamp(22.5rem, 60svh, 31rem);
+      align-items: center;
+      padding: calc(6.35rem + env(safe-area-inset-top)) 0.9rem 1.2rem;
+    }
+
+    .hero::before {
+      background-position: center 24%;
+    }
+
+    .home-hero__content {
+      width: min(100%, 18.5rem);
+    }
+
+    .home-hero__title {
+      max-width: 12.5ch;
+      margin: 0 auto 0.65rem;
+      font-size: clamp(1.6rem, 8.9vw, 2.2rem);
+      line-height: 1.12;
+      overflow-wrap: anywhere;
+    }
+
+    .home-hero__subtitle {
+      max-width: 22ch;
+      font-size: clamp(0.95rem, 3.8vw, 1.08rem);
+      line-height: 1.38;
+      margin-bottom: 1.05rem;
+    }
+
+    .home-hero__actions {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 0.6rem;
+    }
+
+    .home-hero__button {
+      width: min(100%, 16rem);
+      min-width: 0;
+      max-width: none;
+      padding: 0.72rem 1rem;
+      font-size: 0.96rem;
+    }
+
+    .home-hero__button--secondary {
+      padding: 0.58rem 0.9rem;
+      font-size: 0.88rem;
+    }
+
     .activities-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .hero {
+      min-height: clamp(21.5rem, 56svh, 27rem);
+      padding-top: calc(6.05rem + env(safe-area-inset-top));
+      padding-bottom: 1rem;
+    }
+
+    .home-hero__content {
+      width: min(100%, 17.5rem);
+    }
+
+    .home-hero__title {
+      max-width: 12ch;
+      font-size: clamp(1.5rem, 8.5vw, 1.95rem);
+    }
+
+    .home-hero__subtitle {
+      font-size: clamp(0.9rem, 3.5vw, 1rem);
+      margin-bottom: 0.95rem;
+    }
+
+    .home-hero__button {
+      width: min(100%, 15.25rem);
     }
   }
 

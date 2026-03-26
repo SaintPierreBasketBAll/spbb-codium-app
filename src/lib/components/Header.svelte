@@ -106,7 +106,7 @@
 <style>
   .navbar {
       background: linear-gradient(45deg, var(--black), #1a1a1a);
-      padding: 0.5rem 2rem 0.5rem 1rem;
+      padding: 0.45rem 1.5rem 0.45rem 0.85rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -117,7 +117,7 @@
   }
 
   .logo {
-      width: 80px;
+      width: 74px;
       height: auto;
       transition: transform 0.3s ease;
       margin-left: 1rem;
@@ -234,8 +234,8 @@
           display: flex; /* Ensure hamburger is visible on small screens */
           flex-direction: column;
           justify-content: space-between;
-          width: 30px;
-          height: 1.5rem;
+          width: 28px;
+          height: 1.25rem;
           cursor: pointer;
           z-index: 1001; /* Ensure it's above other elements */
       }
@@ -293,27 +293,27 @@
       }
 
       .navbar {
-          padding: 1rem;
+          padding: 0.65rem 0.85rem;
           justify-content: space-between;
       }
 
       .logo {
-          width: 60px;
+          width: 52px;
       }
   }
 
   .header__social {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
   }
 
   .header__social-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
+    width: 38px;
+    height: 38px;
     border-radius: 8px;
     text-decoration: none;
     background: transparent;
@@ -322,8 +322,8 @@
 
   .header__icon {
     display: block;
-    width: 64px;
-    height: 64px;
+    width: 24px;
+    height: 24px;
     color: var(--white);
   }
 
@@ -337,15 +337,15 @@
 
   @media screen and (max-width: 900px) {
     .header__social {
-      gap: 0.25rem;
+      gap: 0.2rem;
     }
     .header__social-link {
-      width: 42px;
-      height: 42px;
+      width: 34px;
+      height: 34px;
     }
     .header__icon {
-      width: 67px;
-      height: 67px;
+      width: 22px;
+      height: 22px;
     }
   }
 </style>

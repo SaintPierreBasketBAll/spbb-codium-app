@@ -49,7 +49,7 @@
 
     <!-- SENIOR F1 -->
     <article class="card">
-      <header><div class="head"><h2>SENIOR F1</h2><div class="coach">Coach : Lise Sinacouty</div></div></header>
+      <header><div class="head"><h2>SENIOR F1</h2><div class="coach">Coach Daniel Barret: </div></div></header>
       <div class="body"><div class="sessions">
         <div class="session"><div class="day">Mardi</div><div class="detail"><div class="time">19h00–20h30</div><div class="venue">Gymnase <span class="mandela">Nelson‑Mandela</span></div></div></div>
         <div class="session"><div class="day">Jeudi</div><div class="detail"><div class="time">19h00–20h30</div><div class="venue">Gymnase <span class="mandela">Nelson‑Mandela</span></div></div></div>
@@ -69,7 +69,7 @@
 
     <!-- U18 M1 -->
     <article class="card">
-      <header><div class="head"><h2>U18 M1</h2><div class="coach">Coach : Jean‑Hugues Bannor</div></div></header>
+      <header><div class="head"><h2>U18 M1</h2><div class="coach">Coach : Faïz Djanfar</div></div></header>
       <div class="body"><div class="sessions">
         <div class="session"><div class="day">Lundi</div><div class="detail"><div class="time">17h30–19h00</div><div class="venue"><span class="dome">Dôme</span></div></div></div>
         <div class="session"><div class="day">Jeudi</div><div class="detail"><div class="time">17h30–19h00</div><div class="venue">Gymnase <span class="mandela">Nelson‑Mandela</span></div></div></div>
@@ -88,7 +88,7 @@
 
     <!-- U18 F -->
     <article class="card">
-      <header><div class="head"><h2>U18 F</h2><div class="coach">Coach : Pauline Payet • Assistant : Daniel C</div></div></header>
+      <header><div class="head"><h2>U18 F</h2><div class="coach">Coach : Pauline Payet • Assistant : Daniel Barret</div></div></header>
       <div class="body"><div class="sessions">
         <div class="session"><div class="day">Lundi</div><div class="detail"><div class="time">17h30–19h00</div><div class="venue">Gymnase <span class="mandela">Nelson‑Mandela</span></div></div></div>
         <div class="session"><div class="day">Mercredi</div><div class="detail"><div class="time">18h30–20h00</div><div class="venue"><span class="gaston">Gaston‑Richardson</span></div></div></div>
@@ -97,7 +97,7 @@
 
     <!-- U15 M1 -->
     <article class="card">
-      <header><div class="head"><h2>U15 M1</h2><div class="coach">Coach : Christophe Simon • Assistant : Jean‑Marie G</div></div></header>
+      <header><div class="head"><h2>U15 M1</h2><div class="coach">Coach : Christophe Simon • Assistant : Jean‑Marie Gonneville</div></div></header>
       <div class="body"><div class="sessions">
         <div class="session"><div class="day">Lundi</div><div class="detail"><div class="time">17h30–19h00</div><div class="venue"><span class="exterieur">Extérieur</span></div></div></div>
         <div class="session"><div class="day">Mercredi</div><div class="detail"><div class="time">16h30–18h30</div><div class="venue"><span class="lbb">Ligne des Bambous</span></div></div></div>
@@ -106,7 +106,7 @@
 
     <!-- U15 M2 -->
     <article class="card">
-      <header><div class="head"><h2>U15 M2</h2><div class="coach">Coach : Faïz Djanfar • Assistant : Daniel C</div></div></header>
+      <header><div class="head"><h2>U15 M2</h2><div class="coach">Coach : Faïz Djanfar • Assistant : Daniel Barret</div></div></header>
       <div class="body"><div class="sessions">
         <div class="session"><div class="day">Lundi</div><div class="detail"><div class="time">17h30–19h00</div><div class="venue"><span class="exterieur">Extérieur</span></div></div></div>
         <div class="session"><div class="day">Mercredi</div><div class="detail"><div class="time">16h30–18h30</div><div class="venue"><span class="lbb">Ligne des Bambous</span></div></div></div>
