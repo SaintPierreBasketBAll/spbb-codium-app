@@ -2,6 +2,7 @@ import { env } from "$env/dynamic/private";
 
 const DEFAULT_PROFILE_URL = "https://www.instagram.com/saintpierrebasketball/";
 const POSTS_LIMIT = 5;
+const CACHE_TTL_MS = 10 * 60 * 1000;
 const MEDIA_FIELDS = [
   "id",
   "caption",
@@ -55,6 +56,8 @@ const FALLBACK_POSTS = [
   }
 ];
 
+let feedCache = null;
+
 function normalizeEnvValue(value) {
   if (typeof value !== "string") {
     return "";
@@ -65,6 +68,42 @@ function normalizeEnvValue(value) {
 
 function parseEnvBoolean(value) {
   return normalizeEnvValue(value).toLowerCase() === "true";
+}
+
+function nowIso() {
+  return new Date().toISOString();
+}
+
+function buildFeedCacheKey({ accessToken, igUserId, isDisabled, profileUrl }) {
+  return JSON.stringify({
+    hasToken: Boolean(accessToken),
+    tokenLength: accessToken.length,
+    tokenPrefix: accessToken.slice(0, 4),
+    tokenSuffix: accessToken.slice(-4),
+    igUserId,
+    isDisabled,
+    profileUrl
+  });
+}
+
+function getCachedFeed(cacheKey) {
+  if (!feedCache || feedCache.cacheKey !== cacheKey) {
+    return null;
+  }
+
+  if (Date.now() >= feedCache.expiresAt) {
+    return null;
+  }
+
+  return feedCache.feed;
+}
+
+function setCachedFeed(cacheKey, feed) {
+  feedCache = {
+    cacheKey,
+    feed,
+    expiresAt: Date.now() + CACHE_TTL_MS
+  };
 }
 
 function buildFallbackFeed(profileUrl, reason = "fallback") {
@@ -79,7 +118,7 @@ function buildFallbackFeed(profileUrl, reason = "fallback") {
     source: "fallback",
     isFallback: true,
     reason,
-    updatedAt: new Date().toISOString()
+    updatedAt: nowIso()
   };
 }
 
@@ -93,15 +132,49 @@ function buildMediaUrl(baseUrl, accessToken) {
   return `${baseUrl}?${params.toString()}`;
 }
 
-function resolveInstagramMediaUrls(accessToken, igUserId) {
+function resolveInstagramMediaUrls(accessToken) {
   const urls = [];
-
-  if (igUserId) {
-    urls.push(buildMediaUrl(`https://graph.facebook.com/v23.0/${igUserId}/media`, accessToken));
-  }
 
   urls.push(buildMediaUrl("https://graph.instagram.com/me/media", accessToken));
   return urls;
+}
+
+function sanitizeInstagramUrl(apiUrl) {
+  const url = new URL(apiUrl);
+  url.searchParams.set("access_token", "<hidden>");
+  return url.toString();
+}
+
+function normalizeMetaError(status, payload, apiUrl) {
+  const error = payload?.error || {};
+
+  return {
+    status,
+    endpoint: sanitizeInstagramUrl(apiUrl),
+    message: error.message || "Instagram API request failed",
+    type: error.type || null,
+    code: error.code || null,
+    error_subcode: error.error_subcode || null
+  };
+}
+
+function createMetaError(metaError) {
+  const error = new Error(`instagram-api-${metaError.status}`);
+  error.meta = metaError;
+  return error;
+}
+
+function logSocialFeedError(error) {
+  const metaError = error?.meta;
+
+  if (metaError) {
+    console.error("[social-feed] Instagram API unavailable, fallback enabled:", metaError);
+    return;
+  }
+
+  console.error("[social-feed] Instagram API unavailable, fallback enabled:", {
+    message: error?.message || "Unknown Instagram API error"
+  });
 }
 
 function resolveImageUrl(media) {
@@ -136,8 +209,8 @@ function normalizeInstagramPost(media, profileUrl) {
   };
 }
 
-async function fetchInstagramPosts(fetchFn, accessToken, igUserId, profileUrl) {
-  const apiUrls = resolveInstagramMediaUrls(accessToken, igUserId);
+async function fetchInstagramPosts(fetchFn, accessToken, profileUrl) {
+  const apiUrls = resolveInstagramMediaUrls(accessToken);
   let lastError = null;
 
   for (const apiUrl of apiUrls) {
@@ -147,7 +220,8 @@ async function fetchInstagramPosts(fetchFn, accessToken, igUserId, profileUrl) {
       });
 
       if (!response.ok) {
-        throw new Error(`instagram-api-${response.status}`);
+        const payload = await response.json().catch(() => ({}));
+        throw createMetaError(normalizeMetaError(response.status, payload, apiUrl));
       }
 
       const payload = await response.json();
@@ -157,9 +231,7 @@ async function fetchInstagramPosts(fetchFn, accessToken, igUserId, profileUrl) {
         .filter(Boolean)
         .slice(0, POSTS_LIMIT);
 
-      if (posts.length) {
-        return posts;
-      }
+      return posts;
     } catch (error) {
       lastError = error;
     }
@@ -173,32 +245,57 @@ export async function getSocialFeed(fetchFn) {
   const isDisabled = parseEnvBoolean(env.SPBB_SOCIAL_FEED_DISABLED);
   const accessToken = normalizeEnvValue(env.INSTAGRAM_ACCESS_TOKEN);
   const igUserId = normalizeEnvValue(env.INSTAGRAM_IG_USER_ID);
+  const cacheKey = buildFeedCacheKey({ accessToken, igUserId, isDisabled, profileUrl });
+  const cachedFeed = getCachedFeed(cacheKey);
+
+  if (cachedFeed) {
+    return cachedFeed;
+  }
 
   if (isDisabled) {
-    return buildFallbackFeed(profileUrl, "disabled");
+    const feed = buildFallbackFeed(profileUrl, "disabled");
+    setCachedFeed(cacheKey, feed);
+    return feed;
   }
 
   if (!accessToken) {
-    return buildFallbackFeed(profileUrl, "missing-token");
+    const feed = buildFallbackFeed(profileUrl, "missing-token");
+    setCachedFeed(cacheKey, feed);
+    return feed;
   }
 
   try {
-    const posts = await fetchInstagramPosts(fetchFn, accessToken, igUserId, profileUrl);
+    const posts = await fetchInstagramPosts(fetchFn, accessToken, profileUrl);
 
     if (!posts.length) {
-      return buildFallbackFeed(profileUrl, "empty");
+      const feed = {
+        posts,
+        profileUrl,
+        source: "instagram-api",
+        isFallback: false,
+        reason: null,
+        updatedAt: nowIso()
+      };
+
+      setCachedFeed(cacheKey, feed);
+      return feed;
     }
 
-    return {
+    const feed = {
       posts,
       profileUrl,
       source: "instagram-api",
       isFallback: false,
       reason: null,
-      updatedAt: new Date().toISOString()
+      updatedAt: nowIso()
     };
+
+    setCachedFeed(cacheKey, feed);
+    return feed;
   } catch (error) {
-    console.error("[social-feed] Instagram API unavailable, fallback enabled:", error);
-    return buildFallbackFeed(profileUrl, "api-error");
+    logSocialFeedError(error);
+    const feed = buildFallbackFeed(profileUrl, error?.meta?.code === 190 ? "oauth-error" : "api-error");
+    setCachedFeed(cacheKey, feed);
+    return feed;
   }
 }
