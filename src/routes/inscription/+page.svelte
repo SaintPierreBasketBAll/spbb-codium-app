@@ -160,7 +160,7 @@
    <h3 class="section-title">Cliquez ici :</h3>
   <p class="inscription_form_link">
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSceCokeBqxNcACXk8VAjKczXRd2heP-lbCNmKop0IbtsxdbBw/viewform?usp=dialog"
+      href="https://forms.gle/dLCrdVUgqZvj2ir7A"
       target="_blank">Formulaire de demande de préinscription</a
     >
   </p>
