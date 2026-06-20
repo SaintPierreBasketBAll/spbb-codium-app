@@ -189,8 +189,8 @@
       Déclaration d'Adhésion
      </strong> devra alors nous être retournée complétée et signée à l'adresse email : 
      <span>
-     <a href="mailto:spbb.inscriptions@gmail.com?subject=Demande%20d%27adh%C3%A9sion%20sign%C3%A9e&body=Bonjour%20SPBB%2C%0AVoici%20en%20pi%C3%A8ce%20jointe%20la%20demande%20d%27adh%C3%A9sion%20sign%C3%A9e.">
-      spbb.inscriptions@gmail.com
+     <a href="mailto:communication.spbb@gmail.com?subject=Demande%20d%27adh%C3%A9sion%20sign%C3%A9e&body=Bonjour%20SPBB%2C%0AVoici%20en%20pi%C3%A8ce%20jointe%20la%20demande%20d%27adh%C3%A9sion%20sign%C3%A9e.">
+      communication.spbb@gmail.com
     </a>
      </span> 
  .</p>
