@@ -144,7 +144,7 @@
 
 <section class="licence-info">
   <!-- Titre de la section -->
-  <h1 class="section-title_h1">LES INSCRIPTIONS 2025/2026</h1>
+  <h1 class="section-title_h1">LES INSCRIPTIONS 2026/2027</h1>
   <!-- Sous-titre de la section -->
    
 
