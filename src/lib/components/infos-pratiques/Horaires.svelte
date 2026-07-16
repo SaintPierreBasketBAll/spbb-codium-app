@@ -18,7 +18,12 @@
   <main class="grid">
     <!-- SENIOR M1 -->
     <article class="card">
-      <header><div class="head"><h2>SENIOR M1</h2><div class="coach">Coach : Laurent Parata</div></div></header>
+      <header>
+        <div class="head">
+          <h2>SENIOR M1</h2>
+          <div class="coach">Coach : Laurent Parata, Adjoint : Eric Raby</div>
+        </div>
+      </header>
       <div class="body">
         <div class="sessions">
           <div class="session"><div class="day">Lundi</div><div class="detail"><div class="time">19h00–20h30</div><div class="venue">Gymnase <span class="mandela">Nelson‑Mandela</span></div></div></div>
