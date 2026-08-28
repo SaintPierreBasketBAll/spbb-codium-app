@@ -33,8 +33,7 @@
       name: 'SENIORS Garçons 3',
       staff: 'Coach : Romain ENAULT',
       sessions: [
-        { day: 'Lundi', time: '20h30–21h45', venue: 'Gymnase <span class="gaston">Gaston‑Richardson</span>' },
-        { day: 'Mardi', time: '20h30–22h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' },
+        { day: 'Lundi', time: '20h00–21h30', venue: 'Gymnase <span class="gaston">Gaston‑Richardson</span>' },
         { day: 'Mercredi', time: '20h30–21h45', venue: 'Gymnase <span class="gaston">Gaston‑Richardson</span>' }
       ]
     },
@@ -44,20 +43,19 @@
       sessions: [
         { day: 'Mardi', time: '19h00–20h30', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' },
         { day: 'Jeudi', time: '19h00–20h30', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' },
-        { day: 'Vendredi', time: '19h00–20h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' }
+        { day: 'Vendredi', time: '19h00–20h30', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' }
       ]
     },
     {
       name: 'SENIORS Filles 2',
       staff: 'Coach : Jocely LAITON ',
       sessions: [
-        { day: 'Mardi', time: '19h00–20h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
-        { day: 'Jeudi', time: '20h00–20h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
-        { day: 'Vendredi', time: '19h00–20h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' }
+        { day: 'Mardi', time: '19h00–20h30', venue: 'Gymnase <span class="lbb">Ligne des Bambous</span>' },
+        { day: 'Jeudi', time: '19h00–20h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' }
       ]
     },
     {
-      name: 'U18 Garçons 1',
+      name: 'U18 MR1',
       staff: 'Coach : Romain ENAULT',
       sessions: [
         { day: 'Lundi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
@@ -66,7 +64,7 @@
       ]
     },
     {
-      name: 'U18 Garçons 2',
+      name: 'U18 MD2',
       staff: 'Coach : Mounir BOUDROUZ',
       sessions: [
         { day: 'Mardi', time: '18h30–20h00', venue: 'Gymnase <span class="lbb">Ligne des Bambous</span>' },
@@ -74,23 +72,16 @@
       ]
     },
     {
-      name: 'U18 Filles',
-      staff: 'Coach Stéphane BURGIO ORTIZ / Adjoint Pauline PAYET',
-      sessions: [
-        { day: 'Lundi', time: '17h30–19h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' },
-        { day: 'Mercredi', time: '18h30–20h00', venue: 'Gymnase <span class="gaston">Gaston‑Richardson</span>' }
-      ]
-    },
-    {
-      name: 'U15 M1',
+      name: 'U15 MD1',
       staff: 'Coach : Sylvain POITIER /  Assistant : Guillaume DELMAS',
       sessions: [
         { day: 'Lundi', time: '17h30–19h00', venue: '<span class="exterieur">Terrains Extérieurs</span>' },
-        { day: 'Mercredi', time: '16h30–18h30', venue: 'Gymnase <span class="lbb">Ligne des Bambous</span>' }
+        { day: 'Mercredi', time: '16h30–18h30', venue: 'Gymnase <span class="lbb">Ligne des Bambous</span>' },
+        { day: 'Vendredi', time: '17h30–19h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' }
       ]
     },
     {
-      name: 'U15 M2',
+      name: 'U15 MD2',
       staff: 'Coach :  Melvin ANTOU',
       sessions: [
         { day: 'Lundi', time: '17h30–19h00', venue: '<span class="exterieur">Terrains Extérieurs</span>' },
@@ -101,13 +92,13 @@
       name: 'U15 F',
       staff: 'Coach : Pauline PAYET • Assistante : Neyma IBRAHIM',
       sessions: [
-        { day: 'Lundi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
+        { day: 'Lundi', time: '17h30–19h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' },
         { day: 'Mercredi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
-        { day: 'Vendredi', time: '17h30–19h00', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' }
+        { day: 'Jeudi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span>' }
       ]
     },
     {
-      name: 'U13 M1',
+      name: 'U13 MD1',
       staff: 'Coach : Melvin ANTOU',
       sessions: [
         { day: 'Mardi', time: '17h30–19h00', venue: '<span class="dome">Dôme</span> ou <span class="exterieur">Terrains Extérieurs</span>' },
@@ -115,7 +106,7 @@
       ]
     },
     {
-      name: 'U13 M2',
+      name: 'U13 MD2',
       staff: 'Coach : En attente',
       sessions: [
         { day: 'Mardi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span> ou <span class="exterieur">TerrainsExtérieurs</span>' },
@@ -131,11 +122,11 @@
       ]
     },
     {
-      name: 'U10-U11',
+      name: 'U11',
       staff: 'Coach : Christophe SIMON',
       sessions: [
         { day: 'Mercredi', time: '16h00–17h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
-        { day: 'Samedi', time: '10h30–12h00', venue: '<span class="dome">Dôme de Terre Sainte</span>' }
+        { day: 'Samedi', time: '09h30–11h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' }
       ]
     },
     {
@@ -144,6 +135,21 @@
       sessions: [
         { day: 'Mercredi', time: '16h00–17h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' },
         { day: 'Samedi', time: '09h00–10h30', venue: 'Gymnase <span class="mandela">Nelson‑Mandela</span>' }
+      ]
+    },
+    {
+      name: 'Pôle Performance',
+      staff: '',
+      sessions: [
+        { day: 'Mercredi', time: '17h00–19h00', venue: 'Gymnase <span class="gaston">Gaston‑Richardson</span>' },
+        { day: 'Samedi', time: '10h30–12h00', venue: '<span class="dome">Dôme de Terre Sainte</span>' }
+      ]
+    },
+    {
+      name: 'Basket Inclusif',
+      staff: '',
+      sessions: [
+        { day: 'Samedi', time: '09h30–10h30', venue: '<span class="dome">Dôme de Terre Sainte</span>' }
       ]
     }
   ];

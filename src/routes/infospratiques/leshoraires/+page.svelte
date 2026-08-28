@@ -4,7 +4,7 @@ import PlanningCards from '$lib/components/infos-pratiques/PlanningCards.svelte'
 
 
 <section class="schedule">
-  <h2 class="section-title">Planning des entraînements saison 2025/2026</h2>
+  <h2 class="section-title">Planning provisoire des entraînements saison 2026/2027</h2>
   <p class = "text_planning">Ce planning est fourni à titre indicatif et susceptible de modifications de dernière minute.</p>
 
 <!-- Planning en mode carte par sections -->
