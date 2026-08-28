@@ -1,5 +1,26 @@
 <script>
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    const renderInstagramPost = () => window.instgrm?.Embeds.process();
+    const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+
+    if (existingScript) {
+      renderInstagramPost();
+      existingScript.addEventListener('load', renderInstagramPost, { once: true });
+      return () => existingScript.removeEventListener('load', renderInstagramPost);
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://www.instagram.com/embed.js';
+    script.async = true;
+    script.addEventListener('load', renderInstagramPost, { once: true });
+    document.body.appendChild(script);
+
+    return () => script.removeEventListener('load', renderInstagramPost);
+  });
 </script>
+
 <section class="trial">
   <h2 class="section-title">Deux séances d’essai offertes</h2>
   <div class="trial__content">
@@ -17,7 +38,20 @@
 <section class="categories">
   <h2 class="section-title">Catégories &amp; années de naissance</h2>
   <div class="categories__embed">
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSPBB974%2Fposts%2Fpfbid02wzSnNkhv6jv1McgfvxJuJv6jK8vQH3nwWnfNGuRGfchvrgFg1vz6jRj1V5cayZqbl&show_text=true&width=500" width="500" height="693" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Publication Facebook SPBB"></iframe>
+    <blockquote
+      class="instagram-media"
+      data-instgrm-captioned
+      data-instgrm-permalink="https://www.instagram.com/p/DclXaIXlshK/"
+      data-instgrm-version="14"
+    >
+      <a
+        href="https://www.instagram.com/p/DclXaIXlshK/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Voir les catégories et années de naissance sur Instagram
+      </a>
+    </blockquote>
   </div>
 </section>
 
@@ -170,7 +204,7 @@
   .trial a { color: var(--orange-light); }
 
   /* =============================
-     Catégories (Facebook embed)
+     Catégories (publication Instagram)
      ============================= */
   .categories {
     padding: 2rem;
@@ -183,15 +217,44 @@
       );
   }
   .categories__embed {
-    max-width: 900px;
+    width: 100%;
+    max-width: 540px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    min-height: 500px;
   }
-  .categories__embed iframe {
+
+  .categories__embed :global(.instagram-media),
+  .categories__embed :global(iframe) {
     width: 100%;
-    max-width: 500px;
+    max-width: 540px;
+    min-width: 0 !important;
+    margin: 0 auto !important;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  }
+
+  .categories__embed > blockquote {
+    box-sizing: border-box;
+    padding: 1.25rem;
+    background: #fff;
+    color: #262626;
+    text-align: center;
+  }
+
+  .categories__embed > blockquote a {
+    color: #c13584;
+    font-weight: 700;
+  }
+
+  @media (max-width: 600px) {
+    .categories {
+      padding-inline: 1rem;
+    }
+
+    .categories__embed {
+      min-height: 420px;
+    }
   }
 </style>
