@@ -51,7 +51,8 @@
     <p class="membership-contact">
       Pour toute question concernant les inscriptions, vous pouvez nous contacter à l’adresse suivante : <a
         href="mailto:inscription.spbb@gmail.com"
-        class="email-link">spbb.inscriptions@gmail.com</a
+        class="email-link">communication.spbb@gmail.com
+</a
       >
     </p>
   </div>
