@@ -132,8 +132,15 @@ function buildMediaUrl(baseUrl, accessToken) {
   return `${baseUrl}?${params.toString()}`;
 }
 
-function resolveInstagramMediaUrls(accessToken) {
+function resolveInstagramMediaUrls(accessToken, igUserId) {
   const urls = [];
+
+  // A professional Instagram account connected to a Facebook Page uses the
+  // Facebook Graph endpoint. Keep the Instagram endpoint as a fallback for
+  // tokens issued through Instagram's own API.
+  if (igUserId) {
+    urls.push(buildMediaUrl(`https://graph.facebook.com/v23.0/${igUserId}/media`, accessToken));
+  }
 
   urls.push(buildMediaUrl("https://graph.instagram.com/me/media", accessToken));
   return urls;
@@ -209,8 +216,8 @@ function normalizeInstagramPost(media, profileUrl) {
   };
 }
 
-async function fetchInstagramPosts(fetchFn, accessToken, profileUrl) {
-  const apiUrls = resolveInstagramMediaUrls(accessToken);
+async function fetchInstagramPosts(fetchFn, accessToken, igUserId, profileUrl) {
+  const apiUrls = resolveInstagramMediaUrls(accessToken, igUserId);
   let lastError = null;
 
   for (const apiUrl of apiUrls) {
@@ -265,7 +272,7 @@ export async function getSocialFeed(fetchFn) {
   }
 
   try {
-    const posts = await fetchInstagramPosts(fetchFn, accessToken, profileUrl);
+    const posts = await fetchInstagramPosts(fetchFn, accessToken, igUserId, profileUrl);
 
     if (!posts.length) {
       const feed = {

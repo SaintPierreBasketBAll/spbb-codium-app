@@ -163,15 +163,6 @@
     font-size: 0.9rem;
   }
 
-  .contact-info {
-    color: var(--grey);
-    line-height: 1.6;
-  }
-
-  .contact-info h3 {
-    color: var(--orange-light);
-    margin-bottom: 1rem;
-  }
   .credits {
     display: flex;
     flex-direction: column;

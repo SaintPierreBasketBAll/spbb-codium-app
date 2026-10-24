@@ -28,17 +28,24 @@
     class="logo logo-radius"
   /></a>
   
-  <div class="hamburger" onclick={toggleMenu}>
+  <button
+    class="hamburger"
+    type="button"
+    aria-label="Ouvrir ou fermer le menu de navigation"
+    aria-expanded={isMenuOpen}
+    aria-controls="main-navigation"
+    onclick={toggleMenu}
+  >
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
  
-  <div class="nav-links" class:active={isMenuOpen}>
+  <div id="main-navigation" class="nav-links" class:active={isMenuOpen}>
     <!-- Contenu des liens de navigation -->
     <a href="/">Accueil</a>
     <div class="nav-item">
-      <a href="#">Le club</a>
+      <a href="/leclub/presentationduclub/">Le club</a>
       <div class="dropdown-menu">
         <a href="/leclub/presentationduclub/">Présentation du club</a>
         <a href="/leclub/lebureau/">L'équipe dirigeante</a>
@@ -49,7 +56,7 @@
       </div>
     </div>
     <div class="nav-item">
-      <a href="#">Nos Équipes</a>
+      <a href="/nosequipes/seniorsgarcons/saison2024-2025/">Nos Équipes</a>
       <div class="dropdown-menu">
         <a href="/nosequipes/seniorsgarcons/saison2024-2025/">Seniors garçons</a>
         <a href="/nosequipes/seniorsfilles/">Seniors filles</a>
@@ -61,7 +68,7 @@
       </div>
     </div>
     <div class="nav-item">
-      <a href="#">Infos pratiques</a>
+      <a href="/infospratiques/adhesion/">Infos pratiques</a>
       <div class="dropdown-menu">
         <a href="/infospratiques/adhesion">Adhésion</a>
         <a href="/infospratiques/leshoraires/">Les horaires</a>
@@ -132,6 +139,9 @@
 
   .hamburger {
       display: none;
+      padding: 0;
+      border: 0;
+      background: transparent;
       flex-direction: column;
       justify-content: space-between;
       width: 30px;

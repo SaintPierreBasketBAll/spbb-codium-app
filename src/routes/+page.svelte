@@ -451,33 +451,6 @@
     background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
   }
 
-  .clubhouse {
-    padding: 6rem 2rem;
-    background-color: #000000;
-    position: relative;
-  }
-
-  .clubhouse-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .clubhouse-alert {
-    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
-    padding: 2rem;
-    border-radius: 15px;
-    margin: 2rem auto;
-    max-width: 600px;
-    text-align: left;
-  }
-
-  .clubhouse-alert p {
-    color: var(--orange-light);
-    font-size: 1.5rem;
-    line-height: 1.6;
-  }
-
   .cta-button:hover {
     transform: translateY(-3px);
   }
@@ -492,25 +465,6 @@
     animation: flameMove 8s infinite alternate;
     z-index: -1;
   }
-  .form_link {
-    width: 100%;
-  text-align: center !important;
-  color: #cccccc; /* gris clair */
-  font-size: 1.4rem; /* équivalent à 16px */
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.form_link:hover {
-  color: var(--orange-light); /* effet de survol (jaune clair si déjà défini dans tes variables) */
-  text-decoration: underline;
-}
-
-.form_link:visited {
-  color: #999999; /* couleur modifiée après clic */
-}
-
   @keyframes flameMove {
     0% {
       transform: translateY(0) scale(1);
@@ -710,10 +664,6 @@
     background-color: #1a1a1a;
   }
 
-  .donate {
-    background-color: #000000;
-  }
-
   .contact {
     background-color: #1a1a1a;
   }
@@ -727,8 +677,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .history-content,
-  .donate-content {
+  .history-content {
     max-width: 800px;
     margin: 0 auto;
     color: var(--grey);
@@ -771,31 +720,6 @@
     color: var(--orange-light);
     font-weight: bold;
     margin-bottom: 0.5rem;
-  }
-
-  .donate-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-
-  .donate-option {
-    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-
-  .donate-option:hover {
-    transform: translateY(-5px);
-  }
-
-  .donate-amount {
-    font-size: 2rem;
-    color: var(--orange-light);
-    margin: 1rem 0;
   }
 
 /*   .donate-button {

@@ -25,7 +25,7 @@
 
 
 <style>
-  :root {
+  :global(:root) {
     --black: #000000;
     --white: #FFFFFF;
     --orange-light: #FFA500;
@@ -33,13 +33,14 @@
     --grey: #808080;
   }
   
-  * {
+  :global(*) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
   }
-  /* Exemple avec BEM */
+  /* Legacy styles for components not rendered on this page.
+     Exemple avec BEM
 .contact-button {
   display: inline-block;
   padding: 1rem 2rem;
@@ -300,6 +301,7 @@
     background-color: #000000;
   }
   
+  */
   .contact {
     padding: 10rem 2rem 10rem 2rem;
     background-color: #1a1a1a;
@@ -314,6 +316,7 @@
     -webkit-text-fill-color: transparent;
   }
   
+  /*
   .history-content, .donate-content {
     max-width: 800px;
     margin: 0 auto;
@@ -398,6 +401,7 @@
     transform: scale(1.05);
   }
   
+  */
   .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -433,6 +437,7 @@
     transform: translateY(-3px);
   }
   
+  /*
   .form-group {
     margin-bottom: 1.5rem;
   }
@@ -453,6 +458,7 @@
     color: var(--white);
   }
   
+  */
   .contact-info {
     color: var(--grey);
     line-height: 1.6;
@@ -463,6 +469,7 @@
     margin-bottom: 1rem;
   }
   
+  /*
   .news {
     padding: 6rem 2rem;
     background-color: #1a1a1a;
@@ -533,4 +540,5 @@
     }
   }
   
+  */
   </style>

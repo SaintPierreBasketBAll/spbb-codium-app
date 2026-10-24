@@ -62,10 +62,6 @@
         box-sizing: border-box;
         font-family: "Arial", sans-serif;
     }
-    body {
-        background-color: var(--black);
-        color: var(--white);
-    }
     .section-title {
         text-align: center;
         font-size: 2.5rem;

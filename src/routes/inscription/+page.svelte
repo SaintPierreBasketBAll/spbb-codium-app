@@ -89,13 +89,13 @@
         "- Certificat médical de surclassement normal, voir lien ci-dessous. Ou, un certificat médical spécifique de surclassement, établi par médecin agréé, attestant l’aptitude à jouer dans la catégorie supérieure, document envoyé par le club aux joueurs concernés.",
       ],
       links: [
-        "/pdf/surclassement_simple.pdf",
+        "/pdf/Surclassement 2026-2027.pdf",
         "/pdf/charte_joueur.pdf",
         "/pdf/reglement_interieur_spbb.pdf",
         "/pdf/charte_parent.pdf",
         "/pdf/declaration_d_adhesion.pdf",
         "/pdf/Certificat_d_aptitude_au_surclassement.pdf",
-        "/pdf/Tableau_surclassements_2025-2026.pdf"
+        "/pdf/Tableau surclassements 2026-2027.pdf"
         
       ],
     },
