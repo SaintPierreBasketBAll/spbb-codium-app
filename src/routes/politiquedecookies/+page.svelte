@@ -1,95 +1,12 @@
-  <script>
-    import { onMount } from 'svelte';
-
-    let showScrollTop = false;
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    onMount(() => {
-      const handleScroll = () => {
-        showScrollTop = window.scrollY > 120;
-      };
-      window.addEventListener('scroll', handleScroll);
-      handleScroll();
-      return () => window.removeEventListener('scroll', handleScroll);
-    });
-  </script>
-
-
-  <main class="legal">
-    <div class="legal__logo">
-      <img src="/images/logo.png" alt="Logo SPBB Saint-Pierre Basket Ball" />
-    </div>
-    <h1 class="legal__title">Politique de cookies (UE)</h1>
-    <div class="legal__subtitle">Utilisation des cookies sur le site du SPBB – Saint-Pierre Basket Ball</div>
-
-    <section class="legal__section">
-      <div class="legal__section-title">1. Qu'est-ce qu'un cookie ?</div>
-      <div class="legal__content">
-        Un cookie est un petit fichier texte enregistré sur votre appareil lors de la consultation d’un site internet. Il permet de collecter des informations relatives à votre navigation et d’adapter certains services à votre terminal.
-    </section>
-
-    <section class="legal__section">
-      <div class="legal__section-title">2. Utilisation des cookies sur ce site</div>
-      <div class="legal__content">
-        Le site www.spbb.re utilise différents types de cookies :
-        <ul class="legal__list">
-          <li><strong>Cookies strictement nécessaires</strong> : essentiels au fonctionnement du site (navigation, accès aux espaces sécurisés, etc.).</li>
-          <li><strong>Cookies de mesure d’audience</strong> : permettent de mesurer la fréquentation et d’améliorer le contenu.</li>
-          <li><strong>Cookies fonctionnels</strong> : facilitent l’utilisation du site en mémorisant vos choix ou préférences.</li>
-        </ul>
-        Aucun cookie publicitaire n’est utilisé.
-    </section>
-
-    <section class="legal__section">
-      <div class="legal__section-title">3. Consentement</div>
-      <div class="legal__content">
-        Lors de votre première visite, un bandeau vous informe de la présence de cookies. En poursuivant votre navigation sur le site, vous acceptez l’utilisation des cookies décrits dans cette politique.<br>
-        Vous pouvez à tout moment refuser ou paramétrer l’utilisation des cookies via les réglages de votre navigateur.
-      </div>
-    </section>
-
-    <section class="legal__section">
-      <div class="legal__section-title">4. Gestion des cookies</div>
-      <div class="legal__content">
-        Vous pouvez désactiver les cookies en modifiant les paramètres de votre navigateur. Le refus de certains cookies peut dégrader votre expérience utilisateur. <br>
-        Pour en savoir plus : 
-        <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank" rel="noopener">Consulter le guide de la CNIL</a>.
-      </div>
-    </section>
-
-    <section class="legal__section">
-      <div class="legal__section-title">5. Durée de conservation</div>
-      <div class="legal__content">
-        Les cookies sont conservés pour une durée maximale de 13 mois à compter de leur dépôt sur votre terminal.
-      </div>
-    </section>
-
-    <section class="legal__section">
-      <div class="legal__section-title">6. Vos droits</div>
-      <div class="legal__content">
-        Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition sur vos données personnelles collectées via les cookies.<br>
-        Pour exercer ces droits, contactez-nous à : <a href="mailto:contact.spbb@gmail.com">contact.spbb@gmail.com</a>
-      </div>
-    </section>
-
-    <section class="legal__section">
-  {#if showScrollTop}
-    <button class="scrolltop" aria-label="Retour en haut" title="Remonter en haut" on:click={scrollToTop}>
-      ↑
-    </button>
-  {/if}
-    </section>
-
-    <div class="legal__footer">
-      &copy; SPBB – Saint-Pierre Basket Ball, 2001‑2025. Tous droits réservés.
-    </div>
-  </main>
-  <!-- Removed duplicate scroll-to-top button outside the conditional block -->
-
-  <style>
+<script>import { openConsentSettings } from '$lib/consent';</script>
+<main class="legal"><h1 class="legal__title">Politique de cookies et médias externes</h1>
+<section class="legal__section"><h2>Votre choix</h2><div class="legal__content">Les cartes Google Maps et les médias Facebook, Instagram ou Canva sont bloqués tant que vous n’avez pas autorisé leur chargement. La poursuite de navigation ne vaut pas acceptation. Vous pouvez tout refuser et consulter les informations du club sans ces intégrations.</div></section>
+<section class="legal__section"><h2>Personnaliser ou retirer votre accord</h2><div class="legal__content"><button type="button" onclick={openConsentSettings}>Gérer mes préférences</button><p>Les boutons « Tout accepter » et « Tout refuser » sont proposés au même niveau. Le retrait de votre accord désactive les intégrations chargées sur le site ; les cookies déjà déposés par un service tiers peuvent être supprimés dans votre navigateur.</p></div></section>
+<section class="legal__section"><h2>Mémorisation du choix</h2><div class="legal__content">Votre choix est conservé pendant six mois dans le stockage local de votre navigateur, sous la clé spbb-consent-v1. Ce stockage sert uniquement à mémoriser vos préférences. Si votre navigateur le bloque, le choix reste actif pendant la visite.</div></section>
+<section class="legal__section"><h2>Services externes</h2><div class="legal__content">Les médias et cartes autorisés se connectent à leurs fournisseurs, qui peuvent recevoir notamment votre adresse IP et des informations de navigation. Un lien ouvrant un service externe vous conduit sur un site qui applique sa propre politique de confidentialité. Aucun outil de mesure d’audience ni de publicité n’est intégré directement dans le code du site.</div></section>
+<section class="legal__section"><h2>Nous contacter</h2><div class="legal__content"><a href="mailto:contact.spbb@gmail.com">contact.spbb@gmail.com</a>. <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank" rel="noopener noreferrer">Conseils de la CNIL pour gérer les traceurs</a>.</div></section>
+</main>
+<style>
    
     .legal {
       max-width: 800px;

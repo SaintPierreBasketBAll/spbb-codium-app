@@ -1,34 +1,17 @@
 <script>
-  import { onMount } from 'svelte';
-
-  onMount(() => {
-    const renderInstagramPost = () => window.instgrm?.Embeds.process();
-    const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
-
-    if (existingScript) {
-      renderInstagramPost();
-      existingScript.addEventListener('load', renderInstagramPost, { once: true });
-      return () => existingScript.removeEventListener('load', renderInstagramPost);
-    }
-
-    const script = document.createElement('script');
-    script.src = 'https://www.instagram.com/embed.js';
-    script.async = true;
-    script.addEventListener('load', renderInstagramPost, { once: true });
-    document.body.appendChild(script);
-
-    return () => script.removeEventListener('load', renderInstagramPost);
-  });
+import PaymentTerms from '$lib/components/infos-pratiques/PaymentTerms.svelte';
+import FamilyDiscounts from '$lib/components/infos-pratiques/FamilyDiscounts.svelte';
 </script>
 
-<section class="trial">
+
+<section class="trial" id="essais">
   <h2 class="section-title">Deux séances d’essai offertes</h2>
   <div class="trial__content">
     <p>
       Avant toute nouvelle inscription, chaque futur licencié a droit à <strong>deux séances d’essai gratuites</strong>.
     </p>
     <ul class="trial__steps">
-      <li>Consultez le planning des entraînements sur notre site : <a href="https://www.spbb.re" target="_blank" rel="noopener">www.spbb.re</a></li>
+      <li>Consultez le planning des entraînements sur notre site : <a href="/infospratiques/leshoraires" target="_blank" rel="noopener">les horaires</a></li>
       <li>Rendez-vous le jour de l’entraînement correspondant à votre catégorie</li>
       <li>Demandez simplement un essai au coach présent</li>
     </ul>
@@ -38,20 +21,7 @@
 <section class="categories">
   <h2 class="section-title">Catégories &amp; années de naissance</h2>
   <div class="categories__embed">
-    <blockquote
-      class="instagram-media"
-      data-instgrm-captioned
-      data-instgrm-permalink="https://www.instagram.com/p/DclXaIXlshK/"
-      data-instgrm-version="14"
-    >
-      <a
-        href="https://www.instagram.com/p/DclXaIXlshK/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Voir les catégories et années de naissance sur Instagram
-      </a>
-    </blockquote>
+    <p>Pour connaître votre catégorie et les places disponibles en 2026/2027, consultez les <a href="/infospratiques/leshoraires">entraînements par catégorie</a> ou contactez le club.</p>
   </div>
 </section>
 
@@ -66,10 +36,8 @@
     </p>
 
     <div class="payment-options">
-      <p>
-        💳 <strong>Paiement :</strong> De préférence
-        <span class="highlight">directement en ligne lors de l'inscription sur le site de la ligue, ou par virement bancaire</span>.
-      </p>
+      <PaymentTerms />
+      <FamilyDiscounts />
      
         <a href="/infospratiques/tarifsetaides"> <p>
         📆 <strong>📌 Aide financière : Cliquez ici pour plus d’informations</strong>— aide disponible via
@@ -84,7 +52,7 @@
 
     <p class="membership-contact">
       Pour toute question concernant les inscriptions, vous pouvez nous contacter à l’adresse suivante : <a
-        href="mailto:inscription.spbb@gmail.com"
+        href="mailto:communication.spbb@gmail.com"
         class="email-link">communication.spbb@gmail.com
 </a
       >

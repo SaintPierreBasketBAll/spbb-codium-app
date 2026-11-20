@@ -1,6 +1,6 @@
   <main class="legal">
     <div class="legal__logo">
-      <img src="/images/logo.png" />
+      <img src="/images/logo.png" alt="Logo Saint-Pierre Basket Ball" />
     </div>
     <h1 class="legal__title">Mentions légales</h1>
     <div class="legal__subtitle">Site officiel du SPBB – Saint-Pierre Basket Ball (La Réunion)</div>
@@ -51,7 +51,7 @@
     <section class="legal__section">
       <div class="legal__section-title">6. Cookies</div>
       <div class="legal__content">
-        Ce site peut utiliser des cookies à des fins statistiques ou pour améliorer votre expérience utilisateur. Vous pouvez configurer votre navigateur pour les refuser à tout moment.
+        Les cartes et médias externes sont désactivés avant votre autorisation. Vous pouvez gérer et retirer votre accord depuis la <a href="/politiquedecookies">politique de cookies</a>.
       </div>
     </section>
 
@@ -63,7 +63,7 @@
     </section>
 
     <div class="legal__footer">
-      &copy; SPBB – Saint-Pierre Basket Ball, 2001‑2025. Tous droits réservés.
+      &copy; SPBB – Saint-Pierre Basket Ball, 2001–{new Date().getFullYear()}. Tous droits réservés.
     </div>
   </main>
   <button class="scrolltop" aria-label="Retour en haut" title="Remonter en haut" on:click={() => window.scrollTo({top:0,behavior:'smooth'})}>

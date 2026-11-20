@@ -1,9 +1,10 @@
 <script>
+  import { externalConsent, openConsentSettings } from "$lib/consent";
   const DEFAULT_PROFILE_URL = "https://www.instagram.com/saintpierrebasketball/";
 
   let {
     feed = null,
-    title = "Dernieres actualites Instagram",
+    title = "Dernières actualités Instagram",
     limit = 5,
     enabled = true
   } = $props();
@@ -15,10 +16,10 @@
     isFallback: true
   };
 
-  const socialFeed = feed ?? emptyFeed;
-  const profileUrl = socialFeed.profileUrl || DEFAULT_PROFILE_URL;
-  const posts = Array.isArray(socialFeed.posts) ? socialFeed.posts.slice(0, limit) : [];
-  const isFallback = Boolean(socialFeed.isFallback);
+  const socialFeed = $derived(feed ?? emptyFeed);
+  const profileUrl = $derived(socialFeed.profileUrl || DEFAULT_PROFILE_URL);
+  const posts = $derived(!socialFeed.isFallback && Array.isArray(socialFeed.posts) ? socialFeed.posts.slice(0, limit) : []);
+
 
   function formatDate(value) {
     if (!value) return "Publication recente";
@@ -46,15 +47,10 @@
     <div class="social-feed__container">
       <header class="social-feed__header">
         <h2 class="social-feed__title" id="social-feed-title">{title}</h2>
-        <p class="social-feed__subtitle">Les 5 dernieres publications du club.</p>
+        <p class="social-feed__subtitle">Les 5 dernières publications du club.</p>
       </header>
 
-      {#if isFallback}
-        <p class="social-feed__notice">
-          Apercu local actif. Le flux Instagram peut etre branche cote serveur sans
-          modifier le composant.
-        </p>
-      {/if}
+
 
       {#if posts.length}
         <ul class="social-feed__grid">
@@ -66,6 +62,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                {#if $externalConsent}
                 <div class="social-feed__media">
                   <img
                     class="social-feed__image"
@@ -75,6 +72,7 @@
                     decoding="async"
                   />
                 </div>
+                {/if}
                 <div class="social-feed__content">
                   <p class="social-feed__caption">{shortCaption(post.caption)}</p>
                   <p class="social-feed__meta">{formatDate(post.timestamp)}</p>
@@ -83,12 +81,15 @@
             </li>
           {/each}
         </ul>
+      {:else if $externalConsent && socialFeed.reason !== "disabled"}
+        <iframe class="social-feed__profile" src="https://www.instagram.com/saintpierrebasketball/embed/" title="Profil Instagram de Saint-Pierre Basket Ball" loading="lazy"></iframe>
       {:else}
         <p class="social-feed__empty">
-          Les dernieres actualites Instagram seront affichees ici.
+          Consultez les actualités directement sur le compte officiel du SPBB.
         </p>
       {/if}
 
+      {#if !$externalConsent && socialFeed.reason !== "disabled"}<button type="button" onclick={openConsentSettings}>Autoriser les médias externes</button>{/if}
       <div class="social-feed__footer">
         <a
           class="social-feed__cta"
@@ -104,6 +105,14 @@
 {/if}
 
 <style>
+  .social-feed__profile {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: 550px;
+    margin: 0 auto;
+    border: 0;
+  }
   .social-feed {
     padding: 4rem 2rem;
     background-color: #000000;

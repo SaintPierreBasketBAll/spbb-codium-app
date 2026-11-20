@@ -13,48 +13,7 @@ const MEDIA_FIELDS = [
   "timestamp"
 ].join(",");
 
-const FALLBACK_POSTS = [
-  {
-    id: "fallback-1",
-    caption: "Retour en images sur les entrainements de nos jeunes sections.",
-    mediaType: "IMAGE",
-    imageUrl: "/images/spbb_img1.jpg",
-    permalink: DEFAULT_PROFILE_URL,
-    timestamp: "2026-03-01T09:00:00.000Z"
-  },
-  {
-    id: "fallback-2",
-    caption: "Preparation des equipes avant les matchs du week-end.",
-    mediaType: "IMAGE",
-    imageUrl: "/images/hero.jpg",
-    permalink: DEFAULT_PROFILE_URL,
-    timestamp: "2026-02-21T09:00:00.000Z"
-  },
-  {
-    id: "fallback-3",
-    caption: "Ambiance club et progression collective tout au long de la saison.",
-    mediaType: "IMAGE",
-    imageUrl: "/images/spbb_img1.jpg",
-    permalink: DEFAULT_PROFILE_URL,
-    timestamp: "2026-02-08T09:00:00.000Z"
-  },
-  {
-    id: "fallback-4",
-    caption: "Moments forts des rencontres et des actions sur le terrain.",
-    mediaType: "IMAGE",
-    imageUrl: "/images/hero.jpg",
-    permalink: DEFAULT_PROFILE_URL,
-    timestamp: "2026-01-26T09:00:00.000Z"
-  },
-  {
-    id: "fallback-5",
-    caption: "Vie associative du SPBB et accompagnement de tous les licencies.",
-    mediaType: "IMAGE",
-    imageUrl: "/images/spbb_img1.jpg",
-    permalink: DEFAULT_PROFILE_URL,
-    timestamp: "2026-01-10T09:00:00.000Z"
-  }
-];
+
 
 let feedCache = null;
 
@@ -107,10 +66,7 @@ function setCachedFeed(cacheKey, feed) {
 }
 
 function buildFallbackFeed(profileUrl, reason = "fallback") {
-  const posts = FALLBACK_POSTS.map((post) => ({
-    ...post,
-    permalink: profileUrl
-  }));
+  const posts = [];
 
   return {
     posts,

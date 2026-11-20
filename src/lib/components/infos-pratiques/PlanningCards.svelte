@@ -101,7 +101,7 @@
       name: 'U13 MD1',
       staff: 'Coach : Melvin ANTOU',
       sessions: [
-        { day: 'Mardi', time: '17h30–19h00', venue: '<span class="dome">Dôme</span> ou <span class="exterieur">Terrains Extérieurs</span>' },
+        { day: 'Mardi', time: '17h30–19h00', venue: '<span class="dome">Dôme</span> ou <span class="exterieur">Terrains Extérieurs</span> (lieu à confirmer)' },
         { day: 'Vendredi', time: '17h30–19h00', venue: '<span class="exterieur">Terrains Extérieurs</span>' }
       ]
     },
@@ -109,7 +109,7 @@
       name: 'U13 MD2',
       staff: 'Coach : En attente',
       sessions: [
-        { day: 'Mardi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span> ou <span class="exterieur">TerrainsExtérieurs</span>' },
+        { day: 'Mardi', time: '17h30–19h00', venue: '<span class="dome">Dôme de Terre Sainte</span> ou <span class="exterieur">Terrains Extérieurs</span> (lieu à confirmer)' },
         { day: 'Vendredi', time: '17h30–19h00', venue: '<span class="exterieur">Terrains Extérieurs</span>' }
       ]
     },
@@ -160,7 +160,7 @@
     <div class="wrap">
       <div class="title">
         <span class="badge">SPBB</span>
-        <h1>Légende des terrains d’entraînement</h1>
+        <h2>Légende des terrains d’entraînement</h2>
       </div> 
       <div class="legend">
         {#each legendItems as item}
@@ -262,7 +262,7 @@
     letter-spacing: 0.3px;
   }
 
-  h1 {
+  .page-header h2 {
     margin: 0;
     font-size: clamp(20px, 2.6vw, 30px);
     letter-spacing: 0.3px;

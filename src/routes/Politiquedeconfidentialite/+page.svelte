@@ -36,8 +36,8 @@
       <div class="legal__content">
         Les données collectées sur ce site le sont principalement via :
         <ul class="legal__list">
-          <li>Formulaires de contact et d’inscription (nom, prénom, adresse e-mail, numéro de téléphone, informations sur la pratique sportive, etc.)</li>
-          <li>Formulaires d’abonnement à la newsletter</li>
+          <li>Demandes envoyées par e-mail au club et formulaires externes de préinscription ou de licence (Google Forms et FFBB).</li>
+
           <li>Données techniques de navigation (adresse IP, navigateur, cookies…)</li>
         </ul>
       </div>
@@ -49,8 +49,8 @@
         Les données personnelles collectées sont utilisées pour :
         <ul class="legal__list">
           <li>Gérer les inscriptions, adhésions et relations avec les membres</li>
-          <li>Répondre aux demandes adressées via le formulaire de contact</li>
-          <li>Envoyer la newsletter si vous y avez consenti</li>
+          <li>Répondre aux demandes adressées au club</li>
+
           <li>Respecter les obligations légales ou réglementaires</li>
         </ul>
       </div>
@@ -66,7 +66,7 @@
     <section class="legal__section">
       <div class="legal__section-title">5. Destinataires des données</div>
       <div class="legal__content">
-        Les données sont destinées uniquement au SPBB et ne sont jamais cédées à des tiers, sauf obligation légale ou accord exprès de votre part.
+        Les demandes sont traitées par les personnes habilitées du SPBB. Les démarches externes de préinscription et de licence font intervenir Google Forms et la FFBB ; leurs politiques de confidentialité s’appliquent également. L’hébergement du site est assuré par Vercel.
       </div>
     </section>
 
@@ -97,7 +97,7 @@
     <section class="legal__section">
       <div class="legal__section-title">8. Cookies</div>
       <div class="legal__content">
-        Le site www.spbb.re utilise des cookies pour le bon fonctionnement du site et à des fins statistiques. Vous pouvez configurer votre navigateur pour refuser les cookies. Pour en savoir plus, consultez notre <a href="/mentions-legales">page Mentions légales</a>.
+        Les cartes et médias externes restent bloqués avant votre accord. Consultez la <a href="/politiquedecookies">politique de cookies</a> pour gérer ou retirer votre consentement.
       </div>
     </section>
 
@@ -111,7 +111,9 @@
     <section class="legal__section">
       <div class="legal__section-title">10. Contact</div>
       <div class="legal__content">
-        Pour toute question relative à la présente politique ou à vos données, vous pouvez écrire à :
+        Pour toute question relative à vos données, écrivez à <a href="mailto:contact.spbb@gmail.com">contact.spbb@gmail.com</a>.
+      </div>
+    </section>
   <button
     class="scrolltop"
     aria-label="Retour en haut"
@@ -123,7 +125,7 @@
   </button>
 
     <div class="legal__footer">
-      &copy; SPBB – Saint-Pierre Basket Ball, 2001‑2025. Tous droits réservés.
+      &copy; SPBB – Saint-Pierre Basket Ball, 2001–{new Date().getFullYear()}. Tous droits réservés.
     </div>
   </main>
 

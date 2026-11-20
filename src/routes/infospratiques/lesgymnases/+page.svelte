@@ -1,10 +1,11 @@
+<script>import ExternalEmbed from "$lib/components/ExternalEmbed.svelte";</script>
 <section class="training-grounds">
     <h2 class="section-title">Les terrains d'entraînement de SPBB</h2>
     <div class="maps-grid">
         <div class="map-card">
             <h3>Gymnase Nelson Mandela</h3>
             <div class="map-container">
-                <iframe
+                <ExternalEmbed
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4669.408694825228!2d55.4921362!3d-21.343714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21780a077a866169%3A0x5f98f326cc711ce0!2sGymnase%20Nelson%20Mandela!5e1!3m2!1sfr!2sfr!4v1742551068343!5m2!1sfr!2sfr"
                     width="100%"
                     height="450"
@@ -12,14 +13,14 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                ></ExternalEmbed>
             </div>
         </div>
 
         <div class="map-card">
             <h3>Gymnase Gaston Richardson</h3>
             <div class="map-container">
-                <iframe
+                <ExternalEmbed
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4669.541445064668!2d55.51366657622176!3d-21.33954508374753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21780a3e5f97e65d%3A0xfdc1b77888012f16!2sGymnase%20Gaston%20Richardson!5e1!3m2!1sfr!2sfr!4v1742550938772!5m2!1sfr!2sfr"
                     width="100%"
                     height="450"
@@ -27,14 +28,14 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                ></ExternalEmbed>
             </div>
         </div>
 
         <div class="map-card">
             <h3>Dôme de Terre Sainte</h3>
             <div class="map-container">
-                <iframe
+                <ExternalEmbed
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4669.390695847253!2d55.48824937622184!3d-21.344279183905286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2182a1002e74a1bb%3A0x5895f21729ea4cf1!2sD%C3%B4me%20de%20Terre%20Sainte!5e1!3m2!1sfr!2sfr!4v1742812346317!5m2!1sfr!2sfr"
                     width="100%"
                     height="450"
@@ -42,14 +43,14 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                ></ExternalEmbed>
             </div>
         </div>
 
         <div class="map-card">
             <h3>Gymnase Ligne des Bambous</h3>
             <div class="map-container">
-                <iframe
+                <ExternalEmbed
                     src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1308.3305164212254!2d55.492482758658355!3d-21.298379410714645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sGym.%20Ligne%20des%20Bambous!5e1!3m2!1sfr!2sfr!4v1742552016693!5m2!1sfr!2sfr"
                     width="100%"
                     height="450"
@@ -57,13 +58,13 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                ></ExternalEmbed>
             </div>
         </div>
         <div class="map-card">
             <h3>Terrains Extérieurs de Nelson Mandela</h3>
             <div class="map-container">
-                <iframe
+                <ExternalEmbed
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d645.2572672421711!2d55.49141811332827!3d-21.343543920043906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1742814707288!5m2!1sfr!2sfr"
                     width="600"
                     height="450"
@@ -71,7 +72,7 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                ></ExternalEmbed>
             </div>
         </div>
     </div>
@@ -933,7 +934,7 @@
         width: 100%;
     }
 
-    .map-container iframe {
+    .map-container :global(iframe) {
         display: block;
     }
 
@@ -1090,7 +1091,7 @@
             grid-template-columns: 1fr;
         }
 
-        .map-container iframe {
+        .map-container :global(iframe) {
             height: 300px;
         }
     }

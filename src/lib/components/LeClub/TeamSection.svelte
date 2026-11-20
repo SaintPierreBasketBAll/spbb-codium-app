@@ -1,44 +1,17 @@
 <script>
-   
-    let teamMembers = $state([
-      {
-        name: "Laurent Parata",
-        role: "Président",
-        description: "Avec passion et leadership, il veille à la bonne marche de l'association et à la réalisation de ses objectifs."
-      },
-     /*  {
-        name: "Imraane Hafeji",
-        role: "Vice-Président",
-        description: "Il soutient activement le président et contribue au développement des projets de l'association."
-      }, */
-      {
-        name: "Frédéric Morel",
-        role: "Secrétaire Général",
-        description: "Le secrétaire général d’association exerce des fonctions principalement administratives"
-      },
-     /*  {
-        name: "Anli-Saïd Souffou",
-        role: "Secrétaire Général adjoint",
-        description: "Il assiste le secrétaire dans ses missions administratives et contribue à la gestion quotidienne."
-      }, */
-     /*  {
-        name: "Estelle Omarjee-Robineau",
-        role: "Trésorière",
-        description: "Elle assure une gestion rigoureuse et transparente des finances de l'association."
-      }/* , */
-      {
-        name: "Hamza Panchbaya",
-        role: "Trésorier adjoint",
-        description: "Il soutient la trésorière dans le suivi et l'exécution des budgets."
-      } 
-    ]);
-  </script>
+  const teamMembers = [
+    { name: 'Laurent PARATA', role: 'Président', description: 'Il préside l’association et coordonne les activités du Bureau.' },
+    { name: 'Frédéric MOREL', role: 'Secrétaire Général', description: 'Il assure le suivi administratif de l’association.' },
+    { name: 'Hamza PANCHBAYA', role: 'Trésorier', description: 'Il assure le suivi de la trésorerie et des comptes de l’association.' },
+    { name: 'Anli-Saïd SOUFFOU', role: 'Secrétaire Adjoint', description: 'Il assiste le secrétaire général dans le suivi administratif.' }
+  ];
+</script>
   
   <section class="team-section">
-    <h2 class="section-title">L'équipe dirigeante</h2>
+    <h1 class="section-title">L’équipe dirigeante</h1>
     <div class="team-container">
       <div class="team-intro">
-        <p>L'association Saint Pierre Basket Ball (SPBB) est dirigée par une équipe de bénévoles passionnés, qui donnent de leur temps et de leur énergie pour promouvoir le basketball et transmettre ses valeurs à Saint-Pierre.</p>
+        <p>Le Bureau du Saint-Pierre Basket Ball assure la gestion administrative, financière et associative du club pour la saison 2026/2027.</p>
       </div>
       <div class="team-grid">
         {#each teamMembers as member}
@@ -50,7 +23,7 @@
         {/each}
       </div>
       <div class="team-outro">
-        <p>Grâce à leur engagement désintéressé, cette équipe unie et compétente permet à l'association de continuer à grandir et à faire rayonner le basketball au sein de la communauté de Saint-Pierre et au-delà.</p>
+        <p>Pour contacter le club, utilisez les coordonnées associatives disponibles sur la page Contact.</p>
       </div>
     </div>
   </section>

@@ -22,10 +22,10 @@
   <div class="flame-animation home-hero__flame"></div>
   <div class="hero-content home-hero__content">
     <h1 class="home-hero__title" id="home-hero-title">Saint-Pierre Basket Ball</h1>
-    <p class="home-hero__subtitle">Passion, Performance, Excellence</p>
+    <p class="home-hero__subtitle">Le basket à Saint-Pierre, La Réunion</p>
     <div class="home-hero__actions">
       <a class="cta-button home-hero__button home-hero__link" href="/inscription">
-        Rejoignez-nous
+        S’inscrire — saison 2026/2027
       </a>
       <a class="cta-button home-hero__button home-hero__button--secondary home-hero__link" href="#social-feed">
         Voir les dernières actualités
@@ -35,6 +35,11 @@
 </main>
 
 <SocialFeedSection feed={data.socialFeed} />
+
+<section class="quick-access" aria-label="Vos démarches au SPBB">
+<p>Saison 2026/2027 — Inscriptions en cours</p>
+<div><a href="/infospratiques/adhesion#essais">Faire 2 séances d’essai</a><a href="/inscription">S’inscrire</a><a href="/infospratiques/leshoraires">Voir les entraînements</a><a href="/infospratiques/tarifsetaides">Tarifs &amp; aides</a></div>
+</section>
 
 <!-- <section class="clubhouse">
   <h2 class="section-title">Club House</h2>
@@ -323,6 +328,10 @@
 </section>
 
 <style>
+.quick-access { padding: 2rem 1rem; background: #151515; color: #fff; text-align: center; }
+.quick-access div { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1rem; }
+.quick-access a { padding: .9rem; border: 1px solid #ffa500; border-radius: 8px; color: #ffb347; }
+
   :root {
     --black: #000000;
     --white: #ffffff;

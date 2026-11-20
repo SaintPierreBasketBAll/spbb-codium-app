@@ -1,79 +1,18 @@
-<section class="pass-sport">
-  <h2 class="section-title">Le Pass Sport</h2>
-  <div class="pass-sport-content">
-    <div class="pass-sport-card">
-      <div class="pass-sport-icon">
-        <svg viewBox="0 0 24 24" width="64" height="64">
-          <path
-            fill="var(--orange-light)"
-            d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
-          />
-          <text
-            x="50%"
-            y="50%"
-            dominant-baseline="middle"
-            text-anchor="middle"
-            fill="var(--orange-light)"
-            font-size="10"
-            font-weight="bold">€</text
-          >
-        </svg>
-      </div>
-      <div class="pass-sport-text">
-        <p>
-          Le <strong>Pass Sport</strong> permet de bénéficier d'une aide
-          financière de <strong>70 euros</strong> pour la prise en charge d'une
-          partie de l'adhésion à un club sportif. Pour la saison en cours, le
-          prix de l'adhésion pour la licence au
-          <strong>Saint Pierre Basket Ball</strong>
-          est de <strong>150 euros</strong>.
-        </p>
-        <div class="alert">
-          <svg class="alert-icon" viewBox="0 0 24 24" width="24" height="24">
-            <path
-              fill="var(--orange-dark)"
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
-            />
-          </svg>
-          <div class="alert__container">
-            <p><strong>Attention :</strong> <br /></p>
-          <ul
-            style="list-style-type: none; margin-top: 0.5rem; padding-left: 0;"
-          >
-            <li>
-              Le <strong>Pass'Sport</strong> pour la saison
-              <strong>2024/2025</strong>
-              <strong>n'est plus valable après le 31 décembre 2024</strong>.
-            </li>
-            <li>
-              Le <strong>Pass'Sport</strong> pour la saison
-              <strong>2025/2026</strong>
-              <strong>n'est plus valable après le 31 décembre 2025</strong>.
-            </li>
-            <li>
-              Valable pour toute inscription du <strong>1er septembre au 31 décembre 2025</strong>;
-              campagne de communication fin août.
-            </li>
-            <li>
-              Bénéficiaires :
-              <ul>
-                <li>Jeunes de <strong>14 à 17 ans</strong> avec ARS ;</li>
-                <li>Jeunes en situation de handicap : <strong>6–19 ans (AEEH)</strong> ou <strong>16–30 ans (AAH)</strong> ;</li>
-                <li>Étudiants boursiers ou aides CROUS/régionales, <strong>moins de 28 ans</strong> ;</li>
-              </ul>
-            </li>
-          </ul>
-
-          <p>Assurez-vous d'en profiter avant ces dates !</p>
-          </div>
-          
-        </div>
-        <a href="https://www.pass.sports.gouv.fr/" class="pass-sport-button" target="_blank" rel="noopener noreferrer">Plus d'informations</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+<script>
+import PaymentTerms from '$lib/components/infos-pratiques/PaymentTerms.svelte';
+import FamilyDiscounts from '$lib/components/infos-pratiques/FamilyDiscounts.svelte';
+</script>
+<section class="pass-sport"><h1 class="section-title">Tarifs et aides 2026/2027</h1>
+<div class="pass-sport-content"><div class="pass-sport-card"><div class="pass-sport-text">
+<h2>Adhésion au SPBB</h2><p>La cotisation affichée par le club est de <strong>150 € hors assurance optionnelle</strong>. Consultez les <a href="/infospratiques/adhesion">modalités d’adhésion et de paiement</a> avant de régler votre inscription.</p>
+<PaymentTerms />
+<FamilyDiscounts />
+<h2>Pass Sport 2026/2027</h2><p>Le Pass Sport est une aide de <strong>50 €</strong>, sous conditions, utilisable du <strong>1er septembre au 31 décembre 2026</strong>.</p>
+<ul><li>Jeunes de 6 à 17 ans révolus : quotient familial CAF ou MSA inférieur ou égal à 699 €.</li><li>Jeunes de 6 à 19 ans révolus bénéficiaires de l’AEEH, ou de 16 à 30 ans révolus bénéficiaires de l’AAH.</li><li>Étudiants boursiers jusqu’à 28 ans révolus, titulaires d’une bourse éligible attribuée avant le 15 octobre 2026.</li></ul>
+<p>Présentez votre code au club avant le règlement afin de vérifier sa prise en compte.</p>
+<p><a href="https://www.education.gouv.fr/le-pass-sport-458742" target="_blank" rel="noopener noreferrer">Conditions officielles du Pass Sport 2026/2027</a></p>
+<a href="https://www.pass.sports.gouv.fr/" class="pass-sport-button" target="_blank" rel="noopener noreferrer">Vérifier mon éligibilité</a>
+</div></div></div></section>
 <style>
   :root {
     --black: #000000;

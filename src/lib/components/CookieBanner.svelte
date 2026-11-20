@@ -1,90 +1,44 @@
 <script>
-  let visible = $state(true);
-
-  $effect(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    if (consent) {
-      visible = false;
-    }
-  });
-
-  function setConsent(value) {
-    localStorage.setItem('cookieConsent', value ? 'accepted' : 'refused');
-    visible = false;
-  }
+import { onMount } from 'svelte';
+import { externalConsent, consentKey, consentDuration } from '$lib/consent';
+let visible = $state(false);
+let customize = $state(false);
+let external = $state(false);
+onMount(() => {
+  try {
+    const saved = JSON.parse(localStorage.getItem(consentKey) || 'null');
+    if (saved && saved.expires > Date.now() && typeof saved.external === 'boolean') {
+      external = saved.external; externalConsent.set(external);
+    } else visible = true;
+  } catch { visible = true; }
+  const reopen = () => { visible = true; customize = true; };
+  window.addEventListener('spbb:consent-settings', reopen);
+  return () => window.removeEventListener('spbb:consent-settings', reopen);
+});
+function save(value) {
+ external = value; externalConsent.set(value);
+ try { localStorage.setItem(consentKey, JSON.stringify({ external: value, expires: Date.now() + consentDuration })); } catch { /* Choix actif pour cette visite. */ }
+ visible = false;
+}
 </script>
-
 {#if visible}
-  <div class="cookie-banner">
-    <div class="cookie-banner__text">
-      Ce site utilise des cookies pour vous garantir la meilleure expérience. 
-      <br>
-      <a href="/politique-de-cookies" target="_blank">Personnaliser les préférences</a>
-    </div>
-    <div class="cookie-banner__buttons">
-      <button class="cookie-banner__button" onclick={() => setConsent(true)}>Accepter tous les cookies</button>
-      <button class="cookie-banner__button" onclick={() => setConsent(false)}>Refuser tous les cookies</button>
-    </div>
-  </div>
+<section class="cookie-banner" aria-label="Préférences de confidentialité">
+<p>Les cartes et médias externes (Google Maps, Facebook, Instagram, Canva) peuvent utiliser des traceurs. Ils restent bloqués avant votre autorisation. <a href="/politiquedecookies">Politique de cookies</a></p>
+{#if customize}
+<p>La mémorisation de votre choix permet de gérer vos préférences.</p>
+<label><input type="checkbox" bind:checked={external} /> Autoriser les cartes et médias externes</label>
+<button type="button" onclick={() => save(external)}>Enregistrer mes choix</button>
 {/if}
-
+<div class="buttons">
+<button type="button" onclick={() => save(true)}>Tout accepter</button>
+<button type="button" onclick={() => save(false)}>Tout refuser</button>
+<button type="button" onclick={() => customize = !customize}>Personnaliser</button>
+</div></section>
+{/if}
 <style>
-  .cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    color: #fff;
-    padding: 1.5rem;
-    border-top: 1px solid #444;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1000;
-    gap: 1rem;
-  }
-
-  .cookie-banner__text {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .cookie-banner__text a {
-    color: #ffd700;
-    text-decoration: underline;
-  }
-
-  .cookie-banner__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .cookie-banner__button {
-    background-color: transparent;
-    border: 2px solid orange;
-    color: orange;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  .cookie-banner__button:hover {
-    background-color: orange;
-    color: #111;
-  }
-
-  @media screen and (max-width: 600px) {
-    .cookie-banner__text {
-      font-size: 0.9rem;
-    }
-
-    .cookie-banner__button {
-      flex: 1 1 100%;
-    }
-  }
+.cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; box-sizing: border-box; max-height: 65vh; overflow: auto; background: #222; color: #fff; padding: 1rem; border-top: 2px solid #ffa500; z-index: 1000; text-align: center; }
+p { margin: .5rem auto; max-width: 65rem; } a { color: #ffb347; text-decoration: underline; }
+.buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: .75rem; }
+button { background: #222; border: 2px solid #ffb347; color: #ffb347; padding: .65rem 1rem; border-radius: 8px; cursor: pointer; font-weight: bold; }
+button:hover, button:focus-visible { background: #ffb347; color: #111; }
 </style>

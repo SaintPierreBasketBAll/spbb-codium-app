@@ -96,7 +96,7 @@
 
     <a
       class="header__social-link"
-      href="https://instagram.com"
+      href="https://www.instagram.com/saintpierrebasketball/"
       target="_blank"
       rel="noopener"
       aria-label="Instagram SPBB"
@@ -111,6 +111,8 @@
 </nav>
 
 <style>
+@media (max-width: 1150px) { .nav-links { overflow-y: auto; box-sizing: border-box; } }
+
   .navbar {
       background: linear-gradient(45deg, var(--black), #1a1a1a);
       padding: 0.45rem 1.5rem 0.45rem 0.85rem;
@@ -207,7 +209,7 @@
       margin-right: 1rem;
   }
 
-  .nav-item:hover .dropdown-menu {
+  .nav-item:focus-within .dropdown-menu, .nav-item:hover .dropdown-menu {
       display: block;
   }
 
@@ -236,7 +238,7 @@
       background-position: 0 0;
       background-color: transparent;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1150px) {
       /* .hamburger {
           display: flex;
       } */
@@ -345,7 +347,7 @@
   /* Sur fond sombre, forcer l'icône Instagram à suivre la couleur du texte */
   .header__social-link svg[fill="currentColor"] { color: var(--white); }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1150px) {
     .header__social {
       gap: 0.2rem;
     }

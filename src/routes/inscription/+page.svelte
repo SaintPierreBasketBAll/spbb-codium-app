@@ -1,4 +1,8 @@
 <script>
+import PaymentTerms from '$lib/components/infos-pratiques/PaymentTerms.svelte';
+import FamilyDiscounts from '$lib/components/infos-pratiques/FamilyDiscounts.svelte';
+
+
   // Type de licencié sélectionné
   let selectedType = $state("nouveau");
   let titre = $state("Nouveau licencié");
@@ -76,7 +80,7 @@
         "/pdf/reglement_interieur_spbb.pdf",
         "/pdf/charte_parent.pdf",
         "/pdf/declaration_d_adhesion.pdf",
-        "/pdf/2025-2026_certificat_medical.pdf",
+        "/pdf/certificat_medical.pdf",
       ],
     },
     surclassement: {
@@ -96,7 +100,7 @@
         "/pdf/declaration_d_adhesion.pdf",
         "/pdf/Certificat_d_aptitude_au_surclassement.pdf",
         "/pdf/Tableau surclassements 2026-2027.pdf"
-        
+
       ],
     },
     coach: {
@@ -110,10 +114,10 @@
       links: [
         "/pdf/reglement_interieur_spbb.pdf",
         "/pdf/charte_entraineur_assistant.pdf",
-        "/pdf/declaration_d_adhesion.pdf",     
+        "/pdf/declaration_d_adhesion.pdf",
       ],
     },
-    
+
     senior: {
       title: "Senior fille ou garçon",
       items: [
@@ -123,13 +127,13 @@
         "Certificat médical",
         "- Règlement intérieur",
         "- Charte joueur",
-       
+
       ],
       links: [
         "/pdf/certificat_medical.pdf",
         "/pdf/charte_d_engagement.pdf",
         "/pdf/charte_joueur.pdf",
-        "/pdf/reglement_interieur_spbb.pdf",      
+        "/pdf/reglement_interieur_spbb.pdf",
         "/pdf/declaration_d_adhesion.pdf",
       ],
     },
@@ -140,137 +144,105 @@
   }
 </script>
 
-<!-- Page d'inscription pour la saison 2025/2026 -->
+<!-- Page d'inscription pour la saison 2026/2027 -->
 
 <section class="licence-info">
   <!-- Titre de la section -->
   <h1 class="section-title_h1">LES INSCRIPTIONS 2026/2027</h1>
   <!-- Sous-titre de la section -->
-   
 
 
-  <h2 class="section-title_h1">🏀 Procédure d’inscription au SPBB</h2>
-  <p>
-    1️⃣ &nbsp;Demande de préinscription : 
-  </p>
-  <p>- Veuillez remplir le formulaire de demande de
-    préinscription en cliquant sur lien ci-dessous</p>
-  <p>- Pour connaitre les conditions d'inscription cliquez sur ce lien : <a href="/infospratiques/adhesion" class="link">Conditions d'inscription</a></p>
-  <br />
-   <h3 class="section-title">Cliquez ici :</h3>
-  <p class="inscription_form_link">
-    <a
-      href="https://forms.gle/dLCrdVUgqZvj2ir7A"
-      target="_blank">Formulaire de demande de préinscription</a
-    >
-  </p>
-  <p>
-    2️⃣ &nbsp; Étude de votre demande : 
-  </p>
-  <p>- Votre demande de préinscription sera étudiée par
-    le club, en fonction des places disponibles.
-  </p>
-  <p>
-    - En cas d’acceptation, un lien FFBB vous sera transmis par e-mail.
-  </p>
-  <p>
-    - En cas de refus vous en serez informé par mail et vous pourrez
-    vous inscrire dans un autre club.
-  </p>
-  
-  <br />
-  <p>
-    3️⃣ &nbsp; Réception d'un lien F.F.B.B : 
-  </p>
-  <p> - Vous devrez alors cliquer sur le lien FFBB et compléter le formulaire <span>
-    muni des documents à fournir(photo d'identité, certificat medical, etc.), voir ci-dessous.</span>
-     À cette étape, il vous faudra aussi <span>télécharger et surtout bien lire et être bien informé du contenu,</span>  du règlement intérieur et des chartes en fonction du type de licence. La  
-     <strong>
-      Déclaration d'Adhésion
-     </strong> devra alors nous être retournée complétée et signée à l'adresse email : 
-     <span><a
-  href="mailto:communication.spbb@gmail.com?subject=Demande%20d%27adh%C3%A9sion%20sign%C3%A9e&body=Bonjour%20SPBB%2C%0AVoici%20en%20pi%C3%A8ce%20jointe%20la%20demande%20d%27adh%C3%A9sion%20sign%C3%A9e."
->
-  communication.spbb@gmail.com
-</a>
-     </span> 
- .</p>
-  <br />
-  <p>
-    4️⃣ &nbsp; Paiement de la licence : 
-  </p>
-  <p>- Une fois que nous avons recu le demande d'adhésion
-    signée et le paiement de la licence effectué, vous recevrez votre licence et
-    serez officiellement licencié au SPBB pour la saison 2025/2026.</p>
-  <br /><br />
- 
+
+  <div class="registration-paths">
+    <h2>Choisissez votre parcours</h2>
+    <div class="licence-tabs" role="group" aria-label="Parcours d’inscription">
+      <button class="licence-tab" class:selected={selectedType === 'nouveau'} aria-pressed={selectedType === 'nouveau'} onclick={() => selectType('nouveau')}>Nouveau licencié</button>
+      <button class="licence-tab" class:selected={selectedType === 'renouvellement'} aria-pressed={selectedType === 'renouvellement'} onclick={() => selectType('renouvellement')}>Renouvellement</button>
+      <button class="licence-tab" class:selected={selectedType === 'mutation'} aria-pressed={selectedType === 'mutation'} onclick={() => selectType('mutation')}>Mutation</button>
+    </div>
+    <ol class="registration-steps" aria-live="polite">
+      {#if selectedType === 'nouveau'}
+        <li><strong>Profitez de deux séances d’essai gratuites.</strong> Sur spbb.re, ouvrez « <a href="/infospratiques/leshoraires">Infos pratiques → Horaires</a> ». En bas de la page, repérez la catégorie de votre enfant dans la rubrique « Catégorie et année de naissance », puis consultez ses horaires d’entraînement. Venez directement au gymnase indiqué à l’heure de l’entraînement, sans rendez-vous, et demandez une séance d’essai au coach sur place.</li>
+        <li><strong>Demandez l’inscription au coach.</strong> Après les deux essais, faites votre demande au coach. S’il reste une place et qu’il donne son accord, il transmet lui-même au bureau le NOM DE FAMILLE (tout en majuscules), le prénom, la date de naissance et le numéro de téléphone du futur licencié.</li>
+        <li><strong>Finalisez votre inscription.</strong> Le club enregistre votre demande sur la plateforme FFBB et vous envoie un lien par e-mail. Remplissez le formulaire de préinscription via ce lien, puis réglez votre licence. Lisez le règlement intérieur et les chartes des joueurs et des parents disponibles ci-dessous, puis envoyez la déclaration d’adhésion signée à <a href="mailto:contact.spbb@gmail.com">contact.spbb@gmail.com</a>. Le club valide votre inscription après réception du dossier FFBB complet, de la déclaration signée et du paiement.</li>
+      {:else}
+        {#if selectedType === 'renouvellement'}
+          <li><strong>Préparez votre renouvellement.</strong> Vérifiez vos coordonnées et les documents à fournir ci-dessous.</li>
+          <li><strong>Complétez le lien FFBB transmis par le club.</strong> Si vous ne l’avez pas reçu, contactez <a href="mailto:communication.spbb@gmail.com">communication.spbb@gmail.com</a>.</li>
+        {:else}
+          <li><strong>Envoyez votre demande.</strong> Remplissez le <a href="https://forms.gle/dLCrdVUgqZvj2ir7A" target="_blank" rel="noopener noreferrer">formulaire de préinscription</a>. {#if selectedType === 'mutation'}Indiquez votre club précédent ; le SPBB vous précisera les démarches et éventuels frais de mutation.{/if}</li>
+          <li><strong>Attendez la réponse du club.</strong> La demande est étudiée selon les places disponibles. En cas d’accord, vous recevez un lien FFBB par e-mail.</li>
+          <li><strong>Complétez votre dossier FFBB.</strong> Préparez les justificatifs correspondant à votre profil ci-dessous.</li>
+        {/if}
+        <li><strong>Lisez les documents du club.</strong> Consultez le règlement et les chartes ; retournez la déclaration d’adhésion signée à <a href="mailto:communication.spbb@gmail.com">communication.spbb@gmail.com</a>.</li>
+        <li><strong>Réglez votre licence.</strong> Consultez les <a href="/infospratiques/tarifsetaides">tarifs et aides</a> et les <a href="/infospratiques/adhesion">modalités d’adhésion</a>. Votre inscription 2026/2027 est effective après validation de votre dossier et de votre règlement par le club.</li>
+      {/if}
+    </ol>
+  </div>
+  <PaymentTerms />
+  <FamilyDiscounts />
   <h2 class="section-title_h1">📄 Liste des documents à fournir</h2>
-  <div class="licence-tabs" role="tablist" aria-label="Types de licenciés">
+  <div class="licence-tabs" role="group" aria-label="Types de licenciés">
     <button
-      role="tab"
+
       class="licence-tab"
       class:selected={selectedType === "nouveau"}
       onclick={() => selectType("nouveau")}
-      aria-selected={selectedType === "nouveau"}
-      tabindex={selectedType === "nouveau" ? 0 : -1}
+      aria-pressed={selectedType === "nouveau"}
+
     >
       Nouveau licencié
     </button>
     <button
-      role="tab"
+
       class="licence-tab"
       class:selected={selectedType === "renouvellement"}
       onclick={() => selectType("renouvellement")}
-      aria-selected={selectedType === "renouvellement"}
-      tabindex={selectedType === "renouvellement" ? 0 : -1}
+      aria-pressed={selectedType === "renouvellement"}
     >
       Renouvellement
     </button>
     <button
-      role="tab"
+
       class="licence-tab"
       class:selected={selectedType === "mutation"}
       onclick={() => selectType("mutation")}
-      aria-selected={selectedType === "mutation"}
-      tabindex={selectedType === "mutation" ? 0 : -1}
+      aria-pressed={selectedType === "mutation"}
     >
       Mutation
     </button>
     <button
-      role="tab"
+
       class="licence-tab"
       class:selected={selectedType === "surclassement"}
       onclick={() => selectType("surclassement")}
-      aria-selected={selectedType === "surclassement"}
-      tabindex={selectedType === "surclassement" ? 0 : -1}
+      aria-pressed={selectedType === "surclassement"}
     >
       Surclassement
     </button>
     <button
-      role="tab"
+
       class="licence-tab"
       class:selected={selectedType === "coach"}
       onclick={() => selectType("coach")}
-      aria-selected={selectedType === "coach"}
-      tabindex={selectedType === "coach" ? 0 : -1}
+      aria-pressed={selectedType === "coach"}
     >
       Entraîneur / Assistant entraîneur
     </button>
-  
+
     <button
-      role="tab"
+
       class="licence-tab"
       class:selected={selectedType === "senior"}
       onclick={() => selectType("senior")}
-      aria-selected={selectedType === "senior"}
-      tabindex={selectedType === "senior" ? 0 : -1}
+      aria-pressed={selectedType === "senior"}
     >
       Senior
     </button>
   </div>
 
-  <div class="licence-panel active" role="tabpanel" aria-live="polite">
-   
+  <div class="licence-panel active" role="region" aria-live="polite">
+
 
     <h3>{titre} : Liste des documents à fournir.</h3>
 
@@ -285,9 +257,7 @@
     {#if fichesDocuments[selectedType]?.links}
       <ul>
         {#each fichesDocuments[selectedType]?.links as link}
-          <div>
-            <a href={link} target="_blank">{link.split("/").pop()}</a>
-          </div>
+          <li><a href={link} target="_blank" rel="noopener noreferrer">{link.split("/").pop()}</a></li>
         {/each}
       </ul>
     {/if}
@@ -296,6 +266,11 @@
 </section>
 
 <style>
+.registration-paths { max-width: 65rem; margin: 0 auto 3rem; }
+.registration-steps { list-style: decimal; padding-left: 1.5rem; }
+.registration-steps li { margin: 1rem 0; line-height: 1.6; }
+.registration-steps a { color: #ffb347; text-decoration: underline; }
+
   /* Styles de base */
   .licence-info {
     color: var(--white);
@@ -317,44 +292,6 @@
     font-weight: 700;
   }
 
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    background: linear-gradient(90deg, var(--orange-dark), gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 700;
-  }
-  span {
-    color: var(--orange-light);
-    font-weight: bold;
-  }
-  span:hover {
-    color: var(--orange-dark);
-    font-weight: bold;
-  }
-  .link {
-    color: var(--orange-light);
-    text-decoration: underline;
-    font-weight: bold;
-  }
-  .link:hover {
-    color: var(--orange-dark);
-  }
-  .inscription_form_link {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    color: aliceblue;
-    text-decoration: underline;
-  }
-  .inscription_form_link :hover {
-    color: var(--orange-dark);
-    text-decoration: none;
-    font-weight: bold;
-  }
 
   /* Onglets */
   .licence-tabs {
@@ -392,7 +329,7 @@
   }
 
   .licence-tab.selected,
-  .licence-tab[aria-selected="true"] {
+  .licence-tab[aria-pressed="true"] {
     border-color: var(--orange-light);
     background: linear-gradient(45deg, var(--orange-light), var(--orange-dark));
   }
@@ -431,9 +368,6 @@
       padding: 4rem 1.5rem;
     }
 
-    .section-title {
-      font-size: 2rem;
-    }
 
     .licence-tab {
       flex: 0 0 320px;
@@ -475,10 +409,5 @@
       margin-top: 3rem;
     }
 
-    .section-title {
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      
-    }
   }
 </style>
