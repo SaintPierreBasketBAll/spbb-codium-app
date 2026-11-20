@@ -1,4 +1,5 @@
 <script>
+import ExternalEmbed from "$lib/components/ExternalEmbed.svelte";
 import PaymentTerms from '$lib/components/infos-pratiques/PaymentTerms.svelte';
 import FamilyDiscounts from '$lib/components/infos-pratiques/FamilyDiscounts.svelte';
 </script>
@@ -21,7 +22,7 @@ import FamilyDiscounts from '$lib/components/infos-pratiques/FamilyDiscounts.sve
 <section class="categories">
   <h2 class="section-title">Catégories &amp; années de naissance</h2>
   <div class="categories__embed">
-    <p>Pour connaître votre catégorie et les places disponibles en 2026/2027, consultez les <a href="/infospratiques/leshoraires">entraînements par catégorie</a> ou contactez le club.</p>
+    <ExternalEmbed title="Publication Facebook sur les catégories" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSPBB974%2Fposts%2Fpfbid02wzSnNkhv6jv1McgfvxJuJv6jK8vQH3nwWnfNGuRGfchvrgFg1vz6jRj1V5cayZqbl&show_text=true&width=500" width="500" height="693" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></ExternalEmbed>
   </div>
 </section>
 
@@ -171,58 +172,25 @@ import FamilyDiscounts from '$lib/components/infos-pratiques/FamilyDiscounts.sve
   }
   .trial a { color: var(--orange-light); }
 
-  /* =============================
-     Catégories (publication Instagram)
-     ============================= */
   .categories {
     padding: 2rem;
-     /* background-color: #e0e0e0;  */
     background: linear-gradient(
       180deg,
-      rgb(0, 0, 0) 0%,
-      rgb(171, 168, 168) 50%,
-      rgba(255, 255, 255) 100%
-      );
+      rgb(0,0,0) 0%,
+      rgb(226, 223, 223) 50%,
+      rgb(255, 255, 255) 100%
+    );
   }
   .categories__embed {
-    width: 100%;
-    max-width: 540px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    min-height: 500px;
   }
-
-  .categories__embed :global(.instagram-media),
   .categories__embed :global(iframe) {
     width: 100%;
-    max-width: 540px;
-    min-width: 0 !important;
-    margin: 0 auto !important;
+    max-width: 500px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-  }
-
-  .categories__embed > blockquote {
-    box-sizing: border-box;
-    padding: 1.25rem;
-    background: #fff;
-    color: #262626;
-    text-align: center;
-  }
-
-  .categories__embed > blockquote a {
-    color: #c13584;
-    font-weight: 700;
-  }
-
-  @media (max-width: 600px) {
-    .categories {
-      padding-inline: 1rem;
-    }
-
-    .categories__embed {
-      min-height: 420px;
-    }
   }
 </style>
